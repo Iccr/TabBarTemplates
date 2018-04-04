@@ -1,0 +1,34 @@
+//
+//  localization.string.swift
+//  Tsukasa
+//
+//  Created by Lizan Pradhanang on 8/16/17.
+//  Copyright © 2017 Lizan Pradhanang. All rights reserved.
+//
+
+"Settings" = "設定";
+"Products List" = "製品";
+"Dashboard" = "ダッシュボード";
+"Favourite" = "お気に入り";
+"Log Out" = "ログアウト";
+"Message Setting" = "メッセージのポップアップ設定";
+"Order History" = "注文履歴";
+"Product List" ="製品リスト";
+"Settings" = "設定";
+"unit" = "単位";
+"Order Date" = "注文日";
+"Create New Order" = "新規注文";
+"Cancelled" = "キャンセル";
+"Language" = "言語";
+"Placed" = "注文日";
+"Received" = "単位";
+"Japanese" = "日本語";
+"English" = "英語";
+"old_password" = "以前のパスワード";
+"new_password" = " 新しいパスワード";
+"save" = " セーブ";
+"Alert Setting" = "アラーム設定";
+"Order Products" = "以前のパスワード";
+"product" = "以前";
+"Account Setting" = "お気に入り";
+"Change Password" = "以前のパスワード";
