@@ -15,6 +15,7 @@ class ModuleAViewController: UIViewController {
     var presenter: ModuleAModuleInterface?
     
     // MARK: IBOutlets
+    var url = "https://www.supremenewyork.com/shop/new"
     
     // MARK: VC's Life cycle
     
@@ -22,6 +23,17 @@ class ModuleAViewController: UIViewController {
         super.viewDidLoad()
         self.setup()
         self.setupTabItem()
+        startSearching()
+    }
+    
+    
+    func startSearching() {
+        var categories = ""
+        var size = ""
+        var color = ""
+        var name = ""
+        var numberOfTabs = ""
+        
     }
     
     // MARK: IBActions
@@ -42,3 +54,5 @@ class ModuleAViewController: UIViewController {
 extension ModuleAViewController: ModuleAViewInterface {
     
 }
+
+

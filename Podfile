@@ -16,9 +16,11 @@ pod 'AlamofireNetworkActivityIndicator'
 pod 'MBProgressHUD'
 pod 'AlamofireImage'
 pod 'FacebookLogin'
-pod 'thenPromise'
+pod 'thenPromise', git: "https://github.com/freshOS/then"
 pod 'IQKeyboardManagerSwift'
   pod 'RSKImageCropper'
+  pod 'ObjectMapper', '~> 3.4'
+
 #    pod "ImageSlideshow/Alamofire"
  pod 'Localize-Swift'
   target 'TabControllerTests' do
