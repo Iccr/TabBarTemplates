@@ -90,6 +90,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - ObjectMapper (3.3.0)
   - Protobuf (3.5.0)
   - RSKImageCropper (2.0.0)
   - thenPromise (4.2.0)
@@ -107,6 +108,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - Localize-Swift
   - MBProgressHUD
+  - ObjectMapper
   - RSKImageCropper
   - thenPromise (from `https://github.com/freshOS/then`)
 
@@ -136,6 +138,7 @@ SPEC REPOS:
     - Localize-Swift
     - MBProgressHUD
     - nanopb
+    - ObjectMapper
     - Protobuf
     - RSKImageCropper
 
@@ -173,10 +176,11 @@ SPEC CHECKSUMS:
   Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   RSKImageCropper: d9a1acbc0600bf8decc8f0d21895872c99a9e4cf
   thenPromise: e46ebb9a45c23cbaa681eeeee3f59929a21c639d
 
-PODFILE CHECKSUM: 1b151cd6cd1f36598f45ac9225576eb1e72e2b69
+PODFILE CHECKSUM: 668006189fce22b89262b1c88999edd3b36cf340
 
 COCOAPODS: 1.5.3

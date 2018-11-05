@@ -19,7 +19,7 @@ pod 'FacebookLogin'
 pod 'thenPromise', git: "https://github.com/freshOS/then"
 pod 'IQKeyboardManagerSwift'
   pod 'RSKImageCropper'
-  pod 'ObjectMapper', '~> 3.4'
+  pod 'ObjectMapper'
 
 #    pod "ImageSlideshow/Alamofire"
  pod 'Localize-Swift'

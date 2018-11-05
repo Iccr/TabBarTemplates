@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import ObjectMapper
 
 
 //var categories = ""
@@ -18,9 +18,24 @@ import Foundation
 
 
 
-class Item {
-    var categories: String?
-    var size: String?
-    var color: String?
+class Item: Mappable {
     var name: String?
+    var id: String?
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        name <- map["name"]
+        id <- map["id"]
+    }
+}
+
+
+
+
+class Styles {
+    var name: String?
+    var size: String?
 }
