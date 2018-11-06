@@ -46,4 +46,14 @@ class Size: Mappable {
 }
 
 
-
+class StyleContainer: Mappable {
+    var data: [Style] = []
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        data <- map["styles"]
+    }
+}

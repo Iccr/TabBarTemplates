@@ -15,10 +15,21 @@ class ModuleAViewController: UIViewController {
     var presenter: ModuleAModuleInterface?
     
     // MARK: IBOutlets
-    var url = "https://www.supremenewyork.com/shop.json"
+    var url = "https://www.supremenewyork.com/shop"
     
-    var itemList: AllItemsList?
+    var itemDick: [String: Any]? {
+        didSet {
+            self.getCategoryId()
+        }
+    }
     // MARK: VC's Life cycle
+    
+    var category = "Jackets"
+    var color = "Dark Rose"
+    var name = "2-Tone Zip Up Jacket"
+    var size = "Small"
+    var tabsNo = 2
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,15 +44,26 @@ class ModuleAViewController: UIViewController {
     }
     
     
+    func getCategoryId() {
+        if let selectedCategoryItems = itemDick?[category] as? [[String: Any]] {
+            selectedCategoryItems.filter {
+                $0["name"] as! String == self.name
+            }
+            print(selectedCategoryItems)
+            print("")
+        }
+        
+//        print(selectedCategoryItems)
+        print("")
+    }
+    
     func startSearching() {
+        self.fetchAllItemsDict(url: self.url, success: { (dict) in
+            self.itemDick = dict.dict
         
-        var category = "Jacketd"
-        var color = "Dark Rose"
-        var name = "2-Tone Zip Up Jacket"
-        var size = "Small"
-        var tabsNo = 2
-        
-        
+        }) { (error) in
+            self.alert(message: error.localizedDescription)
+        }
     }
     
     // MARK: IBActions
@@ -49,12 +71,7 @@ class ModuleAViewController: UIViewController {
     // MARK: Other Functions
     
     private func setup() {
-        // all setup should be done here
-        self.fetchAllItems(url: self.url, success: { (items) in
-            self.itemList = items
-        }) { (error) in
-            self.alert(message: error.localizedDescription)
-        }
+        
     }
     
     override func setupTabItem() {
@@ -68,7 +85,7 @@ extension ModuleAViewController: ModuleAViewInterface {
     
 }
 
-extension ModuleAViewController: FetchAllItems {
+extension ModuleAViewController: FetchAllItemsDict {
     
 }
 
@@ -80,8 +97,44 @@ protocol FetchAllItems: ApiServiceType {
 
 extension FetchAllItems {
     func fetchAllItems(url: String, success: @escaping (AllItemsList) -> (), failure: @escaping (Error) -> ()) {
+        let url = url + ".json"
         auth.request(method: .get, url: url, params: nil, success: { (response: AllItemsList) in
             let data = response
+            success(data)
+        }) { (error) in
+            failure(error)
+        }
+    }
+}
+
+protocol FetchAllItemsDict: ApiServiceType {
+    func fetchAllItemsDict(url: String, success: @escaping (MappableDict) -> (), failure: @escaping (Error) -> ())
+}
+
+
+extension FetchAllItemsDict {
+    func fetchAllItemsDict(url: String, success: @escaping (MappableDict) -> (), failure: @escaping (Error) -> ()) {
+        let url = url + ".json"
+        auth.request(method: .get, url: url, params: nil, success: { (response: MappableDict) in
+            let data = response
+            success(data)
+        }) { (error) in
+            failure(error)
+        }
+    }
+}
+
+
+protocol FetchItemSize: ApiServiceType {
+    func fetchItemSize(url: String,  id: String, success: @escaping ([Style]) -> (), failure: @escaping (Error) -> ())
+}
+
+
+extension FetchItemSize {
+    func fetchItemSize(url: String,  id: String, success: @escaping ([Style]) -> (), failure: @escaping (Error) -> ()) {
+        let url = url + "/\(id)" + ".json"
+        auth.request(method: .get, url: url, params: nil, success: { (response: StyleContainer) in
+            let data = response.data
             success(data)
         }) { (error) in
             failure(error)

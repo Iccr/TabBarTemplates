@@ -23,6 +23,19 @@ class Item: Mappable {
     }
 }
 
+class MappableDict: Mappable {
+    var dict: [String: Any] = [:]
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        dict <- map["products_and_categories"]
+    }
+    
+}
+
 class AllItemsList: Mappable {
     var jackets: [JacketsContainer] = []
     var pants: [PantsContainer] = []
