@@ -3,11 +3,14 @@
 
 import Foundation
 import Alamofire
-//import SwiftyJSON
+import SwiftyJSON
 import ObjectMapper
 
 class Auth {
+    static let shared = Auth()
+    
     let manager: SessionManager
+    
     
     init() {
         self.manager = Alamofire.SessionManager.default
@@ -17,7 +20,6 @@ class Auth {
     func request<T: Mappable>(method: HTTPMethod, url: String, params: [String: Any]?, encoding: ParameterEncoding = JSONEncoding.default, needsAuthorization: Bool = true,  success: @escaping (T) -> (), failure: @escaping (Error) -> ()) {
         if NetworkReachabilityManager()?.isReachable ?? false {
             
-            manager.request(url, method: method, parameters: params, encoding: encoding, headers: nil)
             
             manager.request(
                 url,
@@ -65,3 +67,31 @@ extension DataRequest {
         return NSError.init(domain: "Network", code: code, userInfo: errorInfo)
     }
 }
+
+
+extension JSON {
+    func map<T: Mappable>() -> [T]? {
+        let json = self.array
+        let mapped: [T]? = json?.compactMap({$0.map()})
+        return mapped
+    }
+    
+    func map<T: Mappable>() -> T? {
+        let obj: T? = Mapper<T>().map(JSONObject: self.object)
+        return obj
+    }
+}
+
+
+enum GMEResponseErrorCode: Int {
+    case timeOut = 0
+    case failure
+    case unknown
+    case deleted
+}
+
+
+enum GmeResponseOperationStatusCode: String {
+    case successfull = "Operation Successfull"
+}
+

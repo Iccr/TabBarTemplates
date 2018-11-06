@@ -23,14 +23,42 @@ class Item: Mappable {
     }
 }
 
+class AllItemsList: Mappable {
+    var jackets: [JacketsContainer] = []
+    var pants: [PantsContainer] = []
+    var shirts: [ShirtsContainer] = []
+    var sweatShirts: [SweatshirtsContainer] = []
+    var topsSweaters: [TopsSweatersContainer] = []
+    var hats: [HatsContainer] = []
+    var accessories: [AccessoriesContainer] = []
+    var new: [NewContainer] = []
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        jackets <- map["products_and_categories.Jackets"]
+        pants <- map["products_and_categories.Pants"]
+        shirts <- map["products_and_categories.Shirts"]
+        sweatShirts <- map["products_and_categories.Sweatshirts"]
+        topsSweaters <- map["products_and_categories.Sweaters"]
+        hats <- map["products_and_categories.Hats"]
+        accessories <- map["products_and_categories.Accessories"]
+        new <- map["products_and_categories.new"]
+    }
+}
+
+
 class JacketsContainer: Mappable {
+    
     var data: [Item] = []
     required init?(map: Map) {
         
     }
 
     func mapping(map: Map) {
-        data <- map["products_and_categories.Jackets"]
+        data <- map["Jackets"]
     }
 }
 
@@ -42,7 +70,7 @@ class PantsContainer: Mappable {
     }
     
     func mapping(map: Map) {
-        data <- map["products_and_categories.Pants"]
+        data <- map["Pants"]
     }
 }
 
@@ -53,7 +81,7 @@ class ShirtsContainer: Mappable {
     }
     
     func mapping(map: Map) {
-        data <- map["products_and_categories.Shirts"]
+        data <- map["Shirts"]
     }
 }
 
@@ -64,7 +92,7 @@ class SweatshirtsContainer: Mappable {
     }
     
     func mapping(map: Map) {
-        data <- map["products_and_categories.Sweatshirts"]
+        data <- map["Sweatshirts"]
     }
 }
 
@@ -75,7 +103,7 @@ class TopsSweatersContainer: Mappable {
     }
     
     func mapping(map: Map) {
-        data <- map["products_and_categories.Tops/Sweaters"]
+        data <- map["Tops/Sweaters"]
     }
 }
 
@@ -86,7 +114,7 @@ class HatsContainer: Mappable {
     }
     
     func mapping(map: Map) {
-        data <- map["products_and_categories.Hats"]
+        data <- map["Hats"]
     }
 }
 
@@ -98,7 +126,7 @@ class AccessoriesContainer: Mappable {
     }
     
     func mapping(map: Map) {
-        data <- map["products_and_categories.Accessories"]
+        data <- map["Accessories"]
     }
 }
 

@@ -17,6 +17,7 @@ class ModuleAViewController: UIViewController {
     // MARK: IBOutlets
     var url = "https://www.supremenewyork.com/shop.json"
     
+    var itemList: AllItemsList?
     // MARK: VC's Life cycle
     
     override func viewDidLoad() {
@@ -26,13 +27,21 @@ class ModuleAViewController: UIViewController {
         startSearching()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setup()
+    }
+    
     
     func startSearching() {
-        var categories = ""
-        var size = ""
-        var color = ""
-        var name = ""
-        var numberOfTabs = ""
+        
+        var category = "Jacketd"
+        var color = "Dark Rose"
+        var name = "2-Tone Zip Up Jacket"
+        var size = "Small"
+        var tabsNo = 2
+        
+        
     }
     
     // MARK: IBActions
@@ -41,6 +50,11 @@ class ModuleAViewController: UIViewController {
     
     private func setup() {
         // all setup should be done here
+        self.fetchAllItems(url: self.url, success: { (items) in
+            self.itemList = items
+        }) { (error) in
+            self.alert(message: error.localizedDescription)
+        }
     }
     
     override func setupTabItem() {
@@ -54,4 +68,23 @@ extension ModuleAViewController: ModuleAViewInterface {
     
 }
 
+extension ModuleAViewController: FetchAllItems {
+    
+}
 
+
+protocol FetchAllItems: ApiServiceType {
+    func fetchAllItems(url: String, success: @escaping (AllItemsList) -> (), failure: @escaping (Error) -> ())
+}
+
+
+extension FetchAllItems {
+    func fetchAllItems(url: String, success: @escaping (AllItemsList) -> (), failure: @escaping (Error) -> ()) {
+        auth.request(method: .get, url: url, params: nil, success: { (response: AllItemsList) in
+            let data = response
+            success(data)
+        }) { (error) in
+            failure(error)
+        }
+    }
+}
