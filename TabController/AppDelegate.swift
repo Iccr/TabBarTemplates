@@ -22,47 +22,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-        
         FirebaseApp.configure()
-        
-        
-        
         NetworkActivityIndicatorManager.shared.isEnabled = true
         IQKeyboardManager.sharedManager().enable = true
         IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
         loggerEnabled = isDebug
-        
-       
-        
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        
-        
         self.configureNavBar()
         self.configureTabBar()
-        
-
-            self.entryPoint()
-
-        
+        self.entryPoint()
         return true
-        
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        
-        
         return  GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: annotation)
     }
     
     private func entryPoint() {
         let initialWireframe = LoadingWireframe()
         window.map(initialWireframe.openMainViewIn(window:))
-//        window.map(initialWireframe.openMainViewIn(window: window))
-//        let initialWireframe = LoadingWireframe()
-//        window.map(initialWireframe.openMainViewIn(window:))
-//        let initialWireframe = EulaAgreementWireframe()
-//        window.map(initialWireframe.openMainViewIn(window:))
     }
     
     
@@ -78,9 +56,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navBarAppearance.titleTextAttributes = [
             NSAttributedStringKey.foregroundColor: Colors.NavBar.tint,
             NSAttributedStringKey.font: font]
-        
-//        navBarAppearance.backIndicatorImage = #imageLiteral(resourceName: "back")
-//        navBarAppearance.backIndicatorTransitionMaskImage = #imageLiteral(resourceName: "back")
         navBarAppearance.tintColor = Colors.NavBar.tint
     }
     

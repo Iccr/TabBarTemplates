@@ -75,6 +75,7 @@ PODS:
   - ObjectMapper (3.3.0)
   - Protobuf (3.5.0)
   - RSKImageCropper (2.0.0)
+  - SwiftyJSON (4.2.0)
   - thenPromise (4.2.0)
 
 DEPENDENCIES:
@@ -90,6 +91,7 @@ DEPENDENCIES:
   - MBProgressHUD
   - ObjectMapper
   - RSKImageCropper
+  - SwiftyJSON (~> 4.0)
   - thenPromise (from `https://github.com/freshOS/then`)
 
 SPEC REPOS:
@@ -116,6 +118,7 @@ SPEC REPOS:
     - ObjectMapper
     - Protobuf
     - RSKImageCropper
+    - SwiftyJSON
 
 EXTERNAL SOURCES:
   thenPromise:
@@ -149,8 +152,9 @@ SPEC CHECKSUMS:
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   RSKImageCropper: d9a1acbc0600bf8decc8f0d21895872c99a9e4cf
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   thenPromise: e46ebb9a45c23cbaa681eeeee3f59929a21c639d
 
-PODFILE CHECKSUM: be478ec757607ff0f08158c05665601a5dd4ea99
+PODFILE CHECKSUM: fa1dd442cc87f5cf9af6757b93ff9c5a856cb195
 
 COCOAPODS: 1.5.3
