@@ -9,7 +9,7 @@
 import UIKit
 import IQKeyboardManagerSwift
 import Firebase
-import FBSDKCoreKit
+
 import GoogleSignIn
 import AlamofireNetworkActivityIndicator
 
@@ -45,14 +45,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.entryPoint()
 
         
-        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        return true
         
     }
     
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         
         
-        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation) || GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: annotation)
+        return  GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: annotation)
     }
     
     private func entryPoint() {
