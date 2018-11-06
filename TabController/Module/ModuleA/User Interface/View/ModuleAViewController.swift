@@ -33,7 +33,6 @@ class ModuleAViewController: UIViewController {
         var color = ""
         var name = ""
         var numberOfTabs = ""
-        
     }
     
     // MARK: IBActions
