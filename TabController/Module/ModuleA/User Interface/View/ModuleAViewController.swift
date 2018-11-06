@@ -15,7 +15,7 @@ class ModuleAViewController: UIViewController {
     var presenter: ModuleAModuleInterface?
     
     // MARK: IBOutlets
-    var url = "https://www.supremenewyork.com/shop/new"
+    var url = "https://www.supremenewyork.com/shop.json"
     
     // MARK: VC's Life cycle
     

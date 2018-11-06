@@ -15,7 +15,6 @@ pod 'FacebookCore'
 pod 'AlamofireNetworkActivityIndicator'
 pod 'MBProgressHUD'
 pod 'AlamofireImage'
-pod 'FacebookLogin'
 pod 'thenPromise', git: "https://github.com/freshOS/then"
 pod 'IQKeyboardManagerSwift'
   pod 'RSKImageCropper'
