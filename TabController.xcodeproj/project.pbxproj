@@ -149,7 +149,29 @@
 		D939B3CE2192B54100D9AEC1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B3C22192B54100D9AEC1 /* SettingViewController.swift */; };
 		D939B3CF2192B54100D9AEC1 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D939B3C42192B54100D9AEC1 /* Setting.storyboard */; };
 		D939B3D02192B54100D9AEC1 /* SettingViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B3C52192B54100D9AEC1 /* SettingViewInterface.swift */; };
-		D939B3D22192B56700D9AEC1 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D939B3D12192B56700D9AEC1 /* SettingsViewController.xib */; };
+		D939B4E42192B92300D9AEC1 /* AddItemsModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4D12192B92300D9AEC1 /* AddItemsModuleInterface.swift */; };
+		D939B4E52192B92300D9AEC1 /* AddItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4D42192B92300D9AEC1 /* AddItemsService.swift */; };
+		D939B4E62192B92300D9AEC1 /* AddItemsServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4D52192B92300D9AEC1 /* AddItemsServiceType.swift */; };
+		D939B4E72192B92300D9AEC1 /* AddItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4D72192B92300D9AEC1 /* AddItemsInteractor.swift */; };
+		D939B4E82192B92300D9AEC1 /* AddItemsInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4D82192B92300D9AEC1 /* AddItemsInteractorIO.swift */; };
+		D939B4E92192B92300D9AEC1 /* AddItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4DB2192B92300D9AEC1 /* AddItemsPresenter.swift */; };
+		D939B4EA2192B92300D9AEC1 /* AddItemsWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4DD2192B92300D9AEC1 /* AddItemsWireframeInput.swift */; };
+		D939B4EB2192B92300D9AEC1 /* AddItemsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4DE2192B92300D9AEC1 /* AddItemsWireframe.swift */; };
+		D939B4EC2192B92300D9AEC1 /* AddItemsViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4E12192B92300D9AEC1 /* AddItemsViewInterface.swift */; };
+		D939B4ED2192B92300D9AEC1 /* AddItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4E22192B92300D9AEC1 /* AddItemsViewController.swift */; };
+		D939B4EE2192B92300D9AEC1 /* AddItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D939B4E32192B92300D9AEC1 /* AddItems.storyboard */; };
+		D939B5062192BB2C00D9AEC1 /* ProductListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4F32192BB2C00D9AEC1 /* ProductListModuleInterface.swift */; };
+		D939B5072192BB2C00D9AEC1 /* ProductListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4F62192BB2C00D9AEC1 /* ProductListService.swift */; };
+		D939B5082192BB2C00D9AEC1 /* ProductListServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4F72192BB2C00D9AEC1 /* ProductListServiceType.swift */; };
+		D939B5092192BB2C00D9AEC1 /* ProductListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4F92192BB2C00D9AEC1 /* ProductListInteractor.swift */; };
+		D939B50A2192BB2C00D9AEC1 /* ProductListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4FA2192BB2C00D9AEC1 /* ProductListInteractorIO.swift */; };
+		D939B50B2192BB2C00D9AEC1 /* ProductListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4FD2192BB2C00D9AEC1 /* ProductListPresenter.swift */; };
+		D939B50C2192BB2C00D9AEC1 /* ProductListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B4FF2192BB2C00D9AEC1 /* ProductListWireframe.swift */; };
+		D939B50D2192BB2C00D9AEC1 /* ProductListWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B5002192BB2C00D9AEC1 /* ProductListWireframeInput.swift */; };
+		D939B50E2192BB2C00D9AEC1 /* ProductList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D939B5032192BB2C00D9AEC1 /* ProductList.storyboard */; };
+		D939B50F2192BB2C00D9AEC1 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B5042192BB2C00D9AEC1 /* ProductListViewController.swift */; };
+		D939B5102192BB2C00D9AEC1 /* ProductListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B5052192BB2C00D9AEC1 /* ProductListViewInterface.swift */; };
+		D939B5122192BCA700D9AEC1 /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B5112192BCA700D9AEC1 /* ItemsTableViewCell.swift */; };
 		D98FC53521917AF90082B30B /* ApiServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FC53421917AF90082B30B /* ApiServiceType.swift */; };
 		D98FC537219188450082B30B /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FC536219188450082B30B /* Style.swift */; };
 		FFCFBB55219103ED00E825B7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCFBB54219103ED00E825B7 /* Item.swift */; };
@@ -330,7 +352,29 @@
 		D939B3C22192B54100D9AEC1 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		D939B3C42192B54100D9AEC1 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		D939B3C52192B54100D9AEC1 /* SettingViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewInterface.swift; sourceTree = "<group>"; };
-		D939B3D12192B56700D9AEC1 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		D939B4D12192B92300D9AEC1 /* AddItemsModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemsModuleInterface.swift; sourceTree = "<group>"; };
+		D939B4D42192B92300D9AEC1 /* AddItemsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemsService.swift; sourceTree = "<group>"; };
+		D939B4D52192B92300D9AEC1 /* AddItemsServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemsServiceType.swift; sourceTree = "<group>"; };
+		D939B4D72192B92300D9AEC1 /* AddItemsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemsInteractor.swift; sourceTree = "<group>"; };
+		D939B4D82192B92300D9AEC1 /* AddItemsInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemsInteractorIO.swift; sourceTree = "<group>"; };
+		D939B4DB2192B92300D9AEC1 /* AddItemsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemsPresenter.swift; sourceTree = "<group>"; };
+		D939B4DD2192B92300D9AEC1 /* AddItemsWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemsWireframeInput.swift; sourceTree = "<group>"; };
+		D939B4DE2192B92300D9AEC1 /* AddItemsWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemsWireframe.swift; sourceTree = "<group>"; };
+		D939B4E12192B92300D9AEC1 /* AddItemsViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemsViewInterface.swift; sourceTree = "<group>"; };
+		D939B4E22192B92300D9AEC1 /* AddItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemsViewController.swift; sourceTree = "<group>"; };
+		D939B4E32192B92300D9AEC1 /* AddItems.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddItems.storyboard; sourceTree = "<group>"; };
+		D939B4F32192BB2C00D9AEC1 /* ProductListModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListModuleInterface.swift; sourceTree = "<group>"; };
+		D939B4F62192BB2C00D9AEC1 /* ProductListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListService.swift; sourceTree = "<group>"; };
+		D939B4F72192BB2C00D9AEC1 /* ProductListServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListServiceType.swift; sourceTree = "<group>"; };
+		D939B4F92192BB2C00D9AEC1 /* ProductListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListInteractor.swift; sourceTree = "<group>"; };
+		D939B4FA2192BB2C00D9AEC1 /* ProductListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListInteractorIO.swift; sourceTree = "<group>"; };
+		D939B4FD2192BB2C00D9AEC1 /* ProductListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListPresenter.swift; sourceTree = "<group>"; };
+		D939B4FF2192BB2C00D9AEC1 /* ProductListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListWireframe.swift; sourceTree = "<group>"; };
+		D939B5002192BB2C00D9AEC1 /* ProductListWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListWireframeInput.swift; sourceTree = "<group>"; };
+		D939B5032192BB2C00D9AEC1 /* ProductList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductList.storyboard; sourceTree = "<group>"; };
+		D939B5042192BB2C00D9AEC1 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		D939B5052192BB2C00D9AEC1 /* ProductListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewInterface.swift; sourceTree = "<group>"; };
+		D939B5112192BCA700D9AEC1 /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
 		D98FC53421917AF90082B30B /* ApiServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceType.swift; sourceTree = "<group>"; };
 		D98FC536219188450082B30B /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		FFCFBB54219103ED00E825B7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -1015,6 +1059,8 @@
 		90222FCC2074CBFF00AF91F3 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				D939B4F12192BB2C00D9AEC1 /* ProductList */,
+				D939B4CF2192B92300D9AEC1 /* AddItems */,
 				D939B3B12192B54100D9AEC1 /* Setting */,
 				901BAA0C2074E551001531EA /* ModuleA */,
 				901BAA082074E550001531EA /* ModuleB */,
@@ -1299,7 +1345,6 @@
 				D939B3C22192B54100D9AEC1 /* SettingViewController.swift */,
 				D939B3C32192B54100D9AEC1 /* ViewModels */,
 				D939B3C42192B54100D9AEC1 /* Setting.storyboard */,
-				D939B3D12192B56700D9AEC1 /* SettingsViewController.xib */,
 				D939B3C52192B54100D9AEC1 /* SettingViewInterface.swift */,
 			);
 			path = View;
@@ -1308,6 +1353,187 @@
 		D939B3C32192B54100D9AEC1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D939B4CF2192B92300D9AEC1 /* AddItems */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4D02192B92300D9AEC1 /* Module Interface */,
+				D939B4D22192B92300D9AEC1 /* Application Logic */,
+				D939B4D92192B92300D9AEC1 /* User Interface */,
+			);
+			path = AddItems;
+			sourceTree = "<group>";
+		};
+		D939B4D02192B92300D9AEC1 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4D12192B92300D9AEC1 /* AddItemsModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		D939B4D22192B92300D9AEC1 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4D32192B92300D9AEC1 /* Service */,
+				D939B4D62192B92300D9AEC1 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		D939B4D32192B92300D9AEC1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4D42192B92300D9AEC1 /* AddItemsService.swift */,
+				D939B4D52192B92300D9AEC1 /* AddItemsServiceType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D939B4D62192B92300D9AEC1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4D72192B92300D9AEC1 /* AddItemsInteractor.swift */,
+				D939B4D82192B92300D9AEC1 /* AddItemsInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D939B4D92192B92300D9AEC1 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4DA2192B92300D9AEC1 /* Presenter */,
+				D939B4DC2192B92300D9AEC1 /* Wireframe */,
+				D939B4DF2192B92300D9AEC1 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		D939B4DA2192B92300D9AEC1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4DB2192B92300D9AEC1 /* AddItemsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D939B4DC2192B92300D9AEC1 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4DD2192B92300D9AEC1 /* AddItemsWireframeInput.swift */,
+				D939B4DE2192B92300D9AEC1 /* AddItemsWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D939B4DF2192B92300D9AEC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4E02192B92300D9AEC1 /* ViewModels */,
+				D939B4E12192B92300D9AEC1 /* AddItemsViewInterface.swift */,
+				D939B4E22192B92300D9AEC1 /* AddItemsViewController.swift */,
+				D939B4E32192B92300D9AEC1 /* AddItems.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D939B4E02192B92300D9AEC1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D939B4F12192BB2C00D9AEC1 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4F22192BB2C00D9AEC1 /* Module Interface */,
+				D939B4F42192BB2C00D9AEC1 /* Application Logic */,
+				D939B4FB2192BB2C00D9AEC1 /* User Interface */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		D939B4F22192BB2C00D9AEC1 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4F32192BB2C00D9AEC1 /* ProductListModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		D939B4F42192BB2C00D9AEC1 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4F52192BB2C00D9AEC1 /* Service */,
+				D939B4F82192BB2C00D9AEC1 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		D939B4F52192BB2C00D9AEC1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4F62192BB2C00D9AEC1 /* ProductListService.swift */,
+				D939B4F72192BB2C00D9AEC1 /* ProductListServiceType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D939B4F82192BB2C00D9AEC1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4F92192BB2C00D9AEC1 /* ProductListInteractor.swift */,
+				D939B4FA2192BB2C00D9AEC1 /* ProductListInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D939B4FB2192BB2C00D9AEC1 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4FC2192BB2C00D9AEC1 /* Presenter */,
+				D939B4FE2192BB2C00D9AEC1 /* Wireframe */,
+				D939B5012192BB2C00D9AEC1 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		D939B4FC2192BB2C00D9AEC1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4FD2192BB2C00D9AEC1 /* ProductListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D939B4FE2192BB2C00D9AEC1 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				D939B4FF2192BB2C00D9AEC1 /* ProductListWireframe.swift */,
+				D939B5002192BB2C00D9AEC1 /* ProductListWireframeInput.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D939B5012192BB2C00D9AEC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D939B5022192BB2C00D9AEC1 /* ViewModels */,
+				D939B5032192BB2C00D9AEC1 /* ProductList.storyboard */,
+				D939B5042192BB2C00D9AEC1 /* ProductListViewController.swift */,
+				D939B5052192BB2C00D9AEC1 /* ProductListViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D939B5022192BB2C00D9AEC1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D939B5112192BCA700D9AEC1 /* ItemsTableViewCell.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -1437,11 +1663,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D939B4EE2192B92300D9AEC1 /* AddItems.storyboard in Resources */,
 				90222AD42074C29300AF91F3 /* QRScanner.storyboard in Resources */,
 				901BAA522074E6EE001531EA /* ModuleB.storyboard in Resources */,
 				901BAA722074E836001531EA /* ModuleC.storyboard in Resources */,
 				90222ADA2074C29300AF91F3 /* TableViewPickerWithIndexes.storyboard in Resources */,
 				90222A6E2074BBD800AF91F3 /* LaunchScreen.storyboard in Resources */,
+				D939B50E2192BB2C00D9AEC1 /* ProductList.storyboard in Resources */,
 				90222FE92074CC2000AF91F3 /* Loading.storyboard in Resources */,
 				90222AD82074C29300AF91F3 /* TableViewPicker.storyboard in Resources */,
 				D939B3CF2192B54100D9AEC1 /* Setting.storyboard in Resources */,
@@ -1456,7 +1684,6 @@
 				901BAAC22074E876001531EA /* ModuleE.storyboard in Resources */,
 				90222AF52074C91100AF91F3 /* Montserrat-Bold.otf in Resources */,
 				90222A692074BBD800AF91F3 /* Main.storyboard in Resources */,
-				D939B3D22192B56700D9AEC1 /* SettingsViewController.xib in Resources */,
 				90222AF32074C8A000AF91F3 /* Montserrat-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1609,6 +1836,7 @@
 			files = (
 				901BAA982074E84B001531EA /* ModuleDService.swift in Sources */,
 				901BAA7B2074E836001531EA /* ModuleCModuleInterface.swift in Sources */,
+				D939B5092192BB2C00D9AEC1 /* ProductListInteractor.swift in Sources */,
 				901BAA972074E84B001531EA /* ModuleDInteractorIO.swift in Sources */,
 				901BAA4E2074E6EE001531EA /* ModuleBService.swift in Sources */,
 				909B07D32074CD8E00496256 /* StatusCode.swift in Sources */,
@@ -1619,6 +1847,8 @@
 				901BAAC12074E876001531EA /* ModuleEPresenter.swift in Sources */,
 				90222AEB2074C4F200AF91F3 /* LocalizationViewController.swift in Sources */,
 				90222A982074BF5500AF91F3 /* Utilities.swift in Sources */,
+				D939B50A2192BB2C00D9AEC1 /* ProductListInteractorIO.swift in Sources */,
+				D939B4E62192B92300D9AEC1 /* AddItemsServiceType.swift in Sources */,
 				90C5EAC92074DC21009EBC01 /* MainViewInterface.swift in Sources */,
 				90C5EAC62074DC21009EBC01 /* MainModuleInterface.swift in Sources */,
 				D98FC53521917AF90082B30B /* ApiServiceType.swift in Sources */,
@@ -1630,14 +1860,19 @@
 				909B07D42074CD8E00496256 /* Either.swift in Sources */,
 				90C5EAC42074DC21009EBC01 /* MainService.swift in Sources */,
 				90C5EACB2074DC21009EBC01 /* MainWireframeInput.swift in Sources */,
+				D939B5102192BB2C00D9AEC1 /* ProductListViewInterface.swift in Sources */,
+				D939B4E82192B92300D9AEC1 /* AddItemsInteractorIO.swift in Sources */,
+				D939B4E42192B92300D9AEC1 /* AddItemsModuleInterface.swift in Sources */,
 				901BAAA02074E84B001531EA /* ModuleDWireframeInput.swift in Sources */,
 				909B07DB2074CD8F00496256 /* WireframeInput.swift in Sources */,
 				901BAA7A2074E836001531EA /* ModuleCServiceType.swift in Sources */,
 				90222FE82074CC2000AF91F3 /* LoadingPresenter.swift in Sources */,
 				90C5EAC32074DC21009EBC01 /* MainInteractorIO.swift in Sources */,
+				D939B4EB2192B92300D9AEC1 /* AddItemsWireframe.swift in Sources */,
 				90222AE92074C4F200AF91F3 /* LanguageCell.swift in Sources */,
 				90222A942074BF4900AF91F3 /* Font.swift in Sources */,
 				901BAA992074E84B001531EA /* ModuleDServiceType.swift in Sources */,
+				D939B5122192BCA700D9AEC1 /* ItemsTableViewCell.swift in Sources */,
 				D939B3D02192B54100D9AEC1 /* SettingViewInterface.swift in Sources */,
 				D939B3C62192B54100D9AEC1 /* SettingModuleInterface.swift in Sources */,
 				901BAA962074E84B001531EA /* ModuleDInteractor.swift in Sources */,
@@ -1645,9 +1880,13 @@
 				901BAA562074E6EE001531EA /* ModuleBWireframeInput.swift in Sources */,
 				90222AD52074C29300AF91F3 /* SocialAuthenticator.swift in Sources */,
 				90222FEF2074CC2000AF91F3 /* LoadingInteractorIO.swift in Sources */,
+				D939B50F2192BB2C00D9AEC1 /* ProductListViewController.swift in Sources */,
 				901BAAC52074E876001531EA /* ModuleEWireframe.swift in Sources */,
+				D939B4E72192B92300D9AEC1 /* AddItemsInteractor.swift in Sources */,
 				90C5EACD2074DC83009EBC01 /* UINavigationBarExtension.swift in Sources */,
 				90222AB12074C1C200AF91F3 /* DateFormatterExtension.swift in Sources */,
+				D939B5062192BB2C00D9AEC1 /* ProductListModuleInterface.swift in Sources */,
+				D939B4E52192B92300D9AEC1 /* AddItemsService.swift in Sources */,
 				901BAABF2074E876001531EA /* ModuleEServiceType.swift in Sources */,
 				90222AB22074C1C200AF91F3 /* DoubleExtension.swift in Sources */,
 				901BAA742074E836001531EA /* ModuleCViewInterface.swift in Sources */,
@@ -1659,6 +1898,8 @@
 				90222FF22074CC2000AF91F3 /* LoadingModuleInterface.swift in Sources */,
 				90222AB72074C1C200AF91F3 /* StringExtension.swift in Sources */,
 				901BAAC02074E876001531EA /* ModuleEModuleInterface.swift in Sources */,
+				D939B50D2192BB2C00D9AEC1 /* ProductListWireframeInput.swift in Sources */,
+				D939B4EC2192B92300D9AEC1 /* AddItemsViewInterface.swift in Sources */,
 				901BAA4F2074E6EE001531EA /* ModuleBServiceType.swift in Sources */,
 				909B07D02074CD8E00496256 /* Auth.swift in Sources */,
 				901BAA2E2074E593001531EA /* ModuleAViewController.swift in Sources */,
@@ -1669,6 +1910,7 @@
 				90222AD22074C29300AF91F3 /* MultiMediaManager.swift in Sources */,
 				901BAA2B2074E593001531EA /* ModuleAServiceType.swift in Sources */,
 				901BAA9A2074E84B001531EA /* ModuleDModuleInterface.swift in Sources */,
+				D939B4EA2192B92300D9AEC1 /* AddItemsWireframeInput.swift in Sources */,
 				90222AB92074C1C200AF91F3 /* UIColorExtension.swift in Sources */,
 				909B07DA2074CD8F00496256 /* UserDefaultManager.swift in Sources */,
 				901BAABD2074E876001531EA /* ModuleEInteractorIO.swift in Sources */,
@@ -1694,6 +1936,7 @@
 				901BAA792074E836001531EA /* ModuleCService.swift in Sources */,
 				901BAA512074E6EE001531EA /* ModuleBPresenter.swift in Sources */,
 				901BAA762074E836001531EA /* ModuleCWireframeInput.swift in Sources */,
+				D939B50B2192BB2C00D9AEC1 /* ProductListPresenter.swift in Sources */,
 				90222AD72074C29300AF91F3 /* TablePickerViewController.swift in Sources */,
 				90222AAF2074C1C200AF91F3 /* CLLocationCoordinate2dExtension.swift in Sources */,
 				901BAA282074E593001531EA /* ModuleAInteractor.swift in Sources */,
@@ -1703,14 +1946,18 @@
 				90222FEA2074CC2000AF91F3 /* LoadingViewController.swift in Sources */,
 				90222FEE2074CC2000AF91F3 /* LoadingInteractor.swift in Sources */,
 				901BAABC2074E876001531EA /* ModuleEInteractor.swift in Sources */,
+				D939B5082192BB2C00D9AEC1 /* ProductListServiceType.swift in Sources */,
+				D939B5072192BB2C00D9AEC1 /* ProductListService.swift in Sources */,
 				90222ABA2074C1C200AF91F3 /* UIDeviceExtension.swift in Sources */,
 				90222A922074BF4400AF91F3 /* Colors.swift in Sources */,
+				D939B4E92192B92300D9AEC1 /* AddItemsPresenter.swift in Sources */,
 				D939B3C92192B54100D9AEC1 /* SettingInteractorIO.swift in Sources */,
 				901BAA772074E836001531EA /* ModuleCInteractor.swift in Sources */,
 				90222AB32074C1C200AF91F3 /* ExtensionTablewView.swift in Sources */,
 				90222AB02074C1C200AF91F3 /* CollectionExtension.swift in Sources */,
 				901BAAC32074E876001531EA /* ModuleEViewController.swift in Sources */,
 				90222A9A2074BF5B00AF91F3 /* GlobalConstants.swift in Sources */,
+				D939B4ED2192B92300D9AEC1 /* AddItemsViewController.swift in Sources */,
 				90222AD32074C29300AF91F3 /* QRCodeScannerViewController.swift in Sources */,
 				901BAABE2074E876001531EA /* ModuleEService.swift in Sources */,
 				90222FF02074CC2000AF91F3 /* LoadingService.swift in Sources */,
@@ -1720,6 +1967,7 @@
 				901BAA542074E6EE001531EA /* ModuleBViewInterface.swift in Sources */,
 				90222AB62074C1C200AF91F3 /* SequenceExtension.swift in Sources */,
 				901BAA9B2074E84B001531EA /* ModuleDPresenter.swift in Sources */,
+				D939B50C2192BB2C00D9AEC1 /* ProductListWireframe.swift in Sources */,
 				90222ABC2074C1C200AF91F3 /* UIViewExtension.swift in Sources */,
 				90222ADC2074C29300AF91F3 /* TableViewPickerWithIndexViewController.swift in Sources */,
 				D939B3CC2192B54100D9AEC1 /* SettingWireframeInput.swift in Sources */,

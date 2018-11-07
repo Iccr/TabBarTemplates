@@ -460,6 +460,12 @@
                             <constraint firstItem="vEz-HA-Z9t" firstAttribute="leading" secondItem="9Uc-9s-KgO" secondAttribute="leading" id="xL9-9u-eWh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="editAddressButton" destination="vNK-Em-Shn" id="uYs-nS-ssy"/>
+                        <outlet property="editCreditCardButton" destination="iUf-UP-HmI" id="ZId-Dd-MxB"/>
+                        <outlet property="editItemButton" destination="U8p-vi-GCg" id="qYh-Zf-uZ5"/>
+                        <outlet property="startButton" destination="tfg-rD-L4Q" id="MUw-U1-XQn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8je-5K-XuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
