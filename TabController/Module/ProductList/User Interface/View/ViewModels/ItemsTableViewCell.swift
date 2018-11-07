@@ -35,17 +35,7 @@ class ItemsTableViewCell: UITableViewCell {
         cardTextField.text = item?.card
     }
     
-    public func getItem() -> SearchItem? {
-        let item = SearchItem(category: "Accessories")
-        item.cateogry = categoryTextField.text!
-        item.size = sizeTextfield.text!
-        item.color = colorTextField.text!
-        item.name = nameTextField.text!
-        item.numberOfTabls = numberOfTabsTextField.text!
-        item.address = addressTextField.text!
-        item.card = cardTextField.text!
-        return item
-    }
+
 
 }
 

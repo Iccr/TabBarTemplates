@@ -30,16 +30,14 @@ class ProductListViewController: UIViewController {
     
     // MARK: IBActions
     @IBAction func addItems(_ sender: UIButton) {
-        let item = SearchItem(category: "")
-        self.items.append(item)
-        self.tableView.reloadData()
+        let addWireframe = AddItemsWireframe()
+        if let navigation = self.navigationController {
+            addWireframe.pushMainView(in: navigation)
+        }
     }
     
     @IBAction func done(_ sender: UIButton) {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-        print(items)
+
     }
     // MARK: Other Functions
     

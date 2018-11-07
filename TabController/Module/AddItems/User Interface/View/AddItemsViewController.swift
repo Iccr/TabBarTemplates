@@ -8,10 +8,21 @@
 
 import UIKit
 
-class AddItemsViewController: UIViewController {
+class AddItemsViewController: UITableViewController {
     
     // MARK: IBOutlets
-
+    var items: SearchItem = SearchItem(category: "Accessories")
+    
+    
+    @IBOutlet weak var categoryTextField: UITextField!
+    @IBOutlet weak var sizeTextfield: UITextField!
+    @IBOutlet weak var colorTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var numberOfTabsTextField: UITextField!
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var cardTextField: UITextField!
+    
+    
     // MARK: Properties
     
     var presenter: AddItemsModuleInterface?
@@ -24,10 +35,23 @@ class AddItemsViewController: UIViewController {
         self.setup()
     }
     
-    // MARK: IBActions
-
+    
+    public func getItem() -> SearchItem? {
+        let item = SearchItem(category: "Accessories")
+        item.cateogry = categoryTextField.text!
+        item.size = sizeTextfield.text!
+        item.color = colorTextField.text!
+        item.name = nameTextField.text!
+        item.numberOfTabls = numberOfTabsTextField.text!
+        item.address = addressTextField.text!
+        item.card = cardTextField.text!
+        return item
+    }
+    
     
     @IBAction func done(_ sender: UIButton) {
+        let item = self.getItem()
+        
         
     }
     
@@ -35,7 +59,8 @@ class AddItemsViewController: UIViewController {
     
     private func setup() {
         
-
+       self.tableView.delegate = self
+        self.tableView.dataSource = self
     }
 }
 
@@ -45,3 +70,6 @@ extension AddItemsViewController: AddItemsViewInterface {
 }
 
 
+extension AddItemsViewController: RealmPersistenceType {
+    
+}
