@@ -18,6 +18,7 @@ pod 'thenPromise', git: "https://github.com/freshOS/then"
 pod 'IQKeyboardManagerSwift'
   pod 'RSKImageCropper'
   pod 'ObjectMapper'
+  pod 'Hex'
 pod 'SwiftyJSON', '~> 4.0'
 #    pod "ImageSlideshow/Alamofire"
  pod 'Localize-Swift'

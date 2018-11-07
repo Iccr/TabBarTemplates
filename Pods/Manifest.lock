@@ -63,6 +63,7 @@ PODS:
   - GTMSessionFetcher/Core (1.1.13)
   - GTMSessionFetcher/Full (1.1.13):
     - GTMSessionFetcher/Core (= 1.1.13)
+  - Hex (6.0.0)
   - IQKeyboardManagerSwift (5.0.7)
   - leveldb-library (1.20)
   - Localize-Swift (2.0.0)
@@ -86,6 +87,7 @@ DEPENDENCIES:
   - Firebase/Crash
   - Firebase/Database
   - GoogleSignIn
+  - Hex
   - IQKeyboardManagerSwift
   - Localize-Swift
   - MBProgressHUD
@@ -110,6 +112,7 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GTMOAuth2
     - GTMSessionFetcher
+    - Hex
     - IQKeyboardManagerSwift
     - leveldb-library
     - Localize-Swift
@@ -144,6 +147,7 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 5bb1eae636127de695590f50e7d248483eb891e6
+  Hex: 3888e06c29fe725b12e33d434e31b06beb4112db
   IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
@@ -155,6 +159,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   thenPromise: e46ebb9a45c23cbaa681eeeee3f59929a21c639d
 
-PODFILE CHECKSUM: fa1dd442cc87f5cf9af6757b93ff9c5a856cb195
+PODFILE CHECKSUM: 993ff86a8ee53ebec8f5200697d77930e66c6ead
 
 COCOAPODS: 1.5.3
