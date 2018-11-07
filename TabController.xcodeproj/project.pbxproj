@@ -174,6 +174,7 @@
 		D939B5122192BCA700D9AEC1 /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B5112192BCA700D9AEC1 /* ItemsTableViewCell.swift */; };
 		D98FC53521917AF90082B30B /* ApiServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FC53421917AF90082B30B /* ApiServiceType.swift */; };
 		D98FC537219188450082B30B /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FC536219188450082B30B /* Style.swift */; };
+		D9F5729D2192C9FB0056B5A8 /* RealmPersistanceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5729C2192C9FB0056B5A8 /* RealmPersistanceType.swift */; };
 		FFCFBB55219103ED00E825B7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCFBB54219103ED00E825B7 /* Item.swift */; };
 /* End PBXBuildFile section */
 
@@ -377,6 +378,7 @@
 		D939B5112192BCA700D9AEC1 /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
 		D98FC53421917AF90082B30B /* ApiServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceType.swift; sourceTree = "<group>"; };
 		D98FC536219188450082B30B /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		D9F5729C2192C9FB0056B5A8 /* RealmPersistanceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPersistanceType.swift; sourceTree = "<group>"; };
 		FFCFBB54219103ED00E825B7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1171,6 +1173,7 @@
 				909B07CA2074CD8E00496256 /* Reachability.swift */,
 				909B07CC2074CD8E00496256 /* UserDefaultManager.swift */,
 				909B07CD2074CD8E00496256 /* WireframeInput.swift */,
+				D9F5729C2192C9FB0056B5A8 /* RealmPersistanceType.swift */,
 			);
 			name = Base;
 			path = Core/Base;
@@ -1925,6 +1928,7 @@
 				D939B3CD2192B54100D9AEC1 /* SettingWireframe.swift in Sources */,
 				901BAA2A2074E593001531EA /* ModuleAService.swift in Sources */,
 				FFCFBB55219103ED00E825B7 /* Item.swift in Sources */,
+				D9F5729D2192C9FB0056B5A8 /* RealmPersistanceType.swift in Sources */,
 				90222A662074BBD800AF91F3 /* ViewController.swift in Sources */,
 				901BAA4C2074E6ED001531EA /* ModuleBInteractor.swift in Sources */,
 				90C5EACF2074DCE2009EBC01 /* UIViewControllerExtension.swift in Sources */,
