@@ -19,6 +19,7 @@ pod 'IQKeyboardManagerSwift'
   pod 'RSKImageCropper'
   pod 'ObjectMapper'
   pod 'Hex'
+  pod 'RealmSwift', '2.8.3'
 pod 'SwiftyJSON', '~> 4.0'
 #    pod "ImageSlideshow/Alamofire"
  pod 'Localize-Swift'

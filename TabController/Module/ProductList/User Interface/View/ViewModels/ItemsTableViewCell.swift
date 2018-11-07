@@ -11,6 +11,7 @@ import UIKit
 class ItemsTableViewCell: UITableViewCell {
     
     var item: SearchItem?
+    var index: Int?
     
     @IBOutlet weak var categoryTextField: UITextField!
     @IBOutlet weak var sizeTextfield: UITextField!
@@ -35,7 +36,7 @@ class ItemsTableViewCell: UITableViewCell {
     }
     
     public func getItem() -> SearchItem? {
-        let item = SearchItem()
+        let item = SearchItem(category: "Accessories")
         item.cateogry = categoryTextField.text!
         item.size = sizeTextfield.text!
         item.color = colorTextField.text!
@@ -51,6 +52,7 @@ class ItemsTableViewCell: UITableViewCell {
 
 
 class SearchItem {
+    var id: Int?
     var cateogry: String?
     var size: String?
     var color: String?
@@ -58,4 +60,8 @@ class SearchItem {
     var numberOfTabls: String?
     var address: String?
     var card: String?
+    
+    init(category: String) {
+        cateogry = category
+    }
 }

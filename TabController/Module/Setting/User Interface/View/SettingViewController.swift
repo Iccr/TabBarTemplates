@@ -35,7 +35,14 @@ class SettingViewController: UIViewController {
     
     private func setup() {
         // all setup should be done here
-       
+        self.editItemButton.addTarget(self, action: #selector(self.openProductList), for: UIControlEvents.touchUpInside)
+    }
+    
+    @objc private func  openProductList() {
+        let wireframe = ProductListWireframe()
+        if let navigation = self.navigationController {
+            wireframe.pushMainView(in: navigation)
+        }
     }
 }
 

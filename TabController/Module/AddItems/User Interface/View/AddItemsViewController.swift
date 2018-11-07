@@ -11,8 +11,7 @@ import UIKit
 class AddItemsViewController: UIViewController {
     
     // MARK: IBOutlets
-    
-    
+
     // MARK: Properties
     
     var presenter: AddItemsModuleInterface?
@@ -26,12 +25,17 @@ class AddItemsViewController: UIViewController {
     }
     
     // MARK: IBActions
+
+    
+    @IBAction func done(_ sender: UIButton) {
+        
+    }
     
     // MARK: Other Functions
     
     private func setup() {
-        // all setup should be done here
-       
+        
+
     }
 }
 
@@ -39,3 +43,5 @@ class AddItemsViewController: UIViewController {
 extension AddItemsViewController: AddItemsViewInterface {
     
 }
+
+
