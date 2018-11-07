@@ -13,7 +13,8 @@ class MainWireframe {
     static let shared: MainWireframe = MainWireframe()
     weak  var view: UIViewController!
     private lazy var loadingWireFrame: LoadingWireframeInput = {LoadingWireframe()}()
-    private lazy var moduleAWireFrame: ModuleAWireframeInput = {ModuleAWireframe()}()
+//    private lazy var moduleAWireFrame: ModuleAWireframeInput = {ModuleAWireframe()}()
+    private lazy var settingWireFrame: SettingWireframeInput = SettingWireframe()
     private lazy var moduleBWireFrame: ModuleBWireframeInput = {ModuleBWireframe()}()
     private lazy var moduleCWireFrame: ModuleCWireframeInput = {ModuleCWireframe()}()
     private lazy var moduleDWireFrame: ModuleDWireframeInput = {ModuleDWireframe()}()
@@ -31,7 +32,7 @@ extension MainWireframe: MainWireframeInput {
     func getMainView() -> UIViewController {
         let viewController =  MainViewController()
         // viewcontrollers for tabBar
-        let viewcontroller1 = moduleAWireFrame.getMainView()
+        let viewcontroller1 = settingWireFrame.getMainView()
         let viewcontroller2 = moduleBWireFrame.getMainView()
         let viewcontroller3 = moduleCWireFrame.getMainView()
         let viewcontroller4 = moduleDWireFrame.getMainView()

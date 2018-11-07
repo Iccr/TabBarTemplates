@@ -138,6 +138,18 @@
 		90C5EACD2074DC83009EBC01 /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5EACC2074DC83009EBC01 /* UINavigationBarExtension.swift */; };
 		90C5EACF2074DCE2009EBC01 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5EACE2074DCE1009EBC01 /* UIViewControllerExtension.swift */; };
 		98EABE97CA8F6FC5AEBAE822 /* Pods_TabControllerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 400BB6692022C27B744EFD3F /* Pods_TabControllerTests.framework */; };
+		D939B3C62192B54100D9AEC1 /* SettingModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B3B32192B54100D9AEC1 /* SettingModuleInterface.swift */; };
+		D939B3C72192B54100D9AEC1 /* SettingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B3B62192B54100D9AEC1 /* SettingService.swift */; };
+		D939B3C82192B54100D9AEC1 /* SettingServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B3B72192B54100D9AEC1 /* SettingServiceType.swift */; };
+		D939B3C92192B54100D9AEC1 /* SettingInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B3B92192B54100D9AEC1 /* SettingInteractorIO.swift */; };
+		D939B3CA2192B54100D9AEC1 /* SettingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B3BA2192B54100D9AEC1 /* SettingInteractor.swift */; };
+		D939B3CB2192B54100D9AEC1 /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B3BD2192B54100D9AEC1 /* SettingPresenter.swift */; };
+		D939B3CC2192B54100D9AEC1 /* SettingWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B3BF2192B54100D9AEC1 /* SettingWireframeInput.swift */; };
+		D939B3CD2192B54100D9AEC1 /* SettingWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B3C02192B54100D9AEC1 /* SettingWireframe.swift */; };
+		D939B3CE2192B54100D9AEC1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B3C22192B54100D9AEC1 /* SettingViewController.swift */; };
+		D939B3CF2192B54100D9AEC1 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D939B3C42192B54100D9AEC1 /* Setting.storyboard */; };
+		D939B3D02192B54100D9AEC1 /* SettingViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939B3C52192B54100D9AEC1 /* SettingViewInterface.swift */; };
+		D939B3D22192B56700D9AEC1 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D939B3D12192B56700D9AEC1 /* SettingsViewController.xib */; };
 		D98FC53521917AF90082B30B /* ApiServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FC53421917AF90082B30B /* ApiServiceType.swift */; };
 		D98FC537219188450082B30B /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FC536219188450082B30B /* Style.swift */; };
 		FFCFBB55219103ED00E825B7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCFBB54219103ED00E825B7 /* Item.swift */; };
@@ -307,6 +319,18 @@
 		90C5EACC2074DC83009EBC01 /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		90C5EACE2074DCE1009EBC01 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		BD310D8CF7F3294C55E7E1C1 /* Pods-TabController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabController.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabController/Pods-TabController.release.xcconfig"; sourceTree = "<group>"; };
+		D939B3B32192B54100D9AEC1 /* SettingModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingModuleInterface.swift; sourceTree = "<group>"; };
+		D939B3B62192B54100D9AEC1 /* SettingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingService.swift; sourceTree = "<group>"; };
+		D939B3B72192B54100D9AEC1 /* SettingServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingServiceType.swift; sourceTree = "<group>"; };
+		D939B3B92192B54100D9AEC1 /* SettingInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingInteractorIO.swift; sourceTree = "<group>"; };
+		D939B3BA2192B54100D9AEC1 /* SettingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingInteractor.swift; sourceTree = "<group>"; };
+		D939B3BD2192B54100D9AEC1 /* SettingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
+		D939B3BF2192B54100D9AEC1 /* SettingWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingWireframeInput.swift; sourceTree = "<group>"; };
+		D939B3C02192B54100D9AEC1 /* SettingWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingWireframe.swift; sourceTree = "<group>"; };
+		D939B3C22192B54100D9AEC1 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		D939B3C42192B54100D9AEC1 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		D939B3C52192B54100D9AEC1 /* SettingViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewInterface.swift; sourceTree = "<group>"; };
+		D939B3D12192B56700D9AEC1 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		D98FC53421917AF90082B30B /* ApiServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceType.swift; sourceTree = "<group>"; };
 		D98FC536219188450082B30B /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		FFCFBB54219103ED00E825B7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -991,6 +1015,7 @@
 		90222FCC2074CBFF00AF91F3 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				D939B3B12192B54100D9AEC1 /* Setting */,
 				901BAA0C2074E551001531EA /* ModuleA */,
 				901BAA082074E550001531EA /* ModuleB */,
 				901BAA092074E550001531EA /* ModuleC */,
@@ -1196,6 +1221,97 @@
 			path = Wireframe;
 			sourceTree = "<group>";
 		};
+		D939B3B12192B54100D9AEC1 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D939B3B22192B54100D9AEC1 /* Module Interface */,
+				D939B3B42192B54100D9AEC1 /* Application Logic */,
+				D939B3BB2192B54100D9AEC1 /* User Interface */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		D939B3B22192B54100D9AEC1 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D939B3B32192B54100D9AEC1 /* SettingModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		D939B3B42192B54100D9AEC1 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				D939B3B52192B54100D9AEC1 /* Service */,
+				D939B3B82192B54100D9AEC1 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		D939B3B52192B54100D9AEC1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D939B3B62192B54100D9AEC1 /* SettingService.swift */,
+				D939B3B72192B54100D9AEC1 /* SettingServiceType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D939B3B82192B54100D9AEC1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D939B3B92192B54100D9AEC1 /* SettingInteractorIO.swift */,
+				D939B3BA2192B54100D9AEC1 /* SettingInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D939B3BB2192B54100D9AEC1 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D939B3BC2192B54100D9AEC1 /* Presenter */,
+				D939B3BE2192B54100D9AEC1 /* Wireframe */,
+				D939B3C12192B54100D9AEC1 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		D939B3BC2192B54100D9AEC1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D939B3BD2192B54100D9AEC1 /* SettingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D939B3BE2192B54100D9AEC1 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				D939B3BF2192B54100D9AEC1 /* SettingWireframeInput.swift */,
+				D939B3C02192B54100D9AEC1 /* SettingWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D939B3C12192B54100D9AEC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D939B3C22192B54100D9AEC1 /* SettingViewController.swift */,
+				D939B3C32192B54100D9AEC1 /* ViewModels */,
+				D939B3C42192B54100D9AEC1 /* Setting.storyboard */,
+				D939B3D12192B56700D9AEC1 /* SettingsViewController.xib */,
+				D939B3C52192B54100D9AEC1 /* SettingViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D939B3C32192B54100D9AEC1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		FFCFBB53219103DF00E825B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1328,6 +1444,7 @@
 				90222A6E2074BBD800AF91F3 /* LaunchScreen.storyboard in Resources */,
 				90222FE92074CC2000AF91F3 /* Loading.storyboard in Resources */,
 				90222AD82074C29300AF91F3 /* TableViewPicker.storyboard in Resources */,
+				D939B3CF2192B54100D9AEC1 /* Setting.storyboard in Resources */,
 				90222A6B2074BBD800AF91F3 /* Assets.xcassets in Resources */,
 				90222AF42074C8A000AF91F3 /* Montserrat-Regular.otf in Resources */,
 				901BAA2D2074E593001531EA /* ModuleA.storyboard in Resources */,
@@ -1339,6 +1456,7 @@
 				901BAAC22074E876001531EA /* ModuleE.storyboard in Resources */,
 				90222AF52074C91100AF91F3 /* Montserrat-Bold.otf in Resources */,
 				90222A692074BBD800AF91F3 /* Main.storyboard in Resources */,
+				D939B3D22192B56700D9AEC1 /* SettingsViewController.xib in Resources */,
 				90222AF32074C8A000AF91F3 /* Montserrat-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1494,6 +1612,7 @@
 				901BAA972074E84B001531EA /* ModuleDInteractorIO.swift in Sources */,
 				901BAA4E2074E6EE001531EA /* ModuleBService.swift in Sources */,
 				909B07D32074CD8E00496256 /* StatusCode.swift in Sources */,
+				D939B3CE2192B54100D9AEC1 /* SettingViewController.swift in Sources */,
 				901BAA9D2074E84B001531EA /* ModuleDViewController.swift in Sources */,
 				901BAA272074E593001531EA /* ModuleAModuleInterface.swift in Sources */,
 				901BAA532074E6EE001531EA /* ModuleBViewController.swift in Sources */,
@@ -1519,6 +1638,8 @@
 				90222AE92074C4F200AF91F3 /* LanguageCell.swift in Sources */,
 				90222A942074BF4900AF91F3 /* Font.swift in Sources */,
 				901BAA992074E84B001531EA /* ModuleDServiceType.swift in Sources */,
+				D939B3D02192B54100D9AEC1 /* SettingViewInterface.swift in Sources */,
+				D939B3C62192B54100D9AEC1 /* SettingModuleInterface.swift in Sources */,
 				901BAA962074E84B001531EA /* ModuleDInteractor.swift in Sources */,
 				901BAAC42074E876001531EA /* ModuleEViewInterface.swift in Sources */,
 				901BAA562074E6EE001531EA /* ModuleBWireframeInput.swift in Sources */,
@@ -1534,6 +1655,7 @@
 				90C5EAC22074DC21009EBC01 /* MainInteractor.swift in Sources */,
 				901BAA712074E836001531EA /* ModuleCPresenter.swift in Sources */,
 				90C5EAC72074DC21009EBC01 /* MainPresenter.swift in Sources */,
+				D939B3C72192B54100D9AEC1 /* SettingService.swift in Sources */,
 				90222FF22074CC2000AF91F3 /* LoadingModuleInterface.swift in Sources */,
 				90222AB72074C1C200AF91F3 /* StringExtension.swift in Sources */,
 				901BAAC02074E876001531EA /* ModuleEModuleInterface.swift in Sources */,
@@ -1542,6 +1664,7 @@
 				901BAA2E2074E593001531EA /* ModuleAViewController.swift in Sources */,
 				90222AD92074C29300AF91F3 /* TableViewPickerCell.swift in Sources */,
 				90222FEB2074CC2000AF91F3 /* LoadingViewInterface.swift in Sources */,
+				D939B3CB2192B54100D9AEC1 /* SettingPresenter.swift in Sources */,
 				901BAA552074E6EE001531EA /* ModuleBWireframe.swift in Sources */,
 				90222AD22074C29300AF91F3 /* MultiMediaManager.swift in Sources */,
 				901BAA2B2074E593001531EA /* ModuleAServiceType.swift in Sources */,
@@ -1553,6 +1676,7 @@
 				901BAA752074E836001531EA /* ModuleCWireframe.swift in Sources */,
 				90C5EACA2074DC21009EBC01 /* MainWireframe.swift in Sources */,
 				90222FED2074CC2000AF91F3 /* LoadingWireframeInput.swift in Sources */,
+				D939B3CD2192B54100D9AEC1 /* SettingWireframe.swift in Sources */,
 				901BAA2A2074E593001531EA /* ModuleAService.swift in Sources */,
 				FFCFBB55219103ED00E825B7 /* Item.swift in Sources */,
 				90222A662074BBD800AF91F3 /* ViewController.swift in Sources */,
@@ -1563,6 +1687,7 @@
 				901BAA502074E6EE001531EA /* ModuleBModuleInterface.swift in Sources */,
 				901BAAC62074E876001531EA /* ModuleEWireframeInput.swift in Sources */,
 				90222FEC2074CC2000AF91F3 /* LoadingWireframe.swift in Sources */,
+				D939B3C82192B54100D9AEC1 /* SettingServiceType.swift in Sources */,
 				901BAA9E2074E84B001531EA /* ModuleDViewInterface.swift in Sources */,
 				901BAA302074E593001531EA /* ModuleAWireframe.swift in Sources */,
 				901BAA4D2074E6ED001531EA /* ModuleBInteractorIO.swift in Sources */,
@@ -1574,11 +1699,13 @@
 				901BAA282074E593001531EA /* ModuleAInteractor.swift in Sources */,
 				90222ABD2074C1C200AF91F3 /* URLExtension.swift in Sources */,
 				901BAA2C2074E593001531EA /* ModuleAPresenter.swift in Sources */,
+				D939B3CA2192B54100D9AEC1 /* SettingInteractor.swift in Sources */,
 				90222FEA2074CC2000AF91F3 /* LoadingViewController.swift in Sources */,
 				90222FEE2074CC2000AF91F3 /* LoadingInteractor.swift in Sources */,
 				901BAABC2074E876001531EA /* ModuleEInteractor.swift in Sources */,
 				90222ABA2074C1C200AF91F3 /* UIDeviceExtension.swift in Sources */,
 				90222A922074BF4400AF91F3 /* Colors.swift in Sources */,
+				D939B3C92192B54100D9AEC1 /* SettingInteractorIO.swift in Sources */,
 				901BAA772074E836001531EA /* ModuleCInteractor.swift in Sources */,
 				90222AB32074C1C200AF91F3 /* ExtensionTablewView.swift in Sources */,
 				90222AB02074C1C200AF91F3 /* CollectionExtension.swift in Sources */,
@@ -1595,6 +1722,7 @@
 				901BAA9B2074E84B001531EA /* ModuleDPresenter.swift in Sources */,
 				90222ABC2074C1C200AF91F3 /* UIViewExtension.swift in Sources */,
 				90222ADC2074C29300AF91F3 /* TableViewPickerWithIndexViewController.swift in Sources */,
+				D939B3CC2192B54100D9AEC1 /* SettingWireframeInput.swift in Sources */,
 				90222A642074BBD800AF91F3 /* AppDelegate.swift in Sources */,
 				90222A9C2074BF6100AF91F3 /* AppConstant.swift in Sources */,
 				901BAA312074E593001531EA /* ModuleAWireframeInput.swift in Sources */,
