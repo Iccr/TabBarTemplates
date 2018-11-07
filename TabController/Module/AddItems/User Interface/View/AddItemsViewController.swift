@@ -11,7 +11,7 @@ import UIKit
 class AddItemsViewController: UITableViewController {
     
     // MARK: IBOutlets
-    var items: SearchItem = SearchItem(category: "Accessories")
+    var items: SearchItem = SearchItem()
     
     
     @IBOutlet weak var categoryTextField: UITextField!
@@ -35,9 +35,16 @@ class AddItemsViewController: UITableViewController {
         self.setup()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        let item = self.getItem()
+        self.save(models: [item])
+        self.navigationController?.popViewController(animated: true)
+    }
     
-    public func getItem() -> SearchItem? {
-        let item = SearchItem(category: "Accessories")
+    
+    public func getItem() -> SearchItem {
+        let item = SearchItem()
         item.cateogry = categoryTextField.text!
         item.size = sizeTextfield.text!
         item.color = colorTextField.text!
@@ -50,9 +57,7 @@ class AddItemsViewController: UITableViewController {
     
     
     @IBAction func done(_ sender: UIButton) {
-        let item = self.getItem()
-        
-        
+ 
     }
     
     // MARK: Other Functions

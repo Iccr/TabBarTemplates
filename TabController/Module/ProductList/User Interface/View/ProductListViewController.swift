@@ -26,6 +26,7 @@ class ProductListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setup()
+        
     }
     
     // MARK: IBActions
@@ -45,6 +46,8 @@ class ProductListViewController: UIViewController {
         // all setup should be done here
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.items = self.fetch()
+        print(items)
        
     }
 }
@@ -70,4 +73,9 @@ extension ProductListViewController: UITableViewDataSource {
         cell.setup()
         return cell
     }
+}
+
+
+extension ProductListViewController: RealmPersistenceType {
+    
 }

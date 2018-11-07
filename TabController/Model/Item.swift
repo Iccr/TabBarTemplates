@@ -16,6 +16,7 @@ class Item: Mappable {
     required init?(map: Map) {
         
     }
+
     
     func mapping(map: Map) {
         name <- map["name"]

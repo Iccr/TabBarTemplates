@@ -8,6 +8,8 @@
 
 import UIKit
 
+import RealmSwift
+
 class ItemsTableViewCell: UITableViewCell {
     
     var item: SearchItem?
@@ -34,24 +36,23 @@ class ItemsTableViewCell: UITableViewCell {
         addressTextField.text = item?.address
         cardTextField.text = item?.card
     }
-    
-
-
 }
 
 
 
-class SearchItem {
-    var id: Int?
-    var cateogry: String?
-    var size: String?
-    var color: String?
-    var name: String?
-    var numberOfTabls: String?
-    var address: String?
-    var card: String?
+class SearchItem: Object {
+    @objc var cateogry: String?
+    @objc var size: String?
+    @objc var color: String?
+    @objc var name: String?
+    @objc var numberOfTabls: String?
+    @objc var address: String?
+    @objc var card: String?
     
-    init(category: String) {
-        cateogry = category
+    
+    override class func primaryKey() -> String? {
+        return "name"
     }
 }
+
+
