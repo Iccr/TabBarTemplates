@@ -75,6 +75,11 @@ PODS:
   - nanopb/encode (0.3.8)
   - ObjectMapper (3.3.0)
   - Protobuf (3.5.0)
+  - Realm (2.8.3):
+    - Realm/Headers (= 2.8.3)
+  - Realm/Headers (2.8.3)
+  - RealmSwift (2.8.3):
+    - Realm (= 2.8.3)
   - RSKImageCropper (2.0.0)
   - SwiftyJSON (4.2.0)
   - thenPromise (4.2.0)
@@ -92,6 +97,7 @@ DEPENDENCIES:
   - Localize-Swift
   - MBProgressHUD
   - ObjectMapper
+  - RealmSwift (= 2.8.3)
   - RSKImageCropper
   - SwiftyJSON (~> 4.0)
   - thenPromise (from `https://github.com/freshOS/then`)
@@ -120,6 +126,8 @@ SPEC REPOS:
     - nanopb
     - ObjectMapper
     - Protobuf
+    - Realm
+    - RealmSwift
     - RSKImageCropper
     - SwiftyJSON
 
@@ -155,10 +163,12 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
+  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+  RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
   RSKImageCropper: d9a1acbc0600bf8decc8f0d21895872c99a9e4cf
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   thenPromise: e46ebb9a45c23cbaa681eeeee3f59929a21c639d
 
-PODFILE CHECKSUM: 993ff86a8ee53ebec8f5200697d77930e66c6ead
+PODFILE CHECKSUM: e19ea27a2b8489a466fecb205a0860911bca7c17
 
 COCOAPODS: 1.5.3
