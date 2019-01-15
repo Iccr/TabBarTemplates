@@ -58,7 +58,7 @@ class SplashScreenViewController: UIViewController {
     // MARK: Other Functions
     
     private func hideNavBar() {
-        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.navigationBar.barTintColor = AppConstants.themWhiteColor
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -81,7 +81,7 @@ class SplashScreenViewController: UIViewController {
         buttonLogin.layer.borderColor = UIColor.white.cgColor
         buttonSignUp.layer.borderWidth = 1
         buttonSignUp.layer.borderColor = UIColor.white.cgColor
-        self.view.backgroundColor = AppConstants.themeRedColor
+        self.view.backgroundColor = AppConstants.themWhiteColor
         self.buttonSignUp.backgroundColor = AppConstants.themeDarkRedColor
         self.buttonLogin.backgroundColor = AppConstants.themeBlueColor
 //        self.buttonSignUp.backgroundColor = AppConstants.themeBlueColor
