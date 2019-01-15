@@ -119,7 +119,6 @@
 		90222FF02074CC2000AF91F3 /* LoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90222FE42074CC2000AF91F3 /* LoadingService.swift */; };
 		90222FF12074CC2000AF91F3 /* LoadingServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90222FE52074CC2000AF91F3 /* LoadingServiceType.swift */; };
 		90222FF22074CC2000AF91F3 /* LoadingModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90222FE72074CC2000AF91F3 /* LoadingModuleInterface.swift */; };
-		909B07D02074CD8E00496256 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909B07C22074CD8E00496256 /* Auth.swift */; };
 		909B07D32074CD8E00496256 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909B07C52074CD8E00496256 /* StatusCode.swift */; };
 		909B07D42074CD8E00496256 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909B07C62074CD8E00496256 /* Either.swift */; };
 		909B07D82074CD8F00496256 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909B07CA2074CD8E00496256 /* Reachability.swift */; };
@@ -138,6 +137,41 @@
 		90C5EACD2074DC83009EBC01 /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5EACC2074DC83009EBC01 /* UINavigationBarExtension.swift */; };
 		90C5EACF2074DCE2009EBC01 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5EACE2074DCE1009EBC01 /* UIViewControllerExtension.swift */; };
 		98EABE97CA8F6FC5AEBAE822 /* Pods_TabControllerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 400BB6692022C27B744EFD3F /* Pods_TabControllerTests.framework */; };
+		D982581221EDA9E70008A472 /* SplashScreenModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98257FF21EDA9E70008A472 /* SplashScreenModuleInterface.swift */; };
+		D982581321EDA9E70008A472 /* SplashScreenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580221EDA9E70008A472 /* SplashScreenService.swift */; };
+		D982581421EDA9E70008A472 /* SplashScreenServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580321EDA9E70008A472 /* SplashScreenServiceType.swift */; };
+		D982581521EDA9E70008A472 /* SplashScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580521EDA9E70008A472 /* SplashScreenInteractor.swift */; };
+		D982581621EDA9E70008A472 /* SplashScreenInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580621EDA9E70008A472 /* SplashScreenInteractorIO.swift */; };
+		D982581721EDA9E70008A472 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580921EDA9E70008A472 /* SplashScreenPresenter.swift */; };
+		D982581821EDA9E70008A472 /* SplashScreenWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580B21EDA9E70008A472 /* SplashScreenWireframe.swift */; };
+		D982581921EDA9E70008A472 /* SplashScreenWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580C21EDA9E70008A472 /* SplashScreenWireframeInput.swift */; };
+		D982581A21EDA9E70008A472 /* SplashScreenViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580F21EDA9E70008A472 /* SplashScreenViewInterface.swift */; };
+		D982581B21EDA9E70008A472 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D982581021EDA9E70008A472 /* SplashScreen.storyboard */; };
+		D982581C21EDA9E70008A472 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982581121EDA9E70008A472 /* SplashScreenViewController.swift */; };
+		D982584721EDAB870008A472 /* LoginModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982581F21EDAB860008A472 /* LoginModuleInterface.swift */; };
+		D982584821EDAB870008A472 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982582221EDAB860008A472 /* LoginService.swift */; };
+		D982584921EDAB870008A472 /* LoginServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982582321EDAB860008A472 /* LoginServiceType.swift */; };
+		D982584A21EDAB870008A472 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982582521EDAB860008A472 /* LoginInteractor.swift */; };
+		D982584B21EDAB870008A472 /* LoginInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982582621EDAB860008A472 /* LoginInteractorIO.swift */; };
+		D982584C21EDAB870008A472 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982582921EDAB860008A472 /* LoginPresenter.swift */; };
+		D982584D21EDAB870008A472 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982582B21EDAB860008A472 /* LoginWireframe.swift */; };
+		D982584E21EDAB870008A472 /* LoginWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982582C21EDAB860008A472 /* LoginWireframeInput.swift */; };
+		D982584F21EDAB870008A472 /* LoginViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982582F21EDAB860008A472 /* LoginViewInterface.swift */; };
+		D982585021EDAB870008A472 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D982583021EDAB860008A472 /* Login.storyboard */; };
+		D982585121EDAB870008A472 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982583121EDAB860008A472 /* LoginViewController.swift */; };
+		D982585221EDAB870008A472 /* RegisterModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982583421EDAB870008A472 /* RegisterModuleInterface.swift */; };
+		D982585321EDAB870008A472 /* RegisterServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982583721EDAB870008A472 /* RegisterServiceType.swift */; };
+		D982585421EDAB870008A472 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982583821EDAB870008A472 /* RegisterService.swift */; };
+		D982585521EDAB870008A472 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982583A21EDAB870008A472 /* RegisterInteractor.swift */; };
+		D982585621EDAB870008A472 /* RegisterInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982583B21EDAB870008A472 /* RegisterInteractorIO.swift */; };
+		D982585721EDAB870008A472 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982583E21EDAB870008A472 /* RegisterPresenter.swift */; };
+		D982585821EDAB870008A472 /* RegisterWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982584021EDAB870008A472 /* RegisterWireframeInput.swift */; };
+		D982585921EDAB870008A472 /* RegisterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982584121EDAB870008A472 /* RegisterWireframe.swift */; };
+		D982585A21EDAB870008A472 /* RegisterViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982584321EDAB870008A472 /* RegisterViewInterface.swift */; };
+		D982585B21EDAB870008A472 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D982584521EDAB870008A472 /* Register.storyboard */; };
+		D982585C21EDAB870008A472 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982584621EDAB870008A472 /* RegisterViewController.swift */; };
+		D982585E21EDAC610008A472 /* ApiServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982585D21EDAC610008A472 /* ApiServiceType.swift */; };
+		D982586021EDAC9B0008A472 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982585F21EDAC9B0008A472 /* Auth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -285,7 +319,6 @@
 		90222FE42074CC2000AF91F3 /* LoadingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingService.swift; sourceTree = "<group>"; };
 		90222FE52074CC2000AF91F3 /* LoadingServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingServiceType.swift; sourceTree = "<group>"; };
 		90222FE72074CC2000AF91F3 /* LoadingModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingModuleInterface.swift; sourceTree = "<group>"; };
-		909B07C22074CD8E00496256 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		909B07C52074CD8E00496256 /* StatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
 		909B07C62074CD8E00496256 /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 		909B07CA2074CD8E00496256 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -304,6 +337,41 @@
 		90C5EACC2074DC83009EBC01 /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		90C5EACE2074DCE1009EBC01 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		BD310D8CF7F3294C55E7E1C1 /* Pods-TabController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabController.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabController/Pods-TabController.release.xcconfig"; sourceTree = "<group>"; };
+		D98257FF21EDA9E70008A472 /* SplashScreenModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenModuleInterface.swift; sourceTree = "<group>"; };
+		D982580221EDA9E70008A472 /* SplashScreenService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenService.swift; sourceTree = "<group>"; };
+		D982580321EDA9E70008A472 /* SplashScreenServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenServiceType.swift; sourceTree = "<group>"; };
+		D982580521EDA9E70008A472 /* SplashScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenInteractor.swift; sourceTree = "<group>"; };
+		D982580621EDA9E70008A472 /* SplashScreenInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenInteractorIO.swift; sourceTree = "<group>"; };
+		D982580921EDA9E70008A472 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
+		D982580B21EDA9E70008A472 /* SplashScreenWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenWireframe.swift; sourceTree = "<group>"; };
+		D982580C21EDA9E70008A472 /* SplashScreenWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenWireframeInput.swift; sourceTree = "<group>"; };
+		D982580F21EDA9E70008A472 /* SplashScreenViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewInterface.swift; sourceTree = "<group>"; };
+		D982581021EDA9E70008A472 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		D982581121EDA9E70008A472 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		D982581F21EDAB860008A472 /* LoginModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModuleInterface.swift; sourceTree = "<group>"; };
+		D982582221EDAB860008A472 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		D982582321EDAB860008A472 /* LoginServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceType.swift; sourceTree = "<group>"; };
+		D982582521EDAB860008A472 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		D982582621EDAB860008A472 /* LoginInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractorIO.swift; sourceTree = "<group>"; };
+		D982582921EDAB860008A472 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		D982582B21EDAB860008A472 /* LoginWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		D982582C21EDAB860008A472 /* LoginWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWireframeInput.swift; sourceTree = "<group>"; };
+		D982582F21EDAB860008A472 /* LoginViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewInterface.swift; sourceTree = "<group>"; };
+		D982583021EDAB860008A472 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D982583121EDAB860008A472 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D982583421EDAB870008A472 /* RegisterModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterModuleInterface.swift; sourceTree = "<group>"; };
+		D982583721EDAB870008A472 /* RegisterServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterServiceType.swift; sourceTree = "<group>"; };
+		D982583821EDAB870008A472 /* RegisterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
+		D982583A21EDAB870008A472 /* RegisterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		D982583B21EDAB870008A472 /* RegisterInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterInteractorIO.swift; sourceTree = "<group>"; };
+		D982583E21EDAB870008A472 /* RegisterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		D982584021EDAB870008A472 /* RegisterWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterWireframeInput.swift; sourceTree = "<group>"; };
+		D982584121EDAB870008A472 /* RegisterWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterWireframe.swift; sourceTree = "<group>"; };
+		D982584321EDAB870008A472 /* RegisterViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewInterface.swift; sourceTree = "<group>"; };
+		D982584521EDAB870008A472 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		D982584621EDAB870008A472 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D982585D21EDAC610008A472 /* ApiServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiServiceType.swift; sourceTree = "<group>"; };
+		D982585F21EDAC9B0008A472 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -984,6 +1052,9 @@
 		90222FCC2074CBFF00AF91F3 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				D982581D21EDAB860008A472 /* Login */,
+				D982583221EDAB870008A472 /* Register */,
+				D98257FD21EDA9E70008A472 /* SplashScreen */,
 				901BAA0C2074E551001531EA /* ModuleA */,
 				901BAA082074E550001531EA /* ModuleB */,
 				901BAA092074E550001531EA /* ModuleC */,
@@ -1101,7 +1172,8 @@
 		909B07BF2074CD8E00496256 /* BaseAPI */ = {
 			isa = PBXGroup;
 			children = (
-				909B07C22074CD8E00496256 /* Auth.swift */,
+				D982585F21EDAC9B0008A472 /* Auth.swift */,
+				D982585D21EDAC610008A472 /* ApiServiceType.swift */,
 				909B07C52074CD8E00496256 /* StatusCode.swift */,
 			);
 			path = BaseAPI;
@@ -1186,6 +1258,276 @@
 				90C5EAC12074DC21009EBC01 /* MainWireframeInput.swift */,
 			);
 			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D98257FD21EDA9E70008A472 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D98257FE21EDA9E70008A472 /* Module Interface */,
+				D982580021EDA9E70008A472 /* Application Logic */,
+				D982580721EDA9E70008A472 /* User Interface */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		D98257FE21EDA9E70008A472 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D98257FF21EDA9E70008A472 /* SplashScreenModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		D982580021EDA9E70008A472 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				D982580121EDA9E70008A472 /* Service */,
+				D982580421EDA9E70008A472 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		D982580121EDA9E70008A472 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D982580221EDA9E70008A472 /* SplashScreenService.swift */,
+				D982580321EDA9E70008A472 /* SplashScreenServiceType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D982580421EDA9E70008A472 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D982580521EDA9E70008A472 /* SplashScreenInteractor.swift */,
+				D982580621EDA9E70008A472 /* SplashScreenInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D982580721EDA9E70008A472 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D982580821EDA9E70008A472 /* Presenter */,
+				D982580A21EDA9E70008A472 /* Wireframe */,
+				D982580D21EDA9E70008A472 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		D982580821EDA9E70008A472 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D982580921EDA9E70008A472 /* SplashScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D982580A21EDA9E70008A472 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				D982580B21EDA9E70008A472 /* SplashScreenWireframe.swift */,
+				D982580C21EDA9E70008A472 /* SplashScreenWireframeInput.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D982580D21EDA9E70008A472 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D982580E21EDA9E70008A472 /* ViewModels */,
+				D982580F21EDA9E70008A472 /* SplashScreenViewInterface.swift */,
+				D982581021EDA9E70008A472 /* SplashScreen.storyboard */,
+				D982581121EDA9E70008A472 /* SplashScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D982580E21EDA9E70008A472 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D982581D21EDAB860008A472 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D982581E21EDAB860008A472 /* Module Interface */,
+				D982582021EDAB860008A472 /* Application Logic */,
+				D982582721EDAB860008A472 /* User Interface */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D982581E21EDAB860008A472 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D982581F21EDAB860008A472 /* LoginModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		D982582021EDAB860008A472 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				D982582121EDAB860008A472 /* Service */,
+				D982582421EDAB860008A472 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		D982582121EDAB860008A472 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D982582221EDAB860008A472 /* LoginService.swift */,
+				D982582321EDAB860008A472 /* LoginServiceType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D982582421EDAB860008A472 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D982582521EDAB860008A472 /* LoginInteractor.swift */,
+				D982582621EDAB860008A472 /* LoginInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D982582721EDAB860008A472 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D982582821EDAB860008A472 /* Presenter */,
+				D982582A21EDAB860008A472 /* Wireframe */,
+				D982582D21EDAB860008A472 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		D982582821EDAB860008A472 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D982582921EDAB860008A472 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D982582A21EDAB860008A472 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				D982582B21EDAB860008A472 /* LoginWireframe.swift */,
+				D982582C21EDAB860008A472 /* LoginWireframeInput.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D982582D21EDAB860008A472 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D982582E21EDAB860008A472 /* ViewModels */,
+				D982582F21EDAB860008A472 /* LoginViewInterface.swift */,
+				D982583021EDAB860008A472 /* Login.storyboard */,
+				D982583121EDAB860008A472 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D982582E21EDAB860008A472 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D982583221EDAB870008A472 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D982583321EDAB870008A472 /* Module Interface */,
+				D982583521EDAB870008A472 /* Application Logic */,
+				D982583C21EDAB870008A472 /* User Interface */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D982583321EDAB870008A472 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D982583421EDAB870008A472 /* RegisterModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		D982583521EDAB870008A472 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				D982583621EDAB870008A472 /* Service */,
+				D982583921EDAB870008A472 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		D982583621EDAB870008A472 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D982583721EDAB870008A472 /* RegisterServiceType.swift */,
+				D982583821EDAB870008A472 /* RegisterService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D982583921EDAB870008A472 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D982583A21EDAB870008A472 /* RegisterInteractor.swift */,
+				D982583B21EDAB870008A472 /* RegisterInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D982583C21EDAB870008A472 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D982583D21EDAB870008A472 /* Presenter */,
+				D982583F21EDAB870008A472 /* Wireframe */,
+				D982584221EDAB870008A472 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		D982583D21EDAB870008A472 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D982583E21EDAB870008A472 /* RegisterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D982583F21EDAB870008A472 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				D982584021EDAB870008A472 /* RegisterWireframeInput.swift */,
+				D982584121EDAB870008A472 /* RegisterWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D982584221EDAB870008A472 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D982584321EDAB870008A472 /* RegisterViewInterface.swift */,
+				D982584421EDAB870008A472 /* ViewModels */,
+				D982584521EDAB870008A472 /* Register.storyboard */,
+				D982584621EDAB870008A472 /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D982584421EDAB870008A472 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1306,6 +1648,7 @@
 			files = (
 				90222AD42074C29300AF91F3 /* QRScanner.storyboard in Resources */,
 				901BAA522074E6EE001531EA /* ModuleB.storyboard in Resources */,
+				D982585021EDAB870008A472 /* Login.storyboard in Resources */,
 				901BAA722074E836001531EA /* ModuleC.storyboard in Resources */,
 				90222ADA2074C29300AF91F3 /* TableViewPickerWithIndexes.storyboard in Resources */,
 				90222A6E2074BBD800AF91F3 /* LaunchScreen.storyboard in Resources */,
@@ -1317,8 +1660,10 @@
 				90222AE82074C4F200AF91F3 /* Localizable.strings in Resources */,
 				90222ADD2074C29300AF91F3 /* Storyboard.storyboard in Resources */,
 				90222AED2074C77A00AF91F3 /* GoogleService-Info.plist in Resources */,
+				D982581B21EDA9E70008A472 /* SplashScreen.storyboard in Resources */,
 				901BAA9C2074E84B001531EA /* ModuleD.storyboard in Resources */,
 				90222AEA2074C4F200AF91F3 /* Localization.storyboard in Resources */,
+				D982585B21EDAB870008A472 /* Register.storyboard in Resources */,
 				901BAAC22074E876001531EA /* ModuleE.storyboard in Resources */,
 				90222AF52074C91100AF91F3 /* Montserrat-Bold.otf in Resources */,
 				90222A692074BBD800AF91F3 /* Main.storyboard in Resources */,
@@ -1478,10 +1823,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D982584C21EDAB870008A472 /* LoginPresenter.swift in Sources */,
 				901BAA982074E84B001531EA /* ModuleDService.swift in Sources */,
 				901BAA7B2074E836001531EA /* ModuleCModuleInterface.swift in Sources */,
 				901BAA972074E84B001531EA /* ModuleDInteractorIO.swift in Sources */,
+				D982585421EDAB870008A472 /* RegisterService.swift in Sources */,
 				901BAA4E2074E6EE001531EA /* ModuleBService.swift in Sources */,
+				D982585121EDAB870008A472 /* LoginViewController.swift in Sources */,
 				909B07D32074CD8E00496256 /* StatusCode.swift in Sources */,
 				901BAA9D2074E84B001531EA /* ModuleDViewController.swift in Sources */,
 				901BAA272074E593001531EA /* ModuleAModuleInterface.swift in Sources */,
@@ -1490,6 +1838,7 @@
 				90222AEB2074C4F200AF91F3 /* LocalizationViewController.swift in Sources */,
 				90222A982074BF5500AF91F3 /* Utilities.swift in Sources */,
 				90C5EAC92074DC21009EBC01 /* MainViewInterface.swift in Sources */,
+				D982584A21EDAB870008A472 /* LoginInteractor.swift in Sources */,
 				90C5EAC62074DC21009EBC01 /* MainModuleInterface.swift in Sources */,
 				901BAA782074E836001531EA /* ModuleCInteractorIO.swift in Sources */,
 				901BAA2F2074E593001531EA /* ModuleAViewInterface.swift in Sources */,
@@ -1497,17 +1846,32 @@
 				90222FF12074CC2000AF91F3 /* LoadingServiceType.swift in Sources */,
 				90222ADB2074C29300AF91F3 /* TableViewPickerWithIndexTableViewCell.swift in Sources */,
 				909B07D42074CD8E00496256 /* Either.swift in Sources */,
+				D982581521EDA9E70008A472 /* SplashScreenInteractor.swift in Sources */,
+				D982585821EDAB870008A472 /* RegisterWireframeInput.swift in Sources */,
 				90C5EAC42074DC21009EBC01 /* MainService.swift in Sources */,
+				D982585521EDAB870008A472 /* RegisterInteractor.swift in Sources */,
 				90C5EACB2074DC21009EBC01 /* MainWireframeInput.swift in Sources */,
 				901BAAA02074E84B001531EA /* ModuleDWireframeInput.swift in Sources */,
+				D982581621EDA9E70008A472 /* SplashScreenInteractorIO.swift in Sources */,
 				909B07DB2074CD8F00496256 /* WireframeInput.swift in Sources */,
+				D982585721EDAB870008A472 /* RegisterPresenter.swift in Sources */,
 				901BAA7A2074E836001531EA /* ModuleCServiceType.swift in Sources */,
 				90222FE82074CC2000AF91F3 /* LoadingPresenter.swift in Sources */,
 				90C5EAC32074DC21009EBC01 /* MainInteractorIO.swift in Sources */,
+				D982584D21EDAB870008A472 /* LoginWireframe.swift in Sources */,
 				90222AE92074C4F200AF91F3 /* LanguageCell.swift in Sources */,
+				D982584B21EDAB870008A472 /* LoginInteractorIO.swift in Sources */,
+				D982585C21EDAB870008A472 /* RegisterViewController.swift in Sources */,
+				D982581C21EDA9E70008A472 /* SplashScreenViewController.swift in Sources */,
 				90222A942074BF4900AF91F3 /* Font.swift in Sources */,
+				D982585321EDAB870008A472 /* RegisterServiceType.swift in Sources */,
+				D982586021EDAC9B0008A472 /* Auth.swift in Sources */,
 				901BAA992074E84B001531EA /* ModuleDServiceType.swift in Sources */,
+				D982584E21EDAB870008A472 /* LoginWireframeInput.swift in Sources */,
+				D982585921EDAB870008A472 /* RegisterWireframe.swift in Sources */,
 				901BAA962074E84B001531EA /* ModuleDInteractor.swift in Sources */,
+				D982581321EDA9E70008A472 /* SplashScreenService.swift in Sources */,
+				D982584821EDAB870008A472 /* LoginService.swift in Sources */,
 				901BAAC42074E876001531EA /* ModuleEViewInterface.swift in Sources */,
 				901BAA562074E6EE001531EA /* ModuleBWireframeInput.swift in Sources */,
 				90222AD52074C29300AF91F3 /* SocialAuthenticator.swift in Sources */,
@@ -1519,6 +1883,7 @@
 				90222AB22074C1C200AF91F3 /* DoubleExtension.swift in Sources */,
 				901BAA742074E836001531EA /* ModuleCViewInterface.swift in Sources */,
 				901BAA292074E593001531EA /* ModuleAInteractorIO.swift in Sources */,
+				D982585221EDAB870008A472 /* RegisterModuleInterface.swift in Sources */,
 				90C5EAC22074DC21009EBC01 /* MainInteractor.swift in Sources */,
 				901BAA712074E836001531EA /* ModuleCPresenter.swift in Sources */,
 				90C5EAC72074DC21009EBC01 /* MainPresenter.swift in Sources */,
@@ -1526,16 +1891,17 @@
 				90222AB72074C1C200AF91F3 /* StringExtension.swift in Sources */,
 				901BAAC02074E876001531EA /* ModuleEModuleInterface.swift in Sources */,
 				901BAA4F2074E6EE001531EA /* ModuleBServiceType.swift in Sources */,
-				909B07D02074CD8E00496256 /* Auth.swift in Sources */,
 				901BAA2E2074E593001531EA /* ModuleAViewController.swift in Sources */,
 				90222AD92074C29300AF91F3 /* TableViewPickerCell.swift in Sources */,
 				90222FEB2074CC2000AF91F3 /* LoadingViewInterface.swift in Sources */,
 				901BAA552074E6EE001531EA /* ModuleBWireframe.swift in Sources */,
+				D982585A21EDAB870008A472 /* RegisterViewInterface.swift in Sources */,
 				90222AD22074C29300AF91F3 /* MultiMediaManager.swift in Sources */,
 				901BAA2B2074E593001531EA /* ModuleAServiceType.swift in Sources */,
 				901BAA9A2074E84B001531EA /* ModuleDModuleInterface.swift in Sources */,
 				90222AB92074C1C200AF91F3 /* UIColorExtension.swift in Sources */,
 				909B07DA2074CD8F00496256 /* UserDefaultManager.swift in Sources */,
+				D982581A21EDA9E70008A472 /* SplashScreenViewInterface.swift in Sources */,
 				901BAABD2074E876001531EA /* ModuleEInteractorIO.swift in Sources */,
 				909B07D82074CD8F00496256 /* Reachability.swift in Sources */,
 				901BAA752074E836001531EA /* ModuleCWireframe.swift in Sources */,
@@ -1547,8 +1913,11 @@
 				90C5EACF2074DCE2009EBC01 /* UIViewControllerExtension.swift in Sources */,
 				90222ADE2074C29300AF91F3 /* WebLinksViewController.swift in Sources */,
 				901BAA9F2074E84B001531EA /* ModuleDWireframe.swift in Sources */,
+				D982581721EDA9E70008A472 /* SplashScreenPresenter.swift in Sources */,
 				901BAA502074E6EE001531EA /* ModuleBModuleInterface.swift in Sources */,
+				D982584921EDAB870008A472 /* LoginServiceType.swift in Sources */,
 				901BAAC62074E876001531EA /* ModuleEWireframeInput.swift in Sources */,
+				D982584721EDAB870008A472 /* LoginModuleInterface.swift in Sources */,
 				90222FEC2074CC2000AF91F3 /* LoadingWireframe.swift in Sources */,
 				901BAA9E2074E84B001531EA /* ModuleDViewInterface.swift in Sources */,
 				901BAA302074E593001531EA /* ModuleAWireframe.swift in Sources */,
@@ -1556,6 +1925,7 @@
 				901BAA792074E836001531EA /* ModuleCService.swift in Sources */,
 				901BAA512074E6EE001531EA /* ModuleBPresenter.swift in Sources */,
 				901BAA762074E836001531EA /* ModuleCWireframeInput.swift in Sources */,
+				D982585E21EDAC610008A472 /* ApiServiceType.swift in Sources */,
 				90222AD72074C29300AF91F3 /* TablePickerViewController.swift in Sources */,
 				90222AAF2074C1C200AF91F3 /* CLLocationCoordinate2dExtension.swift in Sources */,
 				901BAA282074E593001531EA /* ModuleAInteractor.swift in Sources */,
@@ -1564,9 +1934,11 @@
 				90222FEA2074CC2000AF91F3 /* LoadingViewController.swift in Sources */,
 				90222FEE2074CC2000AF91F3 /* LoadingInteractor.swift in Sources */,
 				901BAABC2074E876001531EA /* ModuleEInteractor.swift in Sources */,
+				D982584F21EDAB870008A472 /* LoginViewInterface.swift in Sources */,
 				90222ABA2074C1C200AF91F3 /* UIDeviceExtension.swift in Sources */,
 				90222A922074BF4400AF91F3 /* Colors.swift in Sources */,
 				901BAA772074E836001531EA /* ModuleCInteractor.swift in Sources */,
+				D982581821EDA9E70008A472 /* SplashScreenWireframe.swift in Sources */,
 				90222AB32074C1C200AF91F3 /* ExtensionTablewView.swift in Sources */,
 				90222AB02074C1C200AF91F3 /* CollectionExtension.swift in Sources */,
 				901BAAC32074E876001531EA /* ModuleEViewController.swift in Sources */,
@@ -1578,12 +1950,16 @@
 				90C5EAC82074DC21009EBC01 /* MainViewController.swift in Sources */,
 				90C5EAC52074DC21009EBC01 /* MainServiceType.swift in Sources */,
 				901BAA542074E6EE001531EA /* ModuleBViewInterface.swift in Sources */,
+				D982585621EDAB870008A472 /* RegisterInteractorIO.swift in Sources */,
 				90222AB62074C1C200AF91F3 /* SequenceExtension.swift in Sources */,
 				901BAA9B2074E84B001531EA /* ModuleDPresenter.swift in Sources */,
 				90222ABC2074C1C200AF91F3 /* UIViewExtension.swift in Sources */,
 				90222ADC2074C29300AF91F3 /* TableViewPickerWithIndexViewController.swift in Sources */,
 				90222A642074BBD800AF91F3 /* AppDelegate.swift in Sources */,
 				90222A9C2074BF6100AF91F3 /* AppConstant.swift in Sources */,
+				D982581221EDA9E70008A472 /* SplashScreenModuleInterface.swift in Sources */,
+				D982581921EDA9E70008A472 /* SplashScreenWireframeInput.swift in Sources */,
+				D982581421EDA9E70008A472 /* SplashScreenServiceType.swift in Sources */,
 				901BAA312074E593001531EA /* ModuleAWireframeInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

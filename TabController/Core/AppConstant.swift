@@ -6,8 +6,7 @@
 //  Copyright © 2018 Ekbana. All rights reserved.
 //
 
-import Foundation
-
+import UIKit
 
 struct ApiConstants {
     struct News {
@@ -62,4 +61,14 @@ struct ApiConstants {
         static let booking = "Booking".lowercased()
         static let end = "End".lowercased()
     }
+}
+
+
+class AppConstants {
+    static let dateFormat = "yyyy-MM-dd"
+    static let humanReadableDateFormat = "MMM d, yyyy"
+    static let themeRedColor = UIColor.init(hex: "#ed1b24")
+    static let themeDarkRedColor = UIColor.init(hex: "#be0007")
+    static let themeBlueColor = UIColor.init(hex: "#303e9f") // 2D368F
+    static let themWhiteColor = UIColor.init(hex: "#ffffff")
 }

@@ -16,6 +16,8 @@ pod 'AlamofireNetworkActivityIndicator'
 pod 'MBProgressHUD'
 pod 'AlamofireImage'
 pod 'FacebookLogin'
+pod 'SwiftyJSON'
+pod 'ObjectMapper', '~> 3.3'
 pod 'IQKeyboardManagerSwift'
   pod 'RSKImageCropper'
 #    pod "ImageSlideshow/Alamofire"

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--SplashScreen-->
+        <scene sceneID="R60-Pu-Hpy">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" title="SplashScreen" id="HSb-ou-7T5" customClass="SplashScreenViewController" customModule="TabController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cZd-Ew-7KS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AH-hs-RVn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rya-vW-oho">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="689"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="GZg-3B-iTO">
+                                                <rect key="frame" x="88" y="495" width="199" height="114"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G73-dq-xvs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="199" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="32w-qb-i02"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="18"/>
+                                                        <state key="normal" title="Login"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                <integer key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="login:" destination="HSb-ou-7T5" eventType="touchUpInside" id="qm9-my-wwG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXT-1Y-c8Y">
+                                                        <rect key="frame" x="0.0" y="64" width="199" height="50"/>
+                                                        <color key="backgroundColor" red="0.80784313725490198" green="0.043137254901960784" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="uKY-N1-RoR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="18"/>
+                                                        <state key="normal" title="New User"/>
+                                                        <connections>
+                                                            <action selector="register:" destination="HSb-ou-7T5" eventType="touchUpInside" id="FcL-4Z-y2u"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="GZg-3B-iTO" firstAttribute="top" secondItem="rya-vW-oho" secondAttribute="top" constant="495" id="4Pd-Jf-ein"/>
+                                            <constraint firstItem="GZg-3B-iTO" firstAttribute="leading" secondItem="rya-vW-oho" secondAttribute="leading" constant="88" id="XoC-tt-iOZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="GZg-3B-iTO" secondAttribute="bottom" constant="80" id="epU-P0-dP3"/>
+                                            <constraint firstAttribute="trailing" secondItem="GZg-3B-iTO" secondAttribute="trailing" constant="88" id="uDd-2a-bbe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rya-vW-oho" secondAttribute="bottom" id="8lk-xe-sbE"/>
+                                    <constraint firstAttribute="trailing" secondItem="rya-vW-oho" secondAttribute="trailing" id="HPk-by-347"/>
+                                    <constraint firstItem="rya-vW-oho" firstAttribute="width" secondItem="3AH-hs-RVn" secondAttribute="width" id="hhQ-i2-vMx"/>
+                                    <constraint firstItem="rya-vW-oho" firstAttribute="leading" secondItem="3AH-hs-RVn" secondAttribute="leading" id="m4M-ZS-n7J"/>
+                                    <constraint firstItem="rya-vW-oho" firstAttribute="top" secondItem="3AH-hs-RVn" secondAttribute="top" id="xIz-9X-FKh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.10588235294117647" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3AH-hs-RVn" firstAttribute="leading" secondItem="nO4-c6-DCK" secondAttribute="leading" id="8bh-Xd-Rbc"/>
+                            <constraint firstItem="3AH-hs-RVn" firstAttribute="top" secondItem="cZd-Ew-7KS" secondAttribute="top" id="B9t-2U-Zxd"/>
+                            <constraint firstItem="nO4-c6-DCK" firstAttribute="trailing" secondItem="3AH-hs-RVn" secondAttribute="trailing" id="HqS-yB-j3n"/>
+                            <constraint firstAttribute="bottom" secondItem="3AH-hs-RVn" secondAttribute="bottom" id="w1a-fo-IFG"/>
+                            <constraint firstItem="3AH-hs-RVn" firstAttribute="width" secondItem="cZd-Ew-7KS" secondAttribute="width" id="xC7-kk-7dt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nO4-c6-DCK"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="jAg-jP-7tO"/>
+                    <connections>
+                        <outlet property="buttonLogin" destination="G73-dq-xvs" id="JbA-re-pVh"/>
+                        <outlet property="buttonSignUp" destination="xXT-1Y-c8Y" id="699-2r-8l6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8je-5K-XuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.20000000000005" y="232.53373313343329"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.78177064659999995" green="0.55228364470000002" blue="0.018981300289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
