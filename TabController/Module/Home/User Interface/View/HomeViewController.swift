@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     enum Cells: Int {
         case image = 0
         case search = 1
+        case sponsored = 2
     }
     
     // MARK: IBOutlets
@@ -24,7 +25,7 @@ class HomeViewController: UIViewController {
     
     // MARK: Properties
     
-    var rows: [Cells] = [.image, .search]
+    var rows: [Cells] = [.image, .search, .sponsored]
     var presenter: HomeModuleInterface?
     
     
@@ -86,8 +87,10 @@ extension HomeViewController: UITableViewDataSource {
         switch index {
         case .image:
             return  configureTravelImageCell(tableView: tableView, cellForRowAt: indexPath)
-        default:
+        case .search:
             return configureSearchCell(tableView: tableView, cellForRowAt: indexPath)
+        case .sponsored:
+            return configureSponsoredCell(tableView: tableView, cellForRowAt: indexPath)
         }
     }
     
@@ -99,6 +102,12 @@ extension HomeViewController: UITableViewDataSource {
     
     private func configureTravelImageCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTravelTableViewCell") as! HomeTravelTableViewCell
+        return cell
+    }
+    
+    private func configureSponsoredCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeSponsoredTableViewCell") as! HomeSponsoredTableViewCell
+        cell.setup()
         return cell
     }
     

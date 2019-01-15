@@ -203,6 +203,7 @@
 		D98258B821EDCED20008A472 /* CalayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258B721EDCED20008A472 /* CalayerExtension.swift */; };
 		D98258BB21EDDCAF0008A472 /* HomeSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258BA21EDDCAF0008A472 /* HomeSearchTableViewCell.swift */; };
 		D98258BD21EDE23F0008A472 /* HomeTravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258BC21EDE23F0008A472 /* HomeTravelTableViewCell.swift */; };
+		FF28923021EE3C20005235E9 /* HomeSponsoredTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28922F21EE3C20005235E9 /* HomeSponsoredTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -434,6 +435,7 @@
 		D98258B721EDCED20008A472 /* CalayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalayerExtension.swift; sourceTree = "<group>"; };
 		D98258BA21EDDCAF0008A472 /* HomeSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchTableViewCell.swift; sourceTree = "<group>"; };
 		D98258BC21EDE23F0008A472 /* HomeTravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTravelTableViewCell.swift; sourceTree = "<group>"; };
+		FF28922F21EE3C20005235E9 /* HomeSponsoredTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSponsoredTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1803,6 +1805,7 @@
 			children = (
 				D98258BA21EDDCAF0008A472 /* HomeSearchTableViewCell.swift */,
 				D98258BC21EDE23F0008A472 /* HomeTravelTableViewCell.swift */,
+				FF28922F21EE3C20005235E9 /* HomeSponsoredTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -2194,6 +2197,7 @@
 				90222AD92074C29300AF91F3 /* TableViewPickerCell.swift in Sources */,
 				90222FEB2074CC2000AF91F3 /* LoadingViewInterface.swift in Sources */,
 				901BAA552074E6EE001531EA /* ModuleBWireframe.swift in Sources */,
+				FF28923021EE3C20005235E9 /* HomeSponsoredTableViewCell.swift in Sources */,
 				D982585A21EDAB870008A472 /* RegisterViewInterface.swift in Sources */,
 				90222AD22074C29300AF91F3 /* MultiMediaManager.swift in Sources */,
 				901BAA2B2074E593001531EA /* ModuleAServiceType.swift in Sources */,

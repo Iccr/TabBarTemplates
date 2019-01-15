@@ -74,7 +74,7 @@ class HomeSearchTableViewCell: UITableViewCell {
     
     private func addAttributesToTextfield(textfield: UITextField?, placeholder: String) {
         let attributes = [NSAttributedStringKey.foregroundColor: UIColor.lightGray,
-                          .font : UIFont.systemFont(ofSize: 9, weight: .regular)]
+                          .font : UIFont.systemFont(ofSize: 12, weight: .regular)]
         
         textfield?.attributedPlaceholder = NSAttributedString(string: placeholder, attributes:attributes)
     }
