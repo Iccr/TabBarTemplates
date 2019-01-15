@@ -20,31 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-        
         FirebaseApp.configure()
-        
-        
-        
         NetworkActivityIndicatorManager.shared.isEnabled = true
         IQKeyboardManager.sharedManager().enable = true
         IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
         loggerEnabled = isDebug
-        
-       
-        
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        
-        
         self.configureNavBar()
         self.configureTabBar()
-        
-
-            self.entryPoint()
-
-        
+        self.entryPoint()
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
     }
