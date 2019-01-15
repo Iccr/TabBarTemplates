@@ -21,14 +21,11 @@
         <!--Login-->
         <scene sceneID="R60-Pu-Hpy">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" title="Login" id="HSb-ou-7T5" customClass="LoginViewController" customModule="GME_Remit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="Login" id="HSb-ou-7T5" customClass="LoginViewController" customModule="TabController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EkR-vb-8Ew">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page1_image" translatesAutoresizingMaskIntoConstraints="NO" id="Nln-OL-oSs">
-                                <rect key="frame" x="20" y="592" width="335" height="75"/>
-                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="zm2-31-DT1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
@@ -179,7 +176,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqa-0q-2EH">
-                                                                <rect key="frame" x="85" y="44" width="87" height="25"/>
+                                                                <rect key="frame" x="93" y="44" width="87" height="25"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="87" id="nlf-y6-7jX"/>
                                                                     <constraint firstAttribute="height" constant="25" id="pNr-CR-bhL"/>
@@ -193,10 +190,10 @@
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New to GME?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZa-bQ-H7i">
-                                                                <rect key="frame" x="2" y="49" width="82" height="17"/>
+                                                                <rect key="frame" x="2" y="49" width="90" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="17" id="8dI-um-hz2"/>
-                                                                    <constraint firstAttribute="width" constant="82" id="n2H-KT-zZD"/>
+                                                                    <constraint firstAttribute="width" constant="90" id="n2H-KT-zZD"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14"/>
                                                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
@@ -267,10 +264,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="zm2-31-DT1" secondAttribute="bottom" id="0x0-O8-7Lv"/>
-                            <constraint firstItem="mwG-gr-gUP" firstAttribute="bottom" secondItem="Nln-OL-oSs" secondAttribute="bottom" id="3ay-uF-gF8"/>
                             <constraint firstItem="zm2-31-DT1" firstAttribute="top" secondItem="EkR-vb-8Ew" secondAttribute="top" id="3nh-rG-oEM"/>
-                            <constraint firstItem="mwG-gr-gUP" firstAttribute="trailing" secondItem="Nln-OL-oSs" secondAttribute="trailing" constant="20" id="Ffk-Ha-R8S"/>
-                            <constraint firstItem="Nln-OL-oSs" firstAttribute="leading" secondItem="mwG-gr-gUP" secondAttribute="leading" constant="20" id="Sli-68-xvI"/>
                             <constraint firstItem="zm2-31-DT1" firstAttribute="leading" secondItem="mwG-gr-gUP" secondAttribute="leading" id="VCB-aA-Z1n"/>
                             <constraint firstItem="zm2-31-DT1" firstAttribute="trailing" secondItem="mwG-gr-gUP" secondAttribute="trailing" id="Xo7-vs-IwH"/>
                             <constraint firstItem="zm2-31-DT1" firstAttribute="width" secondItem="EkR-vb-8Ew" secondAttribute="width" id="sB5-q4-RBd"/>
@@ -283,7 +277,6 @@
                         <outlet property="forgotPasswordView" destination="T4Z-0g-COi" id="Y6x-bL-34m"/>
                         <outlet property="headerTitle" destination="dYY-qS-wfk" id="WkD-vI-fRr"/>
                         <outlet property="loginButton" destination="5Un-Jj-Afo" id="Mkf-hN-nhv"/>
-                        <outlet property="logoImageView" destination="Nln-OL-oSs" id="pux-Q4-R75"/>
                         <outlet property="passwordBackgroundView" destination="R26-UF-dDJ" id="dx5-Av-U0f"/>
                         <outlet property="passwordTextField" destination="QK2-zk-MJD" id="T4q-gs-lt0"/>
                         <outlet property="subtitle" destination="KXD-E1-iQq" id="ZFR-T0-5Nx"/>
@@ -314,8 +307,5 @@
             <point key="canvasLocation" x="-92" y="232.53373313343329"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="page1_image" width="300" height="75"/>
-    </resources>
     <color key="tintColor" red="0.78177064659999995" green="0.55228364470000002" blue="0.018981300289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

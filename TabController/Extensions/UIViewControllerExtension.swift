@@ -38,6 +38,12 @@ extension UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    func alertWithOk(message: String?, title: String? = "Error", okTitle: String? = "Ok", style: UIAlertControllerStyle? = .alert, OkStyle: UIAlertActionStyle = .default, okAction: (()->())? = nil) {
+        let alertController = getAlert(message: message, title: title, style: style)
+        alertController.addAction(title: okTitle,style: OkStyle, handler: okAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     func alertWithOkCancel(message: String?, title: String? = "text_error".localized(), okTitle: String? = "btn_okay".localized(), style: UIAlertControllerStyle? = .alert, cancelTitle: String? = "text_cancel".localized(), OkStyle: UIAlertActionStyle = .default, cancelStyle: UIAlertActionStyle = .default, okAction: (()->())? = nil, cancelAction: (()->())? = nil) {
         let alertController = getAlert(message: message, title: title, style: style)
         alertController.addAction(title: okTitle,style: OkStyle, handler: okAction)

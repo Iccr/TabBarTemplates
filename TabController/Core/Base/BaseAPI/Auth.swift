@@ -30,6 +30,7 @@ class Auth {
     
     let manager: SessionManager
 
+    let baseUrl = "blablabla.com"
     
     static let sharedInstance = Auth()
     
@@ -39,15 +40,8 @@ class Auth {
     }
 
     func getUUID() -> String {
-        
-        let uuid = UserDefaults.standard.object(forKey: AppConstants.uuid) as? String
-                if uuid != nil {
-                    return uuid!
-                } else {
-                    let uuid = UUID().uuidString
-                    UserDefaults.standard.set(uuid, forKey: AppConstants.uuid)
-                    return uuid
-                }
+        let uuid = UUID().uuidString
+        return  uuid
     }
     
     func getContentHeaderBeforeLogin() -> [String: String] {

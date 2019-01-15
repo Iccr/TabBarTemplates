@@ -69,7 +69,7 @@ extension LoginInteractor: LoginInteractorInput {
 
             let accessCode = user?.accessCode ?? ""
             let accessCodeBase64 = accessCode
-            Utility.save(user: user, accessCodeBase64: accessCodeBase64, password: password, login: true)
+//            Utility.save(user: user, accessCodeBase64: accessCodeBase64, password: password, login: true)
             
           self.output?.loggedIn()
             

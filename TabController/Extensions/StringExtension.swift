@@ -24,6 +24,11 @@ extension String {
             return nil
         }
     }
+    
+    func toBase64() -> String {
+        let data = self.data(using: String.Encoding.utf8)
+        return data!.base64EncodedString()
+    }
 }
 
 

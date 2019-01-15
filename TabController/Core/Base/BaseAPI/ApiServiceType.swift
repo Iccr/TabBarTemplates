@@ -9,13 +9,13 @@
 import Foundation
 
 protocol ApiServiceType {
-    var auth: RestApiMananger {get}
+    var auth: Auth {get}
     var baseUrl: String  {get}
 }
 
 extension ApiServiceType {
-    var auth: RestApiMananger {return RestApiMananger.sharedInstance}
-    var baseUrl: String {return UrlManager.sharedInstance.baseURL}
+    var auth: Auth {return Auth.sharedInstance}
+    var baseUrl: String {return Auth.sharedInstance.baseUrl}
 }
 
 

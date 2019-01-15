@@ -59,7 +59,7 @@ class SplashScreenViewController: UIViewController {
     
     private func hideNavBar() {
         self.navigationController?.isNavigationBarHidden = true
-        self.navigationController?.navigationBar.barTintColor = AppConstants.themeRedColor
+        self.navigationController?.navigationBar.barTintColor = AppConstants.themWhiteColor
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()

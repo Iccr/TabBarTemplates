@@ -41,13 +41,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func entryPoint() {
-        let initialWireframe = LoadingWireframe()
-        window.map(initialWireframe.openMainViewIn(window:))
-//        window.map(initialWireframe.openMainViewIn(window: window))
-//        let initialWireframe = LoadingWireframe()
-//        window.map(initialWireframe.openMainViewIn(window:))
-//        let initialWireframe = EulaAgreementWireframe()
-//        window.map(initialWireframe.openMainViewIn(window:))
+            let _default = UserDefaults.standard
+            if let loginStatus = _default.string(forKey:  UserKeys.accessCode) {
+                let mainWireFrame = MainWireframe.shared
+                self.window?.rootViewController = mainWireFrame.getMainView()
+            }else {
+                // go to splashscreen
+                let splashWireframe = SplashScreenWireframe()
+                let nav = UINavigationController.init(rootViewController: splashWireframe.getMainView())
+                self.window?.rootViewController = nav
+            }
+
     }
     
     
@@ -63,9 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navBarAppearance.titleTextAttributes = [
             NSAttributedStringKey.foregroundColor: Colors.NavBar.tint,
             NSAttributedStringKey.font: font]
-        
-//        navBarAppearance.backIndicatorImage = #imageLiteral(resourceName: "back")
-//        navBarAppearance.backIndicatorTransitionMaskImage = #imageLiteral(resourceName: "back")
+    
         navBarAppearance.tintColor = Colors.NavBar.tint
     }
     

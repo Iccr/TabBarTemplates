@@ -21,7 +21,7 @@ struct Colors {
     
     struct NavBar {
         static let barTint = UIColor.white
-        static let tint = UIColor(hex: "#535353")
+        static let tint = UIColor.black
         static let shadow = Colors.separator
     }
     

@@ -64,11 +64,15 @@ struct ApiConstants {
 }
 
 
-class AppConstants {
+struct AppConstants {
     static let dateFormat = "yyyy-MM-dd"
     static let humanReadableDateFormat = "MMM d, yyyy"
     static let themeRedColor = UIColor.init(hex: "#ed1b24")
     static let themeDarkRedColor = UIColor.init(hex: "#be0007")
     static let themeBlueColor = UIColor.init(hex: "#303e9f") // 2D368F
     static let themWhiteColor = UIColor.init(hex: "#ffffff")
+}
+
+struct UserKeys {
+    static let accessCode = "accessCode"
 }

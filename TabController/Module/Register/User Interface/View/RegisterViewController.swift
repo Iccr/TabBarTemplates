@@ -31,7 +31,6 @@ class RegisterViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.setupPicturedNavBar()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -75,7 +74,7 @@ class RegisterViewController: UIViewController {
     
     private func setup() {
         // all setup should be done here
-        self.setupPicturedNavBar()
+//        self.setupPicturedNavBar()
         self.setupDatePicker()
        
     }

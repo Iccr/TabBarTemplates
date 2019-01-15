@@ -134,7 +134,7 @@ class LoginViewController: UIViewController {
     }
     
     private func setupNavBar() {
-        self.setupPicturedNavBar()
+        self.navigationController?.isNavigationBarHidden = false
     }
 }
 
