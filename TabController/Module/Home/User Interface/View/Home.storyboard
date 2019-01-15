@@ -49,7 +49,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vaq-hm-bVa">
-                                                    <rect key="frame" x="0.0" y="-10" width="375" height="450.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="450.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="t6c-aA-AIE">
                                                             <rect key="frame" x="8" y="18" width="359" height="387.5"/>
@@ -72,10 +72,10 @@
                                                                                                     <nil key="textColor"/>
                                                                                                     <nil key="highlightedColor"/>
                                                                                                 </label>
-                                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Travel" translatesAutoresizingMaskIntoConstraints="NO" id="hbx-gn-EUi">
+                                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArro" translatesAutoresizingMaskIntoConstraints="NO" id="hbx-gn-EUi">
                                                                                                     <rect key="frame" x="89" y="7" width="30" height="30.5"/>
                                                                                                 </imageView>
-                                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Travel" translatesAutoresizingMaskIntoConstraints="NO" id="Cha-6r-twt">
+                                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightLeftArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Cha-6r-twt">
                                                                                                     <rect key="frame" x="56" y="7" width="30" height="30.5"/>
                                                                                                     <constraints>
                                                                                                         <constraint firstAttribute="width" secondItem="Cha-6r-twt" secondAttribute="height" multiplier="1:1" id="7ti-V2-frg"/>
@@ -122,10 +122,10 @@
                                                                                                     <nil key="textColor"/>
                                                                                                     <nil key="highlightedColor"/>
                                                                                                 </label>
-                                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Travel" translatesAutoresizingMaskIntoConstraints="NO" id="r7F-ZX-Uqq">
+                                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArro" translatesAutoresizingMaskIntoConstraints="NO" id="r7F-ZX-Uqq">
                                                                                                     <rect key="frame" x="109" y="7" width="30" height="30.5"/>
                                                                                                 </imageView>
-                                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Travel" translatesAutoresizingMaskIntoConstraints="NO" id="ANb-Ih-FAv">
+                                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="ANb-Ih-FAv">
                                                                                                     <rect key="frame" x="76" y="7" width="30" height="30.5"/>
                                                                                                     <constraints>
                                                                                                         <constraint firstAttribute="height" constant="30" id="S5v-Oi-Kfi"/>
@@ -261,7 +261,7 @@
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="t6c-aA-AIE" secondAttribute="trailing" constant="8" id="36S-Lh-z0X"/>
                                                         <constraint firstItem="t6c-aA-AIE" firstAttribute="leading" secondItem="Vaq-hm-bVa" secondAttribute="leading" constant="8" id="Cbs-5k-SRB"/>
@@ -272,9 +272,9 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="Vaq-hm-bVa" secondAttribute="bottom" id="1Ya-wI-YUS"/>
+                                                <constraint firstAttribute="bottom" secondItem="Vaq-hm-bVa" secondAttribute="bottom" constant="2" id="1Ya-wI-YUS"/>
                                                 <constraint firstItem="Vaq-hm-bVa" firstAttribute="leading" secondItem="u26-83-F8o" secondAttribute="leading" id="MGA-8L-r5h"/>
-                                                <constraint firstItem="Vaq-hm-bVa" firstAttribute="top" secondItem="u26-83-F8o" secondAttribute="top" constant="-10" id="MtN-yB-Rbr"/>
+                                                <constraint firstItem="Vaq-hm-bVa" firstAttribute="top" secondItem="u26-83-F8o" secondAttribute="top" id="MtN-yB-Rbr"/>
                                                 <constraint firstAttribute="trailing" secondItem="Vaq-hm-bVa" secondAttribute="trailing" id="ax7-fW-xkb"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -313,7 +313,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Travel" width="800" height="400"/>
+        <image name="Travel" width="400" height="200"/>
+        <image name="downArro" width="51" height="46"/>
+        <image name="rightLeftArrow" width="56" height="42"/>
+        <image name="user" width="61" height="46"/>
     </resources>
     <color key="tintColor" red="0.78177064659999995" green="0.55228364470000002" blue="0.018981300289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

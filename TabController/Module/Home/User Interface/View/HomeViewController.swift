@@ -94,8 +94,6 @@ extension HomeViewController: UITableViewDataSource {
     private func configureSearchCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeSearchTableViewCell") as! HomeSearchTableViewCell
         cell.setup()
-        cell.layer.cornerRadius = 10
-        cell.clipsToBounds = true
         return cell
     }
     

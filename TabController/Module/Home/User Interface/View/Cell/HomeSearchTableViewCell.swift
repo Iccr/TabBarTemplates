@@ -30,13 +30,16 @@ class HomeSearchTableViewCell: UITableViewCell {
     private func configureViews() {
         setupShadows()
         searchButton.rounded()
-         
+        self.backGroundView.layer.cornerRadius = 10
+//        self.backGroundView.clipsToBounds = true
     }
     
     private func setupShadows() {
         [fromDestinationTextField, toDestinationTextField, checkInDateTextField, checkOutDateTextField].forEach({
-            $0?.layer.borderWidth = 0.1
-            $0?.layer.addShadow(offset: CGSize.init(width: 1, height: 1.8))
+            $0?.layer.borderWidth = 1
+            $0?.layer.borderColor = UIColor.init(hex: "#F8F8F8", alpha: 1).cgColor
+            
+            $0?.layer.addShadow(offset: CGSize.init(width: 1.5, height: 2))
         })
         self.addAttributesToTextfield(textfield: fromDestinationTextField, placeholder: "From")
         self.addAttributesToTextfield(textfield: toDestinationTextField, placeholder: "To")
