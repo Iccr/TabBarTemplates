@@ -189,6 +189,17 @@
 		D982588A21EDB0F80008A472 /* ExtensionJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982588921EDB0F80008A472 /* ExtensionJSON.swift */; };
 		D982588C21EDB1B20008A472 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982588B21EDB1B20008A472 /* User.swift */; };
 		D982588E21EDB2270008A472 /* ResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982588D21EDB2270008A472 /* ResponseMessage.swift */; };
+		D98258A821EDBDAE0008A472 /* HomeModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982589521EDBDAE0008A472 /* HomeModuleInterface.swift */; };
+		D98258A921EDBDAE0008A472 /* HomeServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982589821EDBDAE0008A472 /* HomeServiceType.swift */; };
+		D98258AA21EDBDAE0008A472 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982589921EDBDAE0008A472 /* HomeService.swift */; };
+		D98258AB21EDBDAE0008A472 /* HomeInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982589B21EDBDAE0008A472 /* HomeInteractorIO.swift */; };
+		D98258AC21EDBDAE0008A472 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982589C21EDBDAE0008A472 /* HomeInteractor.swift */; };
+		D98258AD21EDBDAE0008A472 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982589F21EDBDAE0008A472 /* HomePresenter.swift */; };
+		D98258AE21EDBDAE0008A472 /* HomeWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258A121EDBDAE0008A472 /* HomeWireframeInput.swift */; };
+		D98258AF21EDBDAE0008A472 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258A221EDBDAE0008A472 /* HomeWireframe.swift */; };
+		D98258B021EDBDAE0008A472 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98258A521EDBDAE0008A472 /* Home.storyboard */; };
+		D98258B121EDBDAE0008A472 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258A621EDBDAE0008A472 /* HomeViewController.swift */; };
+		D98258B221EDBDAE0008A472 /* HomeViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258A721EDBDAE0008A472 /* HomeViewInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -406,6 +417,17 @@
 		D982588921EDB0F80008A472 /* ExtensionJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionJSON.swift; sourceTree = "<group>"; };
 		D982588B21EDB1B20008A472 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D982588D21EDB2270008A472 /* ResponseMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMessage.swift; sourceTree = "<group>"; };
+		D982589521EDBDAE0008A472 /* HomeModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleInterface.swift; sourceTree = "<group>"; };
+		D982589821EDBDAE0008A472 /* HomeServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeServiceType.swift; sourceTree = "<group>"; };
+		D982589921EDBDAE0008A472 /* HomeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		D982589B21EDBDAE0008A472 /* HomeInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractorIO.swift; sourceTree = "<group>"; };
+		D982589C21EDBDAE0008A472 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		D982589F21EDBDAE0008A472 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		D98258A121EDBDAE0008A472 /* HomeWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireframeInput.swift; sourceTree = "<group>"; };
+		D98258A221EDBDAE0008A472 /* HomeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		D98258A521EDBDAE0008A472 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D98258A621EDBDAE0008A472 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D98258A721EDBDAE0008A472 /* HomeViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1090,6 +1112,7 @@
 		90222FCC2074CBFF00AF91F3 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				D982589321EDBDAE0008A472 /* Home */,
 				D982586721EDB0690008A472 /* ForgotPassword */,
 				D982581D21EDAB860008A472 /* Login */,
 				D982583221EDAB870008A472 /* Register */,
@@ -1677,6 +1700,96 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		D982589321EDBDAE0008A472 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D982589421EDBDAE0008A472 /* Module Interface */,
+				D982589621EDBDAE0008A472 /* Application Logic */,
+				D982589D21EDBDAE0008A472 /* User Interface */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D982589421EDBDAE0008A472 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D982589521EDBDAE0008A472 /* HomeModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		D982589621EDBDAE0008A472 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				D982589721EDBDAE0008A472 /* Service */,
+				D982589A21EDBDAE0008A472 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		D982589721EDBDAE0008A472 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D982589821EDBDAE0008A472 /* HomeServiceType.swift */,
+				D982589921EDBDAE0008A472 /* HomeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D982589A21EDBDAE0008A472 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D982589B21EDBDAE0008A472 /* HomeInteractorIO.swift */,
+				D982589C21EDBDAE0008A472 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D982589D21EDBDAE0008A472 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D982589E21EDBDAE0008A472 /* Presenter */,
+				D98258A021EDBDAE0008A472 /* Wireframe */,
+				D98258A321EDBDAE0008A472 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		D982589E21EDBDAE0008A472 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D982589F21EDBDAE0008A472 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D98258A021EDBDAE0008A472 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				D98258A121EDBDAE0008A472 /* HomeWireframeInput.swift */,
+				D98258A221EDBDAE0008A472 /* HomeWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D98258A321EDBDAE0008A472 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D98258A421EDBDAE0008A472 /* ViewModels */,
+				D98258A521EDBDAE0008A472 /* Home.storyboard */,
+				D98258A621EDBDAE0008A472 /* HomeViewController.swift */,
+				D98258A721EDBDAE0008A472 /* HomeViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D98258A421EDBDAE0008A472 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1808,6 +1921,7 @@
 				90222AE82074C4F200AF91F3 /* Localizable.strings in Resources */,
 				90222ADD2074C29300AF91F3 /* Storyboard.storyboard in Resources */,
 				90222AED2074C77A00AF91F3 /* GoogleService-Info.plist in Resources */,
+				D98258B021EDBDAE0008A472 /* Home.storyboard in Resources */,
 				D982581B21EDA9E70008A472 /* SplashScreen.storyboard in Resources */,
 				901BAA9C2074E84B001531EA /* ModuleD.storyboard in Resources */,
 				90222AEA2074C4F200AF91F3 /* Localization.storyboard in Resources */,
@@ -1975,12 +2089,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98258A821EDBDAE0008A472 /* HomeModuleInterface.swift in Sources */,
 				D982586621EDAEAC0008A472 /* Utility.swift in Sources */,
 				D982584C21EDAB870008A472 /* LoginPresenter.swift in Sources */,
 				901BAA982074E84B001531EA /* ModuleDService.swift in Sources */,
 				901BAA7B2074E836001531EA /* ModuleCModuleInterface.swift in Sources */,
 				901BAA972074E84B001531EA /* ModuleDInteractorIO.swift in Sources */,
 				D982588521EDB0690008A472 /* ForgotPasswordViewController.swift in Sources */,
+				D98258B221EDBDAE0008A472 /* HomeViewInterface.swift in Sources */,
 				D982585421EDAB870008A472 /* RegisterService.swift in Sources */,
 				901BAA4E2074E6EE001531EA /* ModuleBService.swift in Sources */,
 				D982585121EDAB870008A472 /* LoginViewController.swift in Sources */,
@@ -1990,6 +2106,7 @@
 				D982587E21EDB0690008A472 /* ForgotPasswordService.swift in Sources */,
 				901BAA532074E6EE001531EA /* ModuleBViewController.swift in Sources */,
 				901BAAC12074E876001531EA /* ModuleEPresenter.swift in Sources */,
+				D98258B121EDBDAE0008A472 /* HomeViewController.swift in Sources */,
 				90222AEB2074C4F200AF91F3 /* LocalizationViewController.swift in Sources */,
 				90222A982074BF5500AF91F3 /* Utilities.swift in Sources */,
 				90C5EAC92074DC21009EBC01 /* MainViewInterface.swift in Sources */,
@@ -2026,14 +2143,18 @@
 				901BAA992074E84B001531EA /* ModuleDServiceType.swift in Sources */,
 				D982584E21EDAB870008A472 /* LoginWireframeInput.swift in Sources */,
 				D982585921EDAB870008A472 /* RegisterWireframe.swift in Sources */,
+				D98258AE21EDBDAE0008A472 /* HomeWireframeInput.swift in Sources */,
 				901BAA962074E84B001531EA /* ModuleDInteractor.swift in Sources */,
+				D98258AB21EDBDAE0008A472 /* HomeInteractorIO.swift in Sources */,
 				D982581321EDA9E70008A472 /* SplashScreenService.swift in Sources */,
 				D982584821EDAB870008A472 /* LoginService.swift in Sources */,
 				D982588A21EDB0F80008A472 /* ExtensionJSON.swift in Sources */,
 				901BAAC42074E876001531EA /* ModuleEViewInterface.swift in Sources */,
+				D98258AF21EDBDAE0008A472 /* HomeWireframe.swift in Sources */,
 				901BAA562074E6EE001531EA /* ModuleBWireframeInput.swift in Sources */,
 				90222AD52074C29300AF91F3 /* SocialAuthenticator.swift in Sources */,
 				90222FEF2074CC2000AF91F3 /* LoadingInteractorIO.swift in Sources */,
+				D98258A921EDBDAE0008A472 /* HomeServiceType.swift in Sources */,
 				901BAAC52074E876001531EA /* ModuleEWireframe.swift in Sources */,
 				90C5EACD2074DC83009EBC01 /* UINavigationBarExtension.swift in Sources */,
 				90222AB12074C1C200AF91F3 /* DateFormatterExtension.swift in Sources */,
@@ -2082,12 +2203,14 @@
 				901BAA502074E6EE001531EA /* ModuleBModuleInterface.swift in Sources */,
 				D982584921EDAB870008A472 /* LoginServiceType.swift in Sources */,
 				901BAAC62074E876001531EA /* ModuleEWireframeInput.swift in Sources */,
+				D98258AA21EDBDAE0008A472 /* HomeService.swift in Sources */,
 				D982584721EDAB870008A472 /* LoginModuleInterface.swift in Sources */,
 				90222FEC2074CC2000AF91F3 /* LoadingWireframe.swift in Sources */,
 				901BAA9E2074E84B001531EA /* ModuleDViewInterface.swift in Sources */,
 				901BAA302074E593001531EA /* ModuleAWireframe.swift in Sources */,
 				901BAA4D2074E6ED001531EA /* ModuleBInteractorIO.swift in Sources */,
 				901BAA792074E836001531EA /* ModuleCService.swift in Sources */,
+				D98258AC21EDBDAE0008A472 /* HomeInteractor.swift in Sources */,
 				901BAA512074E6EE001531EA /* ModuleBPresenter.swift in Sources */,
 				901BAA762074E836001531EA /* ModuleCWireframeInput.swift in Sources */,
 				D982585E21EDAC610008A472 /* ApiServiceType.swift in Sources */,
@@ -2113,6 +2236,7 @@
 				901BAABE2074E876001531EA /* ModuleEService.swift in Sources */,
 				90222FF02074CC2000AF91F3 /* LoadingService.swift in Sources */,
 				901BAA732074E836001531EA /* ModuleCViewController.swift in Sources */,
+				D98258AD21EDBDAE0008A472 /* HomePresenter.swift in Sources */,
 				90C5EAC82074DC21009EBC01 /* MainViewController.swift in Sources */,
 				90C5EAC52074DC21009EBC01 /* MainServiceType.swift in Sources */,
 				901BAA542074E6EE001531EA /* ModuleBViewInterface.swift in Sources */,

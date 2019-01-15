@@ -41,17 +41,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func entryPoint() {
+        self.openMainView()
+        return
+        
             let _default = UserDefaults.standard
             if let loginStatus = _default.string(forKey:  UserKeys.accessCode) {
-                let mainWireFrame = MainWireframe.shared
-                self.window?.rootViewController = mainWireFrame.getMainView()
+                self.openMainView()
             }else {
                 // go to splashscreen
-                let splashWireframe = SplashScreenWireframe()
-                let nav = UINavigationController.init(rootViewController: splashWireframe.getMainView())
-                self.window?.rootViewController = nav
+                self.openSplash()
             }
-
+    }
+    
+    private func openMainView() {
+        let mainWireFrame = MainWireframe.shared
+        self.window?.rootViewController = mainWireFrame.getMainView()
+    }
+    
+    private func openSplash() {
+        let splashWireframe = SplashScreenWireframe()
+        let nav = UINavigationController.init(rootViewController: splashWireframe.getMainView())
+        self.window?.rootViewController = nav
     }
     
     

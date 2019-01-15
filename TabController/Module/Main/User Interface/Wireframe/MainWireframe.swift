@@ -12,6 +12,7 @@ import UIKit
 class MainWireframe {
     static let shared: MainWireframe = MainWireframe()
     weak  var view: UIViewController!
+    private lazy var homeWireFrame = HomeWireframe()
     private lazy var loadingWireFrame: LoadingWireframeInput = {LoadingWireframe()}()
     private lazy var moduleAWireFrame: ModuleAWireframeInput = {ModuleAWireframe()}()
     private lazy var moduleBWireFrame: ModuleBWireframeInput = {ModuleBWireframe()}()
@@ -31,14 +32,14 @@ extension MainWireframe: MainWireframeInput {
     func getMainView() -> UIViewController {
         let viewController =  MainViewController()
         // viewcontrollers for tabBar
-        let viewcontroller1 = moduleAWireFrame.getMainView()
+        let viewcontroller1 = homeWireFrame.getMainView()
         let viewcontroller2 = moduleBWireFrame.getMainView()
         let viewcontroller3 = moduleCWireFrame.getMainView()
         let viewcontroller4 = moduleDWireFrame.getMainView()
         let viewcontroller5 = moduleEWireFrame.getMainView()
 
         // wrap it in navigation bar
-        let navViewController1 = UINavigationController(rootViewController: viewcontroller1)
+        let navViewController1 = viewcontroller1
         let navViewController2 = UINavigationController(rootViewController: viewcontroller2)
         let navViewController3 = UINavigationController(rootViewController: viewcontroller3)
         let navViewController4 = UINavigationController(rootViewController: viewcontroller4)
