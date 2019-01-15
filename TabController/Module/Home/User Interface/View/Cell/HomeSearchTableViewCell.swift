@@ -31,7 +31,31 @@ class HomeSearchTableViewCell: UITableViewCell {
         setupShadows()
         searchButton.rounded()
         self.backGroundView.layer.cornerRadius = 10
-//        self.backGroundView.clipsToBounds = true
+        // destinations textfields
+        let yelloImageView = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+         yelloImageView.image = UIImage.init(named: "yelloLocation")
+        let blueDotImageView  = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+       blueDotImageView.image = UIImage.init(named: "blueDot.png")
+        yelloImageView.contentMode = .scaleAspectFit
+        blueDotImageView.contentMode = .scaleAspectFit
+        fromDestinationTextField.leftView = yelloImageView
+        fromDestinationTextField.leftViewMode = .always
+        toDestinationTextField.leftView = blueDotImageView
+        toDestinationTextField.leftViewMode = .always
+        
+        // dates textfields
+        let calendarImageView1 = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        calendarImageView1.image = UIImage.init(named: "calendar.png")
+        let calendarImageView2  = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        calendarImageView2.image = UIImage.init(named: "calendar.png")
+        calendarImageView1.contentMode = .scaleAspectFit
+        calendarImageView2.contentMode = .scaleAspectFit
+        checkInDateTextField.leftView = calendarImageView1
+        checkInDateTextField.leftViewMode = .always
+        checkOutDateTextField.leftView = calendarImageView2
+        checkOutDateTextField.leftViewMode = .always
+
+        
     }
     
     private func setupShadows() {
