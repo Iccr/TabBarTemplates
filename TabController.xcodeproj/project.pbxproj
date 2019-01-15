@@ -200,6 +200,7 @@
 		D98258B021EDBDAE0008A472 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98258A521EDBDAE0008A472 /* Home.storyboard */; };
 		D98258B121EDBDAE0008A472 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258A621EDBDAE0008A472 /* HomeViewController.swift */; };
 		D98258B221EDBDAE0008A472 /* HomeViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258A721EDBDAE0008A472 /* HomeViewInterface.swift */; };
+		D98258B821EDCED20008A472 /* CalayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258B721EDCED20008A472 /* CalayerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -428,6 +429,7 @@
 		D98258A521EDBDAE0008A472 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		D98258A621EDBDAE0008A472 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D98258A721EDBDAE0008A472 /* HomeViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewInterface.swift; sourceTree = "<group>"; };
+		D98258B721EDCED20008A472 /* CalayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalayerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1032,6 +1034,7 @@
 				90222AAB2074C1C200AF91F3 /* UIDeviceExtension.swift */,
 				90222AAD2074C1C200AF91F3 /* UIViewExtension.swift */,
 				90222AAE2074C1C200AF91F3 /* URLExtension.swift */,
+				D98258B721EDCED20008A472 /* CalayerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -2105,6 +2108,7 @@
 				901BAA272074E593001531EA /* ModuleAModuleInterface.swift in Sources */,
 				D982587E21EDB0690008A472 /* ForgotPasswordService.swift in Sources */,
 				901BAA532074E6EE001531EA /* ModuleBViewController.swift in Sources */,
+				D98258B821EDCED20008A472 /* CalayerExtension.swift in Sources */,
 				901BAAC12074E876001531EA /* ModuleEPresenter.swift in Sources */,
 				D98258B121EDBDAE0008A472 /* HomeViewController.swift in Sources */,
 				90222AEB2074C4F200AF91F3 /* LocalizationViewController.swift in Sources */,

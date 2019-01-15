@@ -11,9 +11,15 @@ import UIKit
 class HomeViewController: UIViewController {
     
     // MARK: IBOutlets
-    
+    @IBOutlet weak var fromDestinationTextField: UITextField!
+    @IBOutlet weak var toDestinationTextField: UITextField!
+    @IBOutlet weak var checkInDateTextField: UITextField!
+    @IBOutlet weak var checkOutDateTextField: UITextField!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var fromDestinationBackGroundView: UIView!
     
     // MARK: Properties
+    
     
     var presenter: HomeModuleInterface?
     
@@ -31,7 +37,20 @@ class HomeViewController: UIViewController {
     
     private func setup() {
         // all setup should be done here
-       
+      configureViews()
+    
+    }
+    
+    private func configureViews() {
+        setupShadows()
+        searchButton.rounded()
+    }
+    
+    private func setupShadows() {
+        [fromDestinationTextField, toDestinationTextField, checkInDateTextField, checkOutDateTextField].forEach({
+            $0?.layer.borderWidth = 0.1
+            $0?.layer.addShadow(offset: CGSize.init(width: 1, height: 2.5))
+        })
     }
     
     override func setupTabItem() {
