@@ -10,20 +10,24 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    enum Cells: Int {
+        case image = 0
+        case search = 1
+    }
+    
     // MARK: IBOutlets
-    @IBOutlet weak var fromDestinationTextField: UITextField!
-    @IBOutlet weak var toDestinationTextField: UITextField!
-    @IBOutlet weak var checkInDateTextField: UITextField!
-    @IBOutlet weak var checkOutDateTextField: UITextField!
-    @IBOutlet weak var searchButton: UIButton!
-    @IBOutlet weak var fromDestinationBackGroundView: UIView!
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var travelmageView: UIImageView!
+    
+    
     
     // MARK: Properties
     
-    
+    var rows: [Cells] = [.image, .search]
     var presenter: HomeModuleInterface?
     
-
+    
     // MARK: VC's Life cycle
     
     override func viewDidLoad() {
@@ -37,32 +41,8 @@ class HomeViewController: UIViewController {
     
     private func setup() {
         // all setup should be done here
-      configureViews()
-    
-    }
-    
-    private func configureViews() {
-        setupShadows()
-        searchButton.rounded()
-    }
-    
-    private func setupShadows() {
-        [fromDestinationTextField, toDestinationTextField, checkInDateTextField, checkOutDateTextField].forEach({
-            $0?.layer.borderWidth = 0.1
-            $0?.layer.addShadow(offset: CGSize.init(width: 1, height: 1.8))
-        })
-        self.addAttributesToTextfield(textfield: fromDestinationTextField, placeholder: "From")
-        self.addAttributesToTextfield(textfield: toDestinationTextField, placeholder: "To")
-        self.addAttributesToTextfield(textfield: checkInDateTextField, placeholder: "Check in")
-        self.addAttributesToTextfield(textfield: checkOutDateTextField, placeholder: "Check out")
-        
-    }
-    
-    private func addAttributesToTextfield(textfield: UITextField?, placeholder: String) {
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor.lightGray,
-                          .font : UIFont.systemFont(ofSize: 9, weight: .regular)]
-        
-        textfield?.attributedPlaceholder = NSAttributedString(string: placeholder, attributes:attributes)
+        self.tableView.delegate = self
+        self.tableView.dataSource  = self
     }
     
     override func setupTabItem() {
@@ -75,3 +55,54 @@ class HomeViewController: UIViewController {
 extension HomeViewController: HomeViewInterface {
     
 }
+
+
+extension HomeViewController: UITableViewDelegate {
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        guard let index = Cells.init(rawValue: indexPath.row) else {return 0}
+        switch index {
+        case .image:
+            return self.travelmageView.bounds.height - 40
+        default:
+            return UITableViewAutomaticDimension
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+}
+
+extension HomeViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.rows.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let index = Cells.init(rawValue: indexPath.row) else {return UITableViewCell()}
+        
+        switch index {
+        case .image:
+            return  configureTravelImageCell(tableView: tableView, cellForRowAt: indexPath)
+        default:
+            return configureSearchCell(tableView: tableView, cellForRowAt: indexPath)
+        }
+    }
+    
+    private func configureSearchCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeSearchTableViewCell") as! HomeSearchTableViewCell
+        cell.setup()
+        cell.layer.cornerRadius = 10
+        cell.clipsToBounds = true
+        return cell
+    }
+    
+    private func configureTravelImageCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTravelTableViewCell") as! HomeTravelTableViewCell
+        return cell
+    }
+    
+}
+

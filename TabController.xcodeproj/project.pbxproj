@@ -201,6 +201,8 @@
 		D98258B121EDBDAE0008A472 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258A621EDBDAE0008A472 /* HomeViewController.swift */; };
 		D98258B221EDBDAE0008A472 /* HomeViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258A721EDBDAE0008A472 /* HomeViewInterface.swift */; };
 		D98258B821EDCED20008A472 /* CalayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258B721EDCED20008A472 /* CalayerExtension.swift */; };
+		D98258BB21EDDCAF0008A472 /* HomeSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258BA21EDDCAF0008A472 /* HomeSearchTableViewCell.swift */; };
+		D98258BD21EDE23F0008A472 /* HomeTravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98258BC21EDE23F0008A472 /* HomeTravelTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -430,6 +432,8 @@
 		D98258A621EDBDAE0008A472 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D98258A721EDBDAE0008A472 /* HomeViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewInterface.swift; sourceTree = "<group>"; };
 		D98258B721EDCED20008A472 /* CalayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalayerExtension.swift; sourceTree = "<group>"; };
+		D98258BA21EDDCAF0008A472 /* HomeSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchTableViewCell.swift; sourceTree = "<group>"; };
+		D98258BC21EDE23F0008A472 /* HomeTravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTravelTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1778,6 +1782,7 @@
 		D98258A321EDBDAE0008A472 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D98258B921EDDC9A0008A472 /* Cell */,
 				D98258A421EDBDAE0008A472 /* ViewModels */,
 				D98258A521EDBDAE0008A472 /* Home.storyboard */,
 				D98258A621EDBDAE0008A472 /* HomeViewController.swift */,
@@ -1791,6 +1796,15 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D98258B921EDDC9A0008A472 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D98258BA21EDDCAF0008A472 /* HomeSearchTableViewCell.swift */,
+				D98258BC21EDE23F0008A472 /* HomeTravelTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2209,6 +2223,7 @@
 				901BAAC62074E876001531EA /* ModuleEWireframeInput.swift in Sources */,
 				D98258AA21EDBDAE0008A472 /* HomeService.swift in Sources */,
 				D982584721EDAB870008A472 /* LoginModuleInterface.swift in Sources */,
+				D98258BD21EDE23F0008A472 /* HomeTravelTableViewCell.swift in Sources */,
 				90222FEC2074CC2000AF91F3 /* LoadingWireframe.swift in Sources */,
 				901BAA9E2074E84B001531EA /* ModuleDViewInterface.swift in Sources */,
 				901BAA302074E593001531EA /* ModuleAWireframe.swift in Sources */,
@@ -2238,6 +2253,7 @@
 				90222A9A2074BF5B00AF91F3 /* GlobalConstants.swift in Sources */,
 				90222AD32074C29300AF91F3 /* QRCodeScannerViewController.swift in Sources */,
 				901BAABE2074E876001531EA /* ModuleEService.swift in Sources */,
+				D98258BB21EDDCAF0008A472 /* HomeSearchTableViewCell.swift in Sources */,
 				90222FF02074CC2000AF91F3 /* LoadingService.swift in Sources */,
 				901BAA732074E836001531EA /* ModuleCViewController.swift in Sources */,
 				D98258AD21EDBDAE0008A472 /* HomePresenter.swift in Sources */,
