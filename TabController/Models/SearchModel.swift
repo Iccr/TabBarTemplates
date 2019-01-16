@@ -31,6 +31,8 @@ class SearchContainer: Mappable {
 class Vehicle: Mappable {
     
 
+    init() { }
+    
     
     required init?(map: Map) {
         

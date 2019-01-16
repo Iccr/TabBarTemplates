@@ -150,6 +150,7 @@
 		D901A08E21EEE91400EA8D3A /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901A08321EEE91300EA8D3A /* ListingViewController.swift */; };
 		D901A09021EEF3BB00EA8D3A /* SearchRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901A08F21EEF3BB00EA8D3A /* SearchRequestModel.swift */; };
 		D901A09221EEF72B00EA8D3A /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901A09121EEF72B00EA8D3A /* SearchModel.swift */; };
+		D901A09521EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901A09421EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift */; };
 		D982581221EDA9E70008A472 /* SplashScreenModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98257FF21EDA9E70008A472 /* SplashScreenModuleInterface.swift */; };
 		D982581321EDA9E70008A472 /* SplashScreenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580221EDA9E70008A472 /* SplashScreenService.swift */; };
 		D982581421EDA9E70008A472 /* SplashScreenServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580321EDA9E70008A472 /* SplashScreenServiceType.swift */; };
@@ -395,6 +396,7 @@
 		D901A08321EEE91300EA8D3A /* ListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
 		D901A08F21EEF3BB00EA8D3A /* SearchRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestModel.swift; sourceTree = "<group>"; };
 		D901A09121EEF72B00EA8D3A /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		D901A09421EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingModelsTableViewCell.swift; sourceTree = "<group>"; };
 		D98257FF21EDA9E70008A472 /* SplashScreenModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenModuleInterface.swift; sourceTree = "<group>"; };
 		D982580221EDA9E70008A472 /* SplashScreenService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenService.swift; sourceTree = "<group>"; };
 		D982580321EDA9E70008A472 /* SplashScreenServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenServiceType.swift; sourceTree = "<group>"; };
@@ -1433,6 +1435,7 @@
 		D901A07F21EEE91300EA8D3A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D901A09321EF1E6C00EA8D3A /* Cells */,
 				D901A08021EEE91300EA8D3A /* ViewModels */,
 				D901A08121EEE91300EA8D3A /* ListingViewInterface.swift */,
 				D901A08221EEE91300EA8D3A /* Listing.storyboard */,
@@ -1446,6 +1449,14 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D901A09321EF1E6C00EA8D3A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D901A09421EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		D98257FD21EDA9E70008A472 /* SplashScreen */ = {
@@ -2404,6 +2415,7 @@
 				90222A642074BBD800AF91F3 /* AppDelegate.swift in Sources */,
 				90222A9C2074BF6100AF91F3 /* AppConstant.swift in Sources */,
 				D982581221EDA9E70008A472 /* SplashScreenModuleInterface.swift in Sources */,
+				D901A09521EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift in Sources */,
 				D982581921EDA9E70008A472 /* SplashScreenWireframeInput.swift in Sources */,
 				D982587D21EDB0690008A472 /* ForgotPasswordServiceType.swift in Sources */,
 				D901A08621EEE91400EA8D3A /* ListingServiceType.swift in Sources */,
