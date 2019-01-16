@@ -1,5 +1,5 @@
 //
-//  VehicleListingServiceType.swift
+//  ListingServiceType.swift
 //  TabController
 //
 //  Created by gme_2 on 16/01/2019.

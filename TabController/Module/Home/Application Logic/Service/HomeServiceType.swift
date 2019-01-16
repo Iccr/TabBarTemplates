@@ -20,6 +20,7 @@ protocol VehicleSearchService: ApiServiceType {
 
 extension VehicleSearchService {
     func search(request: SearchRequestModel,  success: @escaping ([Vehicle]) -> (), failure: @escaping (Error) -> ()) {
+        success([])
         let params = request.serialize()
         let url = baseUrl + "blabvla/bla"
         auth.request(method: .get, url: url, params: params, success: { (response: SearchContainer) in

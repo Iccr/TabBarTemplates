@@ -39,7 +39,7 @@ extension MainWireframe: MainWireframeInput {
         let viewcontroller5 = moduleEWireFrame.getMainView()
 
         // wrap it in navigation bar
-        let navViewController1 = viewcontroller1
+        let navViewController1 = UINavigationController(rootViewController: viewcontroller1) 
         let navViewController2 = UINavigationController(rootViewController: viewcontroller2)
         let navViewController3 = UINavigationController(rootViewController: viewcontroller3)
         let navViewController4 = UINavigationController(rootViewController: viewcontroller4)

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--VehicleListing-->
+        <!--Listing-->
         <scene sceneID="R60-Pu-Hpy">
             <objects>
-                <viewController storyboardIdentifier="ListingViewController" title="VehicleListing" id="HSb-ou-7T5" customClass="ListingViewController" customModule="TabController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListingViewController" title="Listing" id="HSb-ou-7T5" customClass="ListingViewController" customModule="TabController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y1H-iV-BwG"/>
                         <viewControllerLayoutGuide type="bottom" id="PYB-Kq-ghm"/>
@@ -68,26 +68,59 @@
                                     <constraint firstAttribute="trailing" secondItem="GXv-KI-i07" secondAttribute="trailing" constant="10" id="VXh-pe-spQ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fd-nJ-hNi" userLabel="shadowView">
-                                <rect key="frame" x="0.0" y="39.5" width="375" height="0.5"/>
-                                <color key="backgroundColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="0.5" id="zEO-vY-49k"/>
-                                </constraints>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="loE-R9-eGD">
+                                <rect key="frame" x="8" y="62" width="339.5" height="60.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorted By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsX-TA-cKL">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="131" translatesAutoresizingMaskIntoConstraints="NO" id="1EQ-NW-5cm">
+                                        <rect key="frame" x="0.0" y="20.5" width="339.5" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="H9C-8a-IhM">
+                                                <rect key="frame" x="0.0" y="0.0" width="168.5" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eL0-7S-c6d">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120.5" height="40"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArro" translatesAutoresizingMaskIntoConstraints="NO" id="i6C-Km-7JY">
+                                                        <rect key="frame" x="128.5" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="ASe-lg-Ilb"/>
+                                                            <constraint firstAttribute="height" constant="40" id="O7F-UT-Sey"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vE8-5I-2c5">
+                                                <rect key="frame" x="299.5" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="TAR-g0-1sn"/>
+                                                    <constraint firstAttribute="height" constant="40" id="jNp-5q-VCB"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="filter"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8fd-nJ-hNi" firstAttribute="trailing" secondItem="xKY-uU-Bm0" secondAttribute="trailing" id="918-Yh-uX4"/>
                             <constraint firstAttribute="trailing" secondItem="xKY-uU-Bm0" secondAttribute="trailing" id="Lff-1R-H9d"/>
                             <constraint firstItem="xKY-uU-Bm0" firstAttribute="leading" secondItem="9Uc-9s-KgO" secondAttribute="leading" id="SUk-Ii-ZPq"/>
-                            <constraint firstItem="8fd-nJ-hNi" firstAttribute="bottom" secondItem="xKY-uU-Bm0" secondAttribute="bottom" id="VJB-E3-bBo"/>
                             <constraint firstItem="xKY-uU-Bm0" firstAttribute="top" secondItem="9Uc-9s-KgO" secondAttribute="top" id="VbX-9E-a5R"/>
-                            <constraint firstItem="8fd-nJ-hNi" firstAttribute="leading" secondItem="xKY-uU-Bm0" secondAttribute="leading" id="ZPH-6R-fCu"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="shadowView" destination="8fd-nJ-hNi" id="g6I-64-tnx"/>
+                        <outlet property="shadowView" destination="xKY-uU-Bm0" id="reh-q0-zsc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8je-5K-XuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -96,6 +129,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="downArro" width="51" height="46"/>
+        <image name="filter" width="32" height="27"/>
         <image name="share" width="36" height="27"/>
     </resources>
     <color key="tintColor" red="0.78177064659999995" green="0.55228364470000002" blue="0.018981300289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

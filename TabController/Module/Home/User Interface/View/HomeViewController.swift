@@ -49,6 +49,7 @@ class HomeViewController: UIViewController {
         // all setup should be done here
         self.tableView.delegate = self
         self.tableView.dataSource  = self
+        self.hideNavigation()
     }
     
     override func setupTabItem() {
@@ -59,7 +60,6 @@ class HomeViewController: UIViewController {
 
 // MARK: HomeViewInterface
 extension HomeViewController: HomeViewInterface {
-    
     func show(error: String) {
         self.alert(message: error)
     }

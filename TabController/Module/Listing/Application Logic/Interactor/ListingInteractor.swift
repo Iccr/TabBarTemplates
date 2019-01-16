@@ -26,8 +26,10 @@ class ListingInteractor {
     // MARK: Converting entities
 }
 
-// MARK: VehicleListing interactor input interface
+// MARK: Listing interactor input interface
 
 extension ListingInteractor: ListingInteractorInput {
-    
+    func viewIsReady() {
+        self.output?.show(models: self.models ?? [])
+    }
 }

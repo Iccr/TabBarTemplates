@@ -76,7 +76,7 @@ class HomeSearchTableViewCell: UITableViewCell {
     private func setupShadows() {
         [fromDestinationTextField, toDestinationTextField, checkInDateTextField, checkOutDateTextField].forEach({
             $0?.layer.borderWidth = 1
-            $0?.layer.borderColor = UIColor.init(hex: "#F8F8F8", alpha: 1).cgColor
+            $0?.layer.borderColor = AppConstants.textfieldShadowColor.cgColor
             
             $0?.layer.addShadow(offset: CGSize.init(width: 1.5, height: 2))
         })

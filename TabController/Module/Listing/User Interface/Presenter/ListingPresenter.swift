@@ -19,14 +19,18 @@ class ListingPresenter {
     // MARK: Converting entities
 }
 
- // MARK: VehicleListing module interface
+ // MARK: Listing module interface
 
 extension ListingPresenter: ListingModuleInterface {
-
+    func show(models: [Vehicle]) {
+        view?.show(models: models)
+    }
 }
 
-// MARK: VehicleListing interactor output interface
+// MARK: Listing interactor output interface
 
 extension ListingPresenter: ListingInteractorOutput {
-    
+    func viewIsReady() {
+        interactor?.viewIsReady()
+    }
 }

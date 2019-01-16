@@ -1,5 +1,5 @@
 //
-//  VehicleListingModuleInterface.swift
+//  ListingModuleInterface.swift
 //  TabController
 //
 //  Created by gme_2 on 16/01/2019.
@@ -7,5 +7,5 @@
 //
 
 protocol ListingModuleInterface: class {
-    
+    func viewIsReady()
 }

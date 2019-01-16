@@ -71,6 +71,7 @@ struct AppConstants {
     static let themeDarkRedColor = UIColor.init(hex: "#be0007")
     static let themeBlueColor = UIColor.init(hex: "#303e9f") // 2D368F
     static let themWhiteColor = UIColor.init(hex: "#ffffff")
+    static let textfieldShadowColor = UIColor.init(hex: "#F8F8F8", alpha: 1)
 }
 
 struct UserKeys {

@@ -1,5 +1,5 @@
 //
-//  VehicleListingViewController.swift
+//  ListingViewController.swift
 //  TabController
 //
 //  Created by gme_2 on 16/01/2019.
@@ -11,6 +11,7 @@ import UIKit
 class ListingViewController: UIViewController {
     
     // MARK: IBOutlets
+    var vehicles: [Vehicle]?
     
     @IBOutlet weak var shadowView: UIView!
     
@@ -32,11 +33,15 @@ class ListingViewController: UIViewController {
     
     private func setup() {
         // all setup should be done here
-       shadowView.layer.addShadow(with: UIColor.black)
+        self.showNavigation()
+        shadowView.layer.addShadow(with: UIColor.lightGray, offset: CGSize.init(width: 5, height: 5))
+        presenter?.viewIsReady()
     }
 }
 
-// MARK: VehicleListingViewInterface
+// MARK: ListingViewInterface
 extension ListingViewController: ListingViewInterface {
-    
+    func show(models: [Vehicle]) {
+        self.vehicles = models
+    }
 }

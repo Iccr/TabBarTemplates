@@ -72,6 +72,16 @@ extension UIViewController {
     }
 }
 
+extension UIViewController {
+    func showNavigation() {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
+    func hideNavigation() {
+        self.navigationController?.isNavigationBarHidden = true
+    }
+}
+
 
 extension UIAlertController {
     func addAction(title: String?, style: UIAlertActionStyle = .default, handler: (()->())? = nil) {

@@ -15,7 +15,7 @@ class ListingWireframe {
 
 extension ListingWireframe: ListingWireframeInput {
     
-    var storyboardName: String {return "VehicleListing"}
+    var storyboardName: String {return "Listing"}
     
     func getMainView() -> UIViewController {
         let service = ListingService()

@@ -1,5 +1,5 @@
 //
-//  VehicleListingViewInterface.swift
+//  ListingViewInterface.swift
 //  TabController
 //
 //  Created by gme_2 on 16/01/2019.
@@ -7,4 +7,5 @@
 //
 
 protocol ListingViewInterface: class {
+    func show(models: [Vehicle]) 
 }
