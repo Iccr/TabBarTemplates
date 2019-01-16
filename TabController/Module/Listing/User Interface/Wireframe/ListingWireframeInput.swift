@@ -1,5 +1,5 @@
 //
-//  VehicleListingWireframeInput.swift
+//  ListingWireframeInput.swift
 //  TabController
 //
 //  Created by gme_2 on 16/01/2019.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol VehicleListingWireframeInput: WireframeInput {
+protocol ListingWireframeInput: WireframeInput {
     
 }

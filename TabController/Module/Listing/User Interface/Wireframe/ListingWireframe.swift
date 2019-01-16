@@ -1,5 +1,5 @@
 //
-//  VehicleListingWireframe.swift
+//  ListingWireframe.swift
 //  TabController
 //
 //  Created by gme_2 on 16/01/2019.
@@ -8,19 +8,20 @@
 
 import UIKit
 
-class VehicleListingWireframe {
+class ListingWireframe {
      weak var view: UIViewController!
+    var models: [Vehicle]?
 }
 
-extension VehicleListingWireframe: VehicleListingWireframeInput {
+extension ListingWireframe: ListingWireframeInput {
     
     var storyboardName: String {return "VehicleListing"}
     
     func getMainView() -> UIViewController {
-        let service = VehicleListingService()
-        let interactor = VehicleListingInteractor(service: service)
-        let presenter = VehicleListingPresenter()
-        let viewController = viewControllerFromStoryboard(of: VehicleListingViewController.self)
+        let service = ListingService()
+        let interactor = ListingInteractor(service: service, models: self.models)
+        let presenter = ListingPresenter()
+        let viewController = viewControllerFromStoryboard(of: ListingViewController.self)
         
         viewController.presenter = presenter
         interactor.output = presenter
@@ -30,5 +31,10 @@ extension VehicleListingWireframe: VehicleListingWireframeInput {
         
         self.view = viewController
         return viewController
+    }
+    
+    func openList(models: [Vehicle], source: UINavigationController) {
+        self.models = models
+        self.pushMainView(in: source)
     }
 }

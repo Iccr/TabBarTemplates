@@ -6,6 +6,6 @@
 //Copyright © 2019 ccr. All rights reserved.
 //
 
-protocol VehicleListingModuleInterface: class {
+protocol ListingModuleInterface: class {
     
 }

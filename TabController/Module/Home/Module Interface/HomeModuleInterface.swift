@@ -7,5 +7,5 @@
 //
 
 protocol HomeModuleInterface: class {
-    
+    func search(request: SearchRequestModel)
 }

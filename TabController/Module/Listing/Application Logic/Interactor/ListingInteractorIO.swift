@@ -6,10 +6,10 @@
 //Copyright © 2019 ccr. All rights reserved.
 //
 
-protocol VehicleListingInteractorInput: class {
+protocol ListingInteractorInput: class {
 
 }
 
-protocol VehicleListingInteractorOutput: class {
+protocol ListingInteractorOutput: class {
 
 }

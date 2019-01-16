@@ -7,9 +7,10 @@
 //
 
 protocol HomeInteractorInput: class {
-
+    func search(request: SearchRequestModel)
 }
 
 protocol HomeInteractorOutput: class {
-
+    func show(models: [Vehicle])
+    func show(error: Error)
 }

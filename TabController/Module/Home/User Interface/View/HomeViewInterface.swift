@@ -7,4 +7,5 @@
 //
 
 protocol HomeViewInterface: class {
+    func show(error: String)
 }

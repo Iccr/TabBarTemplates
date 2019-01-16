@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol HomeSearchDelegate {
+    func search(model: SearchRequestModel)
+}
+
 class HomeViewController: UIViewController {
     
     enum Cells: Int {
@@ -24,6 +28,7 @@ class HomeViewController: UIViewController {
     
     
     // MARK: Properties
+
     
     var rows: [Cells] = [.image, .search, .sponsored]
     var presenter: HomeModuleInterface?
@@ -55,6 +60,9 @@ class HomeViewController: UIViewController {
 // MARK: HomeViewInterface
 extension HomeViewController: HomeViewInterface {
     
+    func show(error: String) {
+        self.alert(message: error)
+    }
 }
 
 
@@ -96,6 +104,7 @@ extension HomeViewController: UITableViewDataSource {
     
     private func configureSearchCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeSearchTableViewCell") as! HomeSearchTableViewCell
+        cell.searchdelegate = self
         cell.setup()
         return cell
     }
@@ -110,6 +119,10 @@ extension HomeViewController: UITableViewDataSource {
         cell.setup()
         return cell
     }
-    
 }
 
+extension HomeViewController: HomeSearchDelegate {
+    func search(model: SearchRequestModel) {
+        presenter?.search(request: model)
+    }
+}

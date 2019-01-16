@@ -1,5 +1,5 @@
 //
-//  VehicleListingInteractor.swift
+//  ListingInteractor.swift
 //  TabController
 //
 //  Created by gme_2 on 16/01/2019.
@@ -8,17 +8,19 @@
 
 import Foundation
 
-class VehicleListingInteractor {
+class ListingInteractor {
     
 	// MARK: Properties
+    var models: [Vehicle]?
     
-    weak var output: VehicleListingInteractorOutput?
-    private let service: VehicleListingServiceType
+    weak var output: ListingInteractorOutput?
+    private let service: ListingServiceType
     
     // MARK: Initialization
     
-    init(service: VehicleListingServiceType) {
+    init(service: ListingServiceType, models: [Vehicle]?) {
         self.service = service
+        self.models = models
     }
 
     // MARK: Converting entities
@@ -26,6 +28,6 @@ class VehicleListingInteractor {
 
 // MARK: VehicleListing interactor input interface
 
-extension VehicleListingInteractor: VehicleListingInteractorInput {
+extension ListingInteractor: ListingInteractorInput {
     
 }

@@ -1,5 +1,5 @@
 //
-//  VehicleListingService.swift
+//  ListingService.swift
 //  TabController
 //
 //  Created by gme_2 on 16/01/2019.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class VehicleListingService: VehicleListingServiceType {
+class ListingService: ListingServiceType {
     
     // MARK: Properties
     

@@ -7,7 +7,26 @@
 //
 
 import Foundation
+import Alamofire
 
-protocol HomeServiceType: class {
+protocol HomeServiceType: class, VehicleSearchService {
     
+}
+
+
+protocol VehicleSearchService: ApiServiceType {
+    func search(request: SearchRequestModel,  success: @escaping ([Vehicle]) -> (), failure: @escaping (Error) -> ())
+}
+
+extension VehicleSearchService {
+    func search(request: SearchRequestModel,  success: @escaping ([Vehicle]) -> (), failure: @escaping (Error) -> ()) {
+        let params = request.serialize()
+        let url = baseUrl + "blabvla/bla"
+        auth.request(method: .get, url: url, params: params, success: { (response: SearchContainer) in
+            let models = response.data ?? []
+            success(models)
+        }) { (error) in
+            failure(error)
+        }
+    }
 }

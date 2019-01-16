@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VehicleListingViewController: UIViewController {
+class ListingViewController: UIViewController {
     
     // MARK: IBOutlets
     
@@ -16,7 +16,7 @@ class VehicleListingViewController: UIViewController {
     
     // MARK: Properties
     
-    var presenter: VehicleListingModuleInterface?
+    var presenter: ListingModuleInterface?
     
 
     // MARK: VC's Life cycle
@@ -37,6 +37,6 @@ class VehicleListingViewController: UIViewController {
 }
 
 // MARK: VehicleListingViewInterface
-extension VehicleListingViewController: VehicleListingViewInterface {
+extension ListingViewController: ListingViewInterface {
     
 }

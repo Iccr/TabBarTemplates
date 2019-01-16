@@ -17,6 +17,8 @@ class HomeSearchTableViewCell: UITableViewCell {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var backGroundView: UIView!
     
+    private var model: SearchRequestModel = SearchRequestModel()
+    var searchdelegate: HomeSearchDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,6 +35,16 @@ class HomeSearchTableViewCell: UITableViewCell {
         searchButton.rounded()
         self.backGroundView.layer.cornerRadius = 10
         setupTextFields()
+    }
+    
+    
+    // @IBAction
+    @IBAction func search(_ sender: Any) {
+        model.from = self.fromDestinationTextField.text!
+        model.to = self.toDestinationTextField.text!
+        model.checkInDate = self.checkInDateTextField.text!
+        model.checkOutDate = self.checkOutDateTextField.text!
+        searchdelegate?.search(model: model)
     }
     
     private func setupTextFields() {

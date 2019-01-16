@@ -27,5 +27,11 @@ class HomeInteractor {
 // MARK: Home interactor input interface
 
 extension HomeInteractor: HomeInteractorInput {
-    
+    func search(request: SearchRequestModel) {
+        self.service.search(request: request, success: { (vehicles) in
+            self.output?.show(models: vehicles)
+        }) { (error) in
+            self.output?.show(error: error)
+        }
+    }
 }

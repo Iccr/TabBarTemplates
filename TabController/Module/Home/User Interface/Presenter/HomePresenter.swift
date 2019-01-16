@@ -12,6 +12,8 @@ class HomePresenter {
     
 	// MARK: Properties
     
+    var models: [Vehicle]?
+    
     weak var view: HomeViewInterface?
     var interactor: HomeInteractorInput?
     var wireframe: HomeWireframeInput?
@@ -22,11 +24,19 @@ class HomePresenter {
  // MARK: Home module interface
 
 extension HomePresenter: HomeModuleInterface {
-
+    func search(request: SearchRequestModel) {
+        interactor?.search(request: request)
+    }
 }
 
 // MARK: Home interactor output interface
 
 extension HomePresenter: HomeInteractorOutput {
+    func show(error: Error) {
+        self.view?.show(error: error.localizedDescription)
+    }
     
+    func show(models: [Vehicle]) {
+        self.wireframe?.showList(models: models)
+    }
 }

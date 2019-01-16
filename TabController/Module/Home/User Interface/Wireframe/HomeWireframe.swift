@@ -10,6 +10,7 @@ import UIKit
 
 class HomeWireframe {
      weak var view: UIViewController!
+    private lazy var listWireframe = ListingWireframe()
 }
 
 extension HomeWireframe: HomeWireframeInput {
@@ -30,5 +31,9 @@ extension HomeWireframe: HomeWireframeInput {
         
         self.view = viewController
         return viewController
+    }
+    
+    func showList(models: [Vehicle]) {
+        
     }
 }

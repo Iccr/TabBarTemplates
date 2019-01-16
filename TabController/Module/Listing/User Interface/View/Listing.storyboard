@@ -12,7 +12,7 @@
         <!--VehicleListing-->
         <scene sceneID="R60-Pu-Hpy">
             <objects>
-                <viewController storyboardIdentifier="VehicleListingViewController" title="VehicleListing" id="HSb-ou-7T5" customClass="VehicleListingViewController" customModule="TabController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListingViewController" title="VehicleListing" id="HSb-ou-7T5" customClass="ListingViewController" customModule="TabController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y1H-iV-BwG"/>
                         <viewControllerLayoutGuide type="bottom" id="PYB-Kq-ghm"/>

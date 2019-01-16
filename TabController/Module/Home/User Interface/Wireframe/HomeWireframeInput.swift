@@ -9,5 +9,5 @@
 import Foundation
 
 protocol HomeWireframeInput: WireframeInput {
-    
+    func showList(models: [Vehicle])
 }
