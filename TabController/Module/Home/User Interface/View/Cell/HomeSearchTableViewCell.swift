@@ -32,11 +32,15 @@ class HomeSearchTableViewCell: UITableViewCell {
         setupShadows()
         searchButton.rounded()
         self.backGroundView.layer.cornerRadius = 10
+        setupTextFields()
+    }
+    
+    private func setupTextFields() {
         // destinations textfields
         let yelloImageView = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-         yelloImageView.image = UIImage.init(named: "yelloLocation")
+        yelloImageView.image = UIImage.init(named: "yelloLocation")
         let blueDotImageView  = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-       blueDotImageView.image = UIImage.init(named: "blueDot.png")
+        blueDotImageView.image = UIImage.init(named: "blueDot.png")
         yelloImageView.contentMode = .scaleAspectFit
         blueDotImageView.contentMode = .scaleAspectFit
         fromDestinationTextField.leftView = yelloImageView
@@ -55,10 +59,6 @@ class HomeSearchTableViewCell: UITableViewCell {
         checkInDateTextField.leftViewMode = .always
         checkOutDateTextField.leftView = calendarImageView2
         checkOutDateTextField.leftViewMode = .always
-        
-        
-
-        
     }
     
     private func setupShadows() {
