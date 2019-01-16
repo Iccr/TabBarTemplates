@@ -17,6 +17,7 @@ class HomeSearchTableViewCell: UITableViewCell {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var backGroundView: UIView!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

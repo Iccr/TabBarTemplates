@@ -16,6 +16,16 @@ class HomeSponsoredTableViewCell: UITableViewCell {
     @IBOutlet weak var offerLabel: UILabel!
     @IBOutlet weak var numberOfDestinationLabel: UILabel!
     
+    @IBOutlet weak var fromToDestinationNameLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBOutlet weak var galleryImageView1: UIImageView!
+    @IBOutlet weak var galleryImageView2: UIImageView!
+    
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var favouriteButton: UIButton!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,5 +34,7 @@ class HomeSponsoredTableViewCell: UITableViewCell {
 
     func setup() {
         seeTicketButton.rounded()
+        self.galleryImageView1.layer.cornerRadius = 10
+        self.galleryImageView2.layer.cornerRadius = 10
     }
 }

@@ -335,46 +335,31 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B5t-BH-4Yz">
                                                                     <rect key="frame" x="0.0" y="254" width="359" height="295"/>
                                                                     <subviews>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="eoe-zQ-dfp">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="15"/>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="eoe-zQ-dfp">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="20"/>
                                                                             <subviews>
-                                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-JE-6r5">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="146" height="15"/>
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-JE-6r5">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="164.5" height="20"/>
                                                                                     <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Kathmandu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrI-8y-5nu">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="69.5" height="14.5"/>
+                                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bus" translatesAutoresizingMaskIntoConstraints="NO" id="zCW-SA-nIq">
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="width" constant="20" id="U23-JY-MgM"/>
+                                                                                            </constraints>
+                                                                                        </imageView>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Kathmandu . . . Pokhara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrI-8y-5nu">
+                                                                                            <rect key="frame" x="21" y="0.0" width="143.5" height="20"/>
                                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text=". . ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-Pq-aPj">
-                                                                                            <rect key="frame" x="70.5" y="0.0" width="19" height="14.5"/>
-                                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                                                                            <nil key="textColor"/>
-                                                                                            <nil key="highlightedColor"/>
-                                                                                        </label>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Pokhara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fB-Jb-wIL">
-                                                                                            <rect key="frame" x="90.5" y="0.0" width="49.5" height="14.5"/>
-                                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                                                                            <nil key="textColor"/>
-                                                                                            <nil key="highlightedColor"/>
-                                                                                        </label>
-                                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="0kz-xO-pkL">
-                                                                                            <rect key="frame" x="141" y="0.0" width="5" height="15"/>
-                                                                                            <subviews>
-                                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1M1-l8-7QR">
-                                                                                                    <rect key="frame" x="0.0" y="0.0" width="5" height="15"/>
-                                                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                                </view>
-                                                                                            </subviews>
-                                                                                        </stackView>
                                                                                     </subviews>
                                                                                 </stackView>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="QJS-nK-9wW">
-                                                                                    <rect key="frame" x="213" y="0.0" width="146" height="15"/>
+                                                                                    <rect key="frame" x="231.5" y="0.0" width="127.5" height="20"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Min Rs 500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyC-ll-371">
-                                                                                            <rect key="frame" x="78" y="0.0" width="68" height="15"/>
+                                                                                            <rect key="frame" x="59.5" y="0.0" width="68" height="20"/>
                                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
@@ -383,16 +368,16 @@
                                                                                 </stackView>
                                                                             </subviews>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="height" constant="15" id="Osr-9P-zqB"/>
+                                                                                <constraint firstAttribute="height" constant="20" id="Osr-9P-zqB"/>
                                                                             </constraints>
                                                                         </stackView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9kp-c2-ifN">
-                                                                            <rect key="frame" x="0.0" y="25" width="359" height="72"/>
+                                                                            <rect key="frame" x="0.0" y="30" width="359" height="67"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfL-bR-5bh">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="72"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="67"/>
                                                                                     <string key="text">Kathmandu to Pokhara Tourist buses with comfortable seats, and best service. Joint Travel Tickets. 24/7 Customer Service. Serure payment Exclusive Online Dea.s. Best Travel Supplies</string>
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                     <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
@@ -415,11 +400,11 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="O5E-Sc-ZIh">
                                                                             <rect key="frame" x="0.0" y="245" width="359" height="50"/>
                                                                             <subviews>
-                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxr-gM-qlg">
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQT-Ap-F1i">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="36" height="50"/>
                                                                                     <state key="normal" image="share"/>
                                                                                 </button>
-                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQT-Ap-F1i">
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxr-gM-qlg">
                                                                                     <rect key="frame" x="326" y="0.0" width="33" height="50"/>
                                                                                     <state key="normal" image="favourite"/>
                                                                                 </button>
@@ -502,10 +487,17 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="descriptionLabel" destination="yfL-bR-5bh" id="SYt-vo-mOi"/>
+                                            <outlet property="favouriteButton" destination="Rxr-gM-qlg" id="lXI-Th-ybw"/>
+                                            <outlet property="fromToDestinationNameLabel" destination="mrI-8y-5nu" id="qoY-dI-XL3"/>
+                                            <outlet property="galleryImageView1" destination="Eap-qG-Odk" id="XiR-2l-Duj"/>
+                                            <outlet property="galleryImageView2" destination="dvz-3H-x5C" id="g99-w1-npy"/>
                                             <outlet property="nameLabel" destination="vF1-42-EGj" id="P0r-M3-ZHF"/>
                                             <outlet property="numberOfDestinationLabel" destination="T4H-tn-iRM" id="ieG-wT-loS"/>
                                             <outlet property="offerLabel" destination="DjP-ZE-MNP" id="b6D-v4-Ba7"/>
+                                            <outlet property="priceLabel" destination="DyC-ll-371" id="ASW-V6-5N2"/>
                                             <outlet property="seeTicketButton" destination="7CU-dG-Woh" id="ozC-e5-pmk"/>
+                                            <outlet property="shareButton" destination="tQT-Ap-F1i" id="pcH-QM-CPx"/>
                                             <outlet property="typeLabel" destination="SUI-lG-zRc" id="EQX-iu-hKb"/>
                                             <outlet property="vehicleImageView" destination="QWo-CG-0Tk" id="u8x-DZ-cF2"/>
                                         </connections>
@@ -535,6 +527,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Bus" width="22" height="23"/>
         <image name="Travel" width="800" height="400"/>
         <image name="downArro" width="51" height="46"/>
         <image name="favourite" width="33" height="26"/>
