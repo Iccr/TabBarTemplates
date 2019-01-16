@@ -57,9 +57,10 @@ class ListingModelsTableViewCell: UITableViewCell {
     func setup() {
         self.roundView.layer.cornerRadius = 5
         self.roundView.clipsToBounds = true
-        self.roundView.layer.borderWidth = 0.5
-        self.roundView.layer.borderColor = AppConstants.textfieldShadowColor.cgColor
+        self.shadowView.layer.borderWidth = 1
+        self.shadowView.layer.borderColor = AppConstants.textfieldShadowColor.cgColor
         shadowView.layer.addShadow(with: UIColor.lightGray, offset: CGSize.init(width: 5, height: 5))
-        self.typeLabel.rounded()
+        self.typeLabel.layer.cornerRadius = 8
+        self.typeLabel.clipsToBounds = true
     }
 }
