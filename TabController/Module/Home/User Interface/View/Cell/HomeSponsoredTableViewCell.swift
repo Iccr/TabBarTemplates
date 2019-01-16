@@ -26,6 +26,8 @@ class HomeSponsoredTableViewCell: UITableViewCell {
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var favouriteButton: UIButton!
     
+    @IBOutlet weak var shadowView: UIView!
+    @IBOutlet weak var roundView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,5 +38,13 @@ class HomeSponsoredTableViewCell: UITableViewCell {
         seeTicketButton.rounded()
         self.galleryImageView1.layer.cornerRadius = 10
         self.galleryImageView2.layer.cornerRadius = 10
+        roundView.layer.cornerRadius = 8
+        roundView.clipsToBounds = true
+        [shadowView].forEach({
+            $0?.layer.borderWidth = 1
+            $0?.layer.borderColor = UIColor.init(hex: "#F8F8F8", alpha: 1).cgColor
+
+            $0?.layer.addShadow(offset: CGSize.init(width:2, height: 3))
+        })
     }
 }

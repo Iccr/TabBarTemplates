@@ -55,6 +55,8 @@ class HomeSearchTableViewCell: UITableViewCell {
         checkInDateTextField.leftViewMode = .always
         checkOutDateTextField.leftView = calendarImageView2
         checkOutDateTextField.leftViewMode = .always
+        
+        
 
         
     }
