@@ -11,5 +11,5 @@ protocol ListingInteractorInput: class {
 }
 
 protocol ListingInteractorOutput: class {
-    func show(models: [Vehicle])
+    func show(models: [Hotel])
 }

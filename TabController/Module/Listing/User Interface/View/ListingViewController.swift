@@ -11,7 +11,7 @@ import UIKit
 class ListingViewController: UIViewController {
     
     // MARK: IBOutlets
-    var models: [Vehicle]?
+    var models: [Hotel]?
     
     @IBOutlet weak var shadowView: UIView!
     
@@ -45,7 +45,7 @@ class ListingViewController: UIViewController {
 
 // MARK: ListingViewInterface
 extension ListingViewController: ListingViewInterface {
-    func show(models: [Vehicle]) {
+    func show(models: [Hotel]) {
         self.models = models
     }
 }

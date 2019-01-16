@@ -11,14 +11,14 @@ import Foundation
 class ListingInteractor {
     
 	// MARK: Properties
-    var models: [Vehicle]?
+    var models: [Hotel]?
     
     weak var output: ListingInteractorOutput?
     private let service: ListingServiceType
     
     // MARK: Initialization
     
-    init(service: ListingServiceType, models: [Vehicle]?) {
+    init(service: ListingServiceType, models: [Hotel]?) {
         self.service = service
         self.models = models
     }

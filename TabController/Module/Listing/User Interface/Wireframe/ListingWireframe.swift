@@ -10,7 +10,7 @@ import UIKit
 
 class ListingWireframe {
      weak var view: UIViewController!
-    var models: [Vehicle]?
+    var models: [Hotel]?
 }
 
 extension ListingWireframe: ListingWireframeInput {
@@ -33,7 +33,7 @@ extension ListingWireframe: ListingWireframeInput {
         return viewController
     }
     
-    func openList(models: [Vehicle], source: UINavigationController) {
+    func openList(models: [Hotel], source: UINavigationController) {
         self.models = models
         self.pushMainView(in: source)
     }

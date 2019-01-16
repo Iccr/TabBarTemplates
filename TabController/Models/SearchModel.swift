@@ -14,7 +14,7 @@ class SearchContainer: Mappable {
     var errorCode: String?
     var message: String?
     var id: String?
-    var data: [Vehicle]?
+    var data: [Hotel]?
     
     required init?(map: Map) {
         
@@ -28,7 +28,7 @@ class SearchContainer: Mappable {
     }
 }
 
-class Vehicle: Mappable {
+class Hotel: Mappable {
     
 
     init() { }

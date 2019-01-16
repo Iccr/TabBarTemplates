@@ -11,6 +11,6 @@ protocol HomeInteractorInput: class {
 }
 
 protocol HomeInteractorOutput: class {
-    func show(models: [Vehicle])
+    func show(models: [Hotel])
     func show(error: Error)
 }

@@ -12,7 +12,7 @@ class HomePresenter {
     
 	// MARK: Properties
     
-    var models: [Vehicle]?
+    var models: [Hotel]?
     
     weak var view: HomeViewInterface?
     var interactor: HomeInteractorInput?
@@ -36,7 +36,7 @@ extension HomePresenter: HomeInteractorOutput {
         self.view?.show(error: error.localizedDescription)
     }
     
-    func show(models: [Vehicle]) {
+    func show(models: [Hotel]) {
         self.wireframe?.showList(models: models)
     }
 }

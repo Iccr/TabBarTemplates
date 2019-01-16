@@ -15,12 +15,12 @@ protocol HomeServiceType: class, VehicleSearchService {
 
 
 protocol VehicleSearchService: ApiServiceType {
-    func search(request: SearchRequestModel,  success: @escaping ([Vehicle]) -> (), failure: @escaping (Error) -> ())
+    func search(request: SearchRequestModel,  success: @escaping ([Hotel]) -> (), failure: @escaping (Error) -> ())
 }
 
 extension VehicleSearchService {
-    func search(request: SearchRequestModel,  success: @escaping ([Vehicle]) -> (), failure: @escaping (Error) -> ()) {
-        success([Vehicle(), Vehicle(), Vehicle()])
+    func search(request: SearchRequestModel,  success: @escaping ([Hotel]) -> (), failure: @escaping (Error) -> ()) {
+        success([Hotel(), Hotel(), Hotel()])
         let params = request.serialize()
         let url = baseUrl + "blabvla/bla"
         auth.request(method: .get, url: url, params: params, success: { (response: SearchContainer) in

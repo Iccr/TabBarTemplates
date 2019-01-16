@@ -33,7 +33,7 @@ extension HomeWireframe: HomeWireframeInput {
         return viewController
     }
     
-    func showList(models: [Vehicle]) {
+    func showList(models: [Hotel]) {
         if let navigation = self.view.navigationController {
             listWireframe.openList(models: models, source: navigation)
         }

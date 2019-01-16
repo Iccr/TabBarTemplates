@@ -22,7 +22,7 @@ class ListingPresenter {
  // MARK: Listing module interface
 
 extension ListingPresenter: ListingModuleInterface {
-    func show(models: [Vehicle]) {
+    func show(models: [Hotel]) {
         view?.show(models: models)
     }
 }

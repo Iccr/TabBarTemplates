@@ -7,5 +7,5 @@
 //
 
 protocol ListingViewInterface: class {
-    func show(models: [Vehicle]) 
+    func show(models: [Hotel]) 
 }
