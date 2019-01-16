@@ -288,18 +288,18 @@
                                             <outlet property="toDestinationTextField" destination="0ow-Kx-grP" id="3pT-sH-xEF"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeSponsoredTableViewCell" rowHeight="395" id="0UF-3Y-yzh" customClass="HomeSponsoredTableViewCell" customModule="TabController" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="608" width="375" height="395"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeSponsoredTableViewCell" rowHeight="560" id="0UF-3Y-yzh" customClass="HomeSponsoredTableViewCell" customModule="TabController" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="608" width="375" height="560"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0UF-3Y-yzh" id="DQj-TQ-Lwg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="394.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="559.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peb-jN-7zy">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="392.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="549"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ken-bX-Vwz">
-                                                            <rect key="frame" x="8" y="18" width="359" height="351"/>
+                                                            <rect key="frame" x="8" y="18" width="359" height="549"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Mr-aW-vhm">
                                                                     <rect key="frame" x="0.0" y="0.0" width="359" height="14.5"/>
@@ -333,36 +333,41 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B5t-BH-4Yz">
-                                                                    <rect key="frame" x="0.0" y="254" width="359" height="97"/>
+                                                                    <rect key="frame" x="0.0" y="254" width="359" height="295"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="eoe-zQ-dfp">
                                                                             <rect key="frame" x="0.0" y="0.0" width="359" height="15"/>
                                                                             <subviews>
-                                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-JE-6r5">
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-JE-6r5">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="146" height="15"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Kathmandu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrI-8y-5nu">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="69.5" height="15"/>
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="69.5" height="14.5"/>
                                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text=". . ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrG-Pq-aPj">
-                                                                                            <rect key="frame" x="70.5" y="0.0" width="19" height="15"/>
+                                                                                            <rect key="frame" x="70.5" y="0.0" width="19" height="14.5"/>
                                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Pokhara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fB-Jb-wIL">
-                                                                                            <rect key="frame" x="90.5" y="0.0" width="49.5" height="15"/>
+                                                                                            <rect key="frame" x="90.5" y="0.0" width="49.5" height="14.5"/>
                                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
-                                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1M1-l8-7QR">
+                                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="0kz-xO-pkL">
                                                                                             <rect key="frame" x="141" y="0.0" width="5" height="15"/>
-                                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                        </view>
+                                                                                            <subviews>
+                                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1M1-l8-7QR">
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="5" height="15"/>
+                                                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                </view>
+                                                                                            </subviews>
+                                                                                        </stackView>
                                                                                     </subviews>
                                                                                 </stackView>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="QJS-nK-9wW">
@@ -381,16 +386,54 @@
                                                                                 <constraint firstAttribute="height" constant="15" id="Osr-9P-zqB"/>
                                                                             </constraints>
                                                                         </stackView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfL-bR-5bh">
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9kp-c2-ifN">
                                                                             <rect key="frame" x="0.0" y="25" width="359" height="72"/>
-                                                                            <string key="text">Kathmandu to Pokhara Tourist buses with comfortable seats, and best service. Joint Travel Tickets. 24/7 Customer Service. Serure payment Exclusive Online Dea.s. Best Travel Supplies</string>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                            <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfL-bR-5bh">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="72"/>
+                                                                                    <string key="text">Kathmandu to Pokhara Tourist buses with comfortable seats, and best service. Joint Travel Tickets. 24/7 Customer Service. Serure payment Exclusive Online Dea.s. Best Travel Supplies</string>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7q7-89-EoM">
+                                                                            <rect key="frame" x="0.0" y="107" width="359" height="128"/>
+                                                                            <subviews>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Travel" translatesAutoresizingMaskIntoConstraints="NO" id="Eap-qG-Odk">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="174.5" height="128"/>
+                                                                                </imageView>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Travel" translatesAutoresizingMaskIntoConstraints="NO" id="dvz-3H-x5C">
+                                                                                    <rect key="frame" x="184.5" y="0.0" width="174.5" height="128"/>
+                                                                                </imageView>
+                                                                            </subviews>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="128" id="zlI-Z0-3Ce"/>
+                                                                            </constraints>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="O5E-Sc-ZIh">
+                                                                            <rect key="frame" x="0.0" y="245" width="359" height="50"/>
+                                                                            <subviews>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxr-gM-qlg">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="36" height="50"/>
+                                                                                    <state key="normal" image="share"/>
+                                                                                </button>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQT-Ap-F1i">
+                                                                                    <rect key="frame" x="326" y="0.0" width="33" height="50"/>
+                                                                                    <state key="normal" image="favourite"/>
+                                                                                </button>
+                                                                            </subviews>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="50" id="fwP-bR-RGO"/>
+                                                                            </constraints>
+                                                                        </stackView>
                                                                     </subviews>
                                                                 </stackView>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="549" id="CLR-f1-qgS"/>
+                                                            </constraints>
                                                         </stackView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CU-dG-Woh">
                                                             <rect key="frame" x="112.5" y="227" width="150" height="30"/>
@@ -430,11 +473,11 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="392.5" id="38h-r7-DSF"/>
                                                         <constraint firstItem="7CU-dG-Woh" firstAttribute="bottom" secondItem="QWo-CG-0Tk" secondAttribute="bottom" constant="15" id="8VD-os-adO"/>
                                                         <constraint firstItem="ken-bX-Vwz" firstAttribute="leading" secondItem="peb-jN-7zy" secondAttribute="leading" constant="8" id="BTk-qK-6s3"/>
                                                         <constraint firstItem="7CU-dG-Woh" firstAttribute="centerX" secondItem="peb-jN-7zy" secondAttribute="centerX" id="QT8-zX-D09"/>
                                                         <constraint firstItem="W3L-GO-BKp" firstAttribute="trailing" secondItem="QWo-CG-0Tk" secondAttribute="trailing" constant="-20" id="QWq-Qd-ft6"/>
+                                                        <constraint firstAttribute="height" secondItem="ken-bX-Vwz" secondAttribute="height" id="S5i-AZ-dIZ"/>
                                                         <constraint firstItem="ken-bX-Vwz" firstAttribute="top" secondItem="peb-jN-7zy" secondAttribute="top" constant="18" id="SbN-Vb-14o"/>
                                                         <constraint firstItem="b6S-NW-SKq" firstAttribute="leading" secondItem="peb-jN-7zy" secondAttribute="leading" constant="20" id="UhR-gk-BYW"/>
                                                         <constraint firstAttribute="trailing" secondItem="ken-bX-Vwz" secondAttribute="trailing" constant="8" id="UjQ-It-ZoT"/>
@@ -494,8 +537,10 @@
     <resources>
         <image name="Travel" width="800" height="400"/>
         <image name="downArro" width="51" height="46"/>
+        <image name="favourite" width="33" height="26"/>
         <image name="rightLeftArrow" width="56" height="42"/>
         <image name="sajha-yatatat" width="648" height="330"/>
+        <image name="share" width="36" height="27"/>
         <image name="user" width="61" height="46"/>
     </resources>
     <color key="tintColor" red="0.78177064659999995" green="0.55228364470000002" blue="0.018981300289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
