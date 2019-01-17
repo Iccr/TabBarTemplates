@@ -10,19 +10,30 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    enum DetailCells: Int {
+        case images = 0
+        case info
+        case location
+        case rating
+        case amenities
+    }
+    
     // MARK: Properties
     
     var presenter: DetailModuleInterface?
     
+    var cells: [DetailCells]  = [.images, .info, .location, .rating, .amenities]
+    
     var model: Hotel? {
         didSet {
-            self.collectionView.reloadData()
+            self.tableView.reloadData()
         }
     }
     
     // MARK: IBOutlets
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
+    
     
     
     // MARK: VC's Life cycle
@@ -44,8 +55,8 @@ class DetailViewController: UIViewController {
     
     private func setup() {
         // all setup should be done here
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
     }
 }
 
@@ -61,19 +72,31 @@ extension DetailViewController: DetailViewInterface {
 }
 
 
-extension DetailViewController: UICollectionViewDelegate {
+extension DetailViewController: UITableViewDelegate {
     
 }
 
-extension DetailViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return model?.images?.count ?? 0
+extension DetailViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cells.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailImageCollectionViewCell", for: indexPath) as! DetailImageCollectionViewCell
-        cell.image = self.model?.images?.elementAt(index: indexPath.row)
-        cell.setup()
-        return cell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let index = DetailCells.init(rawValue: indexPath.row) else {return UITableViewCell()}
+        
+        switch index {
+        case .images:
+            break
+        case .info: break
+        case .location: break
+        case .rating: break
+        case .amenities: break
+        }
+        
+        return UITableViewCell()
+    }
+    
+    private func configureImagesCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
+        
     }
 }

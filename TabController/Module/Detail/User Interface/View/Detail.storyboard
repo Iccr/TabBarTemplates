@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Rem-6v-Q3L">
             <objects>
-                <viewController id="zJI-hK-bHq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="zJI-hK-bHq" customClass="DetailViewController" customModule="TabController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WHq-XP-dgK"/>
                         <viewControllerLayoutGuide type="bottom" id="DIP-Vv-ylU"/>
@@ -246,7 +246,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="109" id="8g3-hF-gFw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="109" id="8g3-hF-gFw" userLabel="Amenities Table View Cell">
                                         <rect key="frame" x="0.0" y="665" width="375" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8g3-hF-gFw" id="N45-c7-VOr">
@@ -352,6 +352,9 @@
                             <constraint firstItem="MAu-tf-DB7" firstAttribute="leading" secondItem="ZGK-i7-tYr" secondAttribute="leading" id="vfa-1I-f8W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="MAu-tf-DB7" id="W87-i6-xLU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pa6-oS-qi9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
