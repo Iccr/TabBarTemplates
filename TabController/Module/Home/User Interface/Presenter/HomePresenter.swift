@@ -17,6 +17,7 @@ class HomePresenter {
     weak var view: HomeViewInterface?
     var interactor: HomeInteractorInput?
     var wireframe: HomeWireframeInput?
+    var request: SearchRequestModel?
 
     // MARK: Converting entities
 }
@@ -25,6 +26,7 @@ class HomePresenter {
 
 extension HomePresenter: HomeModuleInterface {
     func search(request: SearchRequestModel) {
+        self.request = request
         interactor?.search(request: request)
     }
 }
@@ -37,6 +39,6 @@ extension HomePresenter: HomeInteractorOutput {
     }
     
     func show(models: [Hotel]) {
-        self.wireframe?.showList(models: models)
+        self.wireframe?.showList(models: models, for: self.request)
     }
 }

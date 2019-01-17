@@ -8,4 +8,5 @@
 
 protocol DetailModuleInterface: class {
     func viewIsReady()
+    func openConfirmation(for hotel: Hotel)
 }

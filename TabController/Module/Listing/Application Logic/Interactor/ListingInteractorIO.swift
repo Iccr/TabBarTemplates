@@ -12,4 +12,5 @@ protocol ListingInteractorInput: class {
 
 protocol ListingInteractorOutput: class {
     func show(models: [Hotel])
+    func show(request: SearchRequestModel)
 }

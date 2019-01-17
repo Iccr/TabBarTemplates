@@ -9,5 +9,5 @@
 import Foundation
 
 protocol DetailWireframeInput: WireframeInput {
-    
+     func openConfirmation(for hotel: Hotel, and request: SearchRequestModel?)
 }

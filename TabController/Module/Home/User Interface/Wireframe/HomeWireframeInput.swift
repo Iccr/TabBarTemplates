@@ -9,5 +9,5 @@
 import Foundation
 
 protocol HomeWireframeInput: WireframeInput {
-    func showList(models: [Hotel])
+    func showList(models: [Hotel], for request: SearchRequestModel?)
 }

@@ -15,6 +15,8 @@ class DetailPresenter {
     weak var view: DetailViewInterface?
     var interactor: DetailInteractorInput?
     var wireframe: DetailWireframeInput?
+    
+    var request: SearchRequestModel?
 
     // MARK: Converting entities
 }
@@ -22,9 +24,18 @@ class DetailPresenter {
  // MARK: Detail module interface
 
 extension DetailPresenter: DetailModuleInterface {
+    func openConfirmation(for hotel: Hotel) {
+        self.wireframe?.openConfirmation(for: hotel, and: self.request)
+    }
+    
     func viewIsReady() {
         interactor?.viewIsReady()
     }
+    
+    func show(request: SearchRequestModel) {
+        self.request = request
+    }
+    
 }
 
 // MARK: Detail interactor output interface

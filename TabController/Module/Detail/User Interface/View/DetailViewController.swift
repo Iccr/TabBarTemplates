@@ -52,6 +52,10 @@ class DetailViewController: UIViewController {
     
     // MARK: IBActions
     
+    @IBAction func bookNowTapped(_ sender: Any) {
+        guard let model = self.model else {return}
+        self.presenter?.openConfirmation(for: model)
+    }
     // MARK: Other Functions
     
     private func setup() {
@@ -110,6 +114,7 @@ extension DetailViewController: UITableViewDataSource {
     private func configureImagesCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailImagesTableViewCell") as! DetailImagesTableViewCell
         cell.model = self.model
+        cell.parent = self
         cell.setup()
         return cell
     }

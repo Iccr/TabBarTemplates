@@ -15,6 +15,8 @@ class ListingPresenter {
     weak var view: ListingViewInterface?
     var interactor: ListingInteractorInput?
     var wireframe: ListingWireframeInput?
+    
+    var request: SearchRequestModel?
 
     // MARK: Converting entities
 }
@@ -24,6 +26,10 @@ class ListingPresenter {
 extension ListingPresenter: ListingModuleInterface {
     func show(models: [Hotel]) {
         view?.show(models: models)
+    }
+    
+    func show(request: SearchRequestModel) {
+        self.request = request
     }
 }
 
@@ -35,6 +41,6 @@ extension ListingPresenter: ListingInteractorOutput {
     }
     
     func openDetail(for model: Hotel) {
-        wireframe?.openDetail(for: model)
+        wireframe?.openDetail(for: model, for: self.request )
     }
 }

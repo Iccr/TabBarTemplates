@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import ImageSlideshow
 
 class DetailImagesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
     var model: Hotel?
-    
+    let slideShow = ImageSlideshow()
+    var parent: UIViewController?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,11 +23,29 @@ class DetailImagesTableViewCell: UITableViewCell {
     func setup() {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
+        setupImageSlidShow()
+    }
+    
+    private func setupImageSlidShow() {
+        if let images = self.model?.images {
+            let inputs: [AlamofireSource] = images.compactMap({ _ in
+                let source = AlamofireSource.init(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")
+                return source
+            })
+            self.slideShow.setImageInputs(inputs)
+//            slideShow.activityIndicator = DefaultActivityIndicator()
+        }
     }
 }
 
 
-extension DetailImagesTableViewCell: UICollectionViewDelegate {}
+extension DetailImagesTableViewCell: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let vc = self.parent {
+            slideShow.presentFullScreenController(from: vc)
+        }
+    }
+}
 
 extension DetailImagesTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

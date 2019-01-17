@@ -15,11 +15,13 @@ class DetailInteractor {
     weak var output: DetailInteractorOutput?
     private let service: DetailServiceType
     var model: Hotel?
+    var request: SearchRequestModel?
     
     // MARK: Initialization
     
-    init(service: DetailServiceType, model: Hotel?) {
+    init(service: DetailServiceType, model: Hotel?, request: SearchRequestModel?) {
         self.service = service
+        self.request = request
         self.model = model
     }
 
@@ -32,6 +34,9 @@ extension DetailInteractor: DetailInteractorInput {
     func viewIsReady() {
         guard let model = self.model else { raiseError(message: "Cannot find hotel Detail"); return}
         self.output?.show(model: model)
+        if let request = self.request {
+            self.output?.show(request: request)
+        }
     }
     
     func raiseError(message: String) {

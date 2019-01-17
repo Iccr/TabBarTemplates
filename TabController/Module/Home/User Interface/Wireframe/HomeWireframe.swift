@@ -33,9 +33,9 @@ extension HomeWireframe: HomeWireframeInput {
         return viewController
     }
     
-    func showList(models: [Hotel]) {
+    func showList(models: [Hotel], for request: SearchRequestModel?) {
         if let navigation = self.view.navigationController {
-            listWireframe.openList(models: models, source: navigation)
+            listWireframe.openList(models: models, request: request, source: navigation)
         }
     }
 }

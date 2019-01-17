@@ -11,6 +11,7 @@ import UIKit
 class ListingWireframe {
      weak var view: UIViewController!
     var models: [Hotel]?
+    var request: SearchRequestModel?
     lazy var detailWireframe = DetailWireframe()
 }
 
@@ -20,7 +21,7 @@ extension ListingWireframe: ListingWireframeInput {
     
     func getMainView() -> UIViewController {
         let service = ListingService()
-        let interactor = ListingInteractor(service: service, models: self.models)
+        let interactor = ListingInteractor(service: service, models: self.models, and: self.request)
         let presenter = ListingPresenter()
         let viewController = viewControllerFromStoryboard(of: ListingViewController.self)
         
@@ -34,14 +35,15 @@ extension ListingWireframe: ListingWireframeInput {
         return viewController
     }
     
-    func openList(models: [Hotel], source: UINavigationController) {
+    func openList(models: [Hotel], request: SearchRequestModel? ,source: UINavigationController) {
         self.models = models
+        self.request = request
         self.pushMainView(in: source)
     }
     
-    func openDetail(for model: Hotel) {
+    func openDetail(for model: Hotel, for request: SearchRequestModel?) {
         if let navigation = self.view.navigationController {
-            detailWireframe.openDetail(model: model, source: navigation)
+            detailWireframe.openDetail(model: model, request: request, source: navigation)
         }
     }
 }

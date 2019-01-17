@@ -11,6 +11,8 @@ import UIKit
 class DetailWireframe {
      weak var view: UIViewController!
     var model: Hotel?
+    var request: SearchRequestModel?
+    lazy var confirmationWireFrame = ConfirmationWireframe()
 }
 
 extension DetailWireframe: DetailWireframeInput {
@@ -19,7 +21,7 @@ extension DetailWireframe: DetailWireframeInput {
     
     func getMainView() -> UIViewController {
         let service = DetailService()
-        let interactor = DetailInteractor(service: service, model: self.model)
+        let interactor = DetailInteractor(service: service, model: self.model, request: self.request)
         let presenter = DetailPresenter()
         let viewController = viewControllerFromStoryboard(of: DetailViewController.self)
         
@@ -33,8 +35,15 @@ extension DetailWireframe: DetailWireframeInput {
         return viewController
     }
     
-    func openDetail(model: Hotel, source: UINavigationController) {
+    func openDetail(model: Hotel, request: SearchRequestModel?, source: UINavigationController) {
         self.model = model
+        self.request = request
         self.pushMainView(in: source)
+    }
+    
+    func openConfirmation(for hotel: Hotel, and request: SearchRequestModel?) {
+        if let navigation = self.view.navigationController {
+            self.confirmationWireFrame.openConformation(model: hotel, request: request, source: navigation)
+        }
     }
 }

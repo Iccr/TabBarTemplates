@@ -157,6 +157,17 @@
 		D904E98621F01E600049E889 /* DetailLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E98521F01E600049E889 /* DetailLocationTableViewCell.swift */; };
 		D904E98821F01E7C0049E889 /* DetailRatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E98721F01E7C0049E889 /* DetailRatingTableViewCell.swift */; };
 		D904E98A21F01E920049E889 /* DetailAmenitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E98921F01E920049E889 /* DetailAmenitiesTableViewCell.swift */; };
+		D904E9A221F068200049E889 /* ConfirmationModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E98F21F068200049E889 /* ConfirmationModuleInterface.swift */; };
+		D904E9A321F068200049E889 /* ConfirmationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E99221F068200049E889 /* ConfirmationService.swift */; };
+		D904E9A421F068200049E889 /* ConfirmationServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E99321F068200049E889 /* ConfirmationServiceType.swift */; };
+		D904E9A521F068200049E889 /* ConfirmationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E99521F068200049E889 /* ConfirmationInteractor.swift */; };
+		D904E9A621F068200049E889 /* ConfirmationInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E99621F068200049E889 /* ConfirmationInteractorIO.swift */; };
+		D904E9A721F068200049E889 /* ConfirmationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E99921F068200049E889 /* ConfirmationPresenter.swift */; };
+		D904E9A821F068200049E889 /* ConfirmationWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E99B21F068200049E889 /* ConfirmationWireframe.swift */; };
+		D904E9A921F068200049E889 /* ConfirmationWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E99C21F068200049E889 /* ConfirmationWireframeInput.swift */; };
+		D904E9AA21F068200049E889 /* Confirmation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D904E99F21F068200049E889 /* Confirmation.storyboard */; };
+		D904E9AB21F068200049E889 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E9A021F068200049E889 /* ConfirmationViewController.swift */; };
+		D904E9AC21F068200049E889 /* ConfirmationViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E9A121F068200049E889 /* ConfirmationViewInterface.swift */; };
 		D982581221EDA9E70008A472 /* SplashScreenModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98257FF21EDA9E70008A472 /* SplashScreenModuleInterface.swift */; };
 		D982581321EDA9E70008A472 /* SplashScreenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580221EDA9E70008A472 /* SplashScreenService.swift */; };
 		D982581421EDA9E70008A472 /* SplashScreenServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580321EDA9E70008A472 /* SplashScreenServiceType.swift */; };
@@ -420,6 +431,17 @@
 		D904E98521F01E600049E889 /* DetailLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLocationTableViewCell.swift; sourceTree = "<group>"; };
 		D904E98721F01E7C0049E889 /* DetailRatingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRatingTableViewCell.swift; sourceTree = "<group>"; };
 		D904E98921F01E920049E889 /* DetailAmenitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAmenitiesTableViewCell.swift; sourceTree = "<group>"; };
+		D904E98F21F068200049E889 /* ConfirmationModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationModuleInterface.swift; sourceTree = "<group>"; };
+		D904E99221F068200049E889 /* ConfirmationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationService.swift; sourceTree = "<group>"; };
+		D904E99321F068200049E889 /* ConfirmationServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationServiceType.swift; sourceTree = "<group>"; };
+		D904E99521F068200049E889 /* ConfirmationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationInteractor.swift; sourceTree = "<group>"; };
+		D904E99621F068200049E889 /* ConfirmationInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationInteractorIO.swift; sourceTree = "<group>"; };
+		D904E99921F068200049E889 /* ConfirmationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationPresenter.swift; sourceTree = "<group>"; };
+		D904E99B21F068200049E889 /* ConfirmationWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationWireframe.swift; sourceTree = "<group>"; };
+		D904E99C21F068200049E889 /* ConfirmationWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationWireframeInput.swift; sourceTree = "<group>"; };
+		D904E99F21F068200049E889 /* Confirmation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Confirmation.storyboard; sourceTree = "<group>"; };
+		D904E9A021F068200049E889 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		D904E9A121F068200049E889 /* ConfirmationViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewInterface.swift; sourceTree = "<group>"; };
 		D98257FF21EDA9E70008A472 /* SplashScreenModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenModuleInterface.swift; sourceTree = "<group>"; };
 		D982580221EDA9E70008A472 /* SplashScreenService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenService.swift; sourceTree = "<group>"; };
 		D982580321EDA9E70008A472 /* SplashScreenServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenServiceType.swift; sourceTree = "<group>"; };
@@ -1183,6 +1205,7 @@
 		90222FCC2074CBFF00AF91F3 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				D904E98D21F068200049E889 /* Confirmation */,
 				FF6A252C21EF711B00B7273B /* Detail */,
 				D901A06F21EEE91300EA8D3A /* Listing */,
 				D982589321EDBDAE0008A472 /* Home */,
@@ -1505,6 +1528,96 @@
 				D904E98921F01E920049E889 /* DetailAmenitiesTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		D904E98D21F068200049E889 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				D904E98E21F068200049E889 /* Module Interface */,
+				D904E99021F068200049E889 /* Application Logic */,
+				D904E99721F068200049E889 /* User Interface */,
+			);
+			path = Confirmation;
+			sourceTree = "<group>";
+		};
+		D904E98E21F068200049E889 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D904E98F21F068200049E889 /* ConfirmationModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		D904E99021F068200049E889 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				D904E99121F068200049E889 /* Service */,
+				D904E99421F068200049E889 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		D904E99121F068200049E889 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D904E99221F068200049E889 /* ConfirmationService.swift */,
+				D904E99321F068200049E889 /* ConfirmationServiceType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D904E99421F068200049E889 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D904E99521F068200049E889 /* ConfirmationInteractor.swift */,
+				D904E99621F068200049E889 /* ConfirmationInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D904E99721F068200049E889 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D904E99821F068200049E889 /* Presenter */,
+				D904E99A21F068200049E889 /* Wireframe */,
+				D904E99D21F068200049E889 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		D904E99821F068200049E889 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D904E99921F068200049E889 /* ConfirmationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D904E99A21F068200049E889 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				D904E99B21F068200049E889 /* ConfirmationWireframe.swift */,
+				D904E99C21F068200049E889 /* ConfirmationWireframeInput.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D904E99D21F068200049E889 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D904E99E21F068200049E889 /* ViewModels */,
+				D904E99F21F068200049E889 /* Confirmation.storyboard */,
+				D904E9A021F068200049E889 /* ConfirmationViewController.swift */,
+				D904E9A121F068200049E889 /* ConfirmationViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D904E99E21F068200049E889 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		D98257FD21EDA9E70008A472 /* SplashScreen */ = {
@@ -2201,6 +2314,7 @@
 				FF6A254721EF711B00B7273B /* Detail.storyboard in Resources */,
 				D982588421EDB0690008A472 /* ForgotPassword.storyboard in Resources */,
 				901BAA722074E836001531EA /* ModuleC.storyboard in Resources */,
+				D904E9AA21F068200049E889 /* Confirmation.storyboard in Resources */,
 				90222ADA2074C29300AF91F3 /* TableViewPickerWithIndexes.storyboard in Resources */,
 				90222A6E2074BBD800AF91F3 /* LaunchScreen.storyboard in Resources */,
 				90222FE92074CC2000AF91F3 /* Loading.storyboard in Resources */,
@@ -2411,6 +2525,7 @@
 				D982584A21EDAB870008A472 /* LoginInteractor.swift in Sources */,
 				90C5EAC62074DC21009EBC01 /* MainModuleInterface.swift in Sources */,
 				901BAA782074E836001531EA /* ModuleCInteractorIO.swift in Sources */,
+				D904E9A621F068200049E889 /* ConfirmationInteractorIO.swift in Sources */,
 				901BAA2F2074E593001531EA /* ModuleAViewInterface.swift in Sources */,
 				90222AD62074C29300AF91F3 /* SpLocationManager.swift in Sources */,
 				D901A08C21EEE91400EA8D3A /* ListingViewInterface.swift in Sources */,
@@ -2442,6 +2557,7 @@
 				D901A08E21EEE91400EA8D3A /* ListingViewController.swift in Sources */,
 				90222A942074BF4900AF91F3 /* Font.swift in Sources */,
 				D982585321EDAB870008A472 /* RegisterServiceType.swift in Sources */,
+				D904E9A821F068200049E889 /* ConfirmationWireframe.swift in Sources */,
 				D901A08721EEE91400EA8D3A /* ListingInteractorIO.swift in Sources */,
 				D982586021EDAC9B0008A472 /* Auth.swift in Sources */,
 				901BAA992074E84B001531EA /* ModuleDServiceType.swift in Sources */,
@@ -2470,6 +2586,7 @@
 				901BAABF2074E876001531EA /* ModuleEServiceType.swift in Sources */,
 				90222AB22074C1C200AF91F3 /* DoubleExtension.swift in Sources */,
 				901BAA742074E836001531EA /* ModuleCViewInterface.swift in Sources */,
+				D904E9A321F068200049E889 /* ConfirmationService.swift in Sources */,
 				901BAA292074E593001531EA /* ModuleAInteractorIO.swift in Sources */,
 				D982585221EDAB870008A472 /* RegisterModuleInterface.swift in Sources */,
 				90C5EAC22074DC21009EBC01 /* MainInteractor.swift in Sources */,
@@ -2486,9 +2603,12 @@
 				90222FEB2074CC2000AF91F3 /* LoadingViewInterface.swift in Sources */,
 				901BAA552074E6EE001531EA /* ModuleBWireframe.swift in Sources */,
 				FF28923021EE3C20005235E9 /* HomeSponsoredTableViewCell.swift in Sources */,
+				D904E9A521F068200049E889 /* ConfirmationInteractor.swift in Sources */,
+				D904E9A221F068200049E889 /* ConfirmationModuleInterface.swift in Sources */,
 				D982585A21EDAB870008A472 /* RegisterViewInterface.swift in Sources */,
 				90222AD22074C29300AF91F3 /* MultiMediaManager.swift in Sources */,
 				901BAA2B2074E593001531EA /* ModuleAServiceType.swift in Sources */,
+				D904E9AB21F068200049E889 /* ConfirmationViewController.swift in Sources */,
 				901BAA9A2074E84B001531EA /* ModuleDModuleInterface.swift in Sources */,
 				90222AB92074C1C200AF91F3 /* UIColorExtension.swift in Sources */,
 				909B07DA2074CD8F00496256 /* UserDefaultManager.swift in Sources */,
@@ -2529,6 +2649,7 @@
 				901BAA512074E6EE001531EA /* ModuleBPresenter.swift in Sources */,
 				901BAA762074E836001531EA /* ModuleCWireframeInput.swift in Sources */,
 				D982585E21EDAC610008A472 /* ApiServiceType.swift in Sources */,
+				D904E9AC21F068200049E889 /* ConfirmationViewInterface.swift in Sources */,
 				90222AD72074C29300AF91F3 /* TablePickerViewController.swift in Sources */,
 				90222AAF2074C1C200AF91F3 /* CLLocationCoordinate2dExtension.swift in Sources */,
 				901BAA282074E593001531EA /* ModuleAInteractor.swift in Sources */,
@@ -2544,6 +2665,7 @@
 				901BAA772074E836001531EA /* ModuleCInteractor.swift in Sources */,
 				D982581821EDA9E70008A472 /* SplashScreenWireframe.swift in Sources */,
 				90222AB32074C1C200AF91F3 /* ExtensionTablewView.swift in Sources */,
+				D904E9A921F068200049E889 /* ConfirmationWireframeInput.swift in Sources */,
 				D901A08A21EEE91400EA8D3A /* ListingWireframe.swift in Sources */,
 				FF6A254121EF711B00B7273B /* DetailInteractor.swift in Sources */,
 				90222AB02074C1C200AF91F3 /* CollectionExtension.swift in Sources */,
@@ -2560,6 +2682,7 @@
 				90C5EAC52074DC21009EBC01 /* MainServiceType.swift in Sources */,
 				D901A09021EEF3BB00EA8D3A /* SearchRequestModel.swift in Sources */,
 				FF6A254621EF711B00B7273B /* DetailPresenter.swift in Sources */,
+				D904E9A421F068200049E889 /* ConfirmationServiceType.swift in Sources */,
 				901BAA542074E6EE001531EA /* ModuleBViewInterface.swift in Sources */,
 				D982585621EDAB870008A472 /* RegisterInteractorIO.swift in Sources */,
 				D901A08421EEE91400EA8D3A /* ListingModuleInterface.swift in Sources */,
@@ -2571,6 +2694,7 @@
 				D982587F21EDB0690008A472 /* ForgotPasswordInteractor.swift in Sources */,
 				90222A642074BBD800AF91F3 /* AppDelegate.swift in Sources */,
 				90222A9C2074BF6100AF91F3 /* AppConstant.swift in Sources */,
+				D904E9A721F068200049E889 /* ConfirmationPresenter.swift in Sources */,
 				D982581221EDA9E70008A472 /* SplashScreenModuleInterface.swift in Sources */,
 				D901A09521EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift in Sources */,
 				D982581921EDA9E70008A472 /* SplashScreenWireframeInput.swift in Sources */,

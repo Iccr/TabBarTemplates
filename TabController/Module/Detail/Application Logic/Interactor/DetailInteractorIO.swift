@@ -13,4 +13,5 @@ protocol DetailInteractorInput: class {
 protocol DetailInteractorOutput: class {
     func show(model: Hotel)
     func show(error: Error)
+    func show(request: SearchRequestModel)
 }
