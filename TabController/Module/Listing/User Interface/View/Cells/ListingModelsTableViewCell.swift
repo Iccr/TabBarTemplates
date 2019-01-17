@@ -21,6 +21,6 @@ class ListingModelsTableViewCell: UITableViewCell {
     func setup() {
         shadowView.layer.borderColor = AppConstants.textfieldShadowColor.cgColor
         shadowView.layer.borderWidth = 1
-        shadowView.layer.addShadow(offset: CGSize(width: 2, height: 2))
+        shadowView.layer.addShadow(offset: CGSize(width: 2, height: 5))
     }
 }

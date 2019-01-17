@@ -252,7 +252,7 @@
                                                                                 <constraint firstAttribute="height" constant="44" id="oAV-Kn-JpZ"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
-                                                                            <state key="normal" title="Search Vehicles">
+                                                                            <state key="normal" title="Search ">
                                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             </state>
                                                                             <connections>
