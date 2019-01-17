@@ -81,6 +81,10 @@ PODS:
   - GTMSessionFetcher/Core (1.1.13)
   - GTMSessionFetcher/Full (1.1.13):
     - GTMSessionFetcher/Core (= 1.1.13)
+  - ImageSlideshow/Alamofire (1.7.0):
+    - AlamofireImage (~> 3.0)
+    - ImageSlideshow/Core
+  - ImageSlideshow/Core (1.7.0)
   - IQKeyboardManagerSwift (5.0.7)
   - leveldb-library (1.20)
   - Localize-Swift (2.0.0)
@@ -105,6 +109,7 @@ DEPENDENCIES:
   - Firebase/Crash
   - Firebase/Database
   - GoogleSignIn
+  - ImageSlideshow/Alamofire
   - IQKeyboardManagerSwift
   - Localize-Swift
   - MBProgressHUD
@@ -133,6 +138,7 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GTMOAuth2
     - GTMSessionFetcher
+    - ImageSlideshow
     - IQKeyboardManagerSwift
     - leveldb-library
     - Localize-Swift
@@ -163,6 +169,7 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMOAuth2: e8b6512c896235149df975c41d9a36c868ab7fba
   GTMSessionFetcher: 5bb1eae636127de695590f50e7d248483eb891e6
+  ImageSlideshow: f8eec5e37a980f60923b585ff23b0e140fd24018
   IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
@@ -173,6 +180,6 @@ SPEC CHECKSUMS:
   RSKImageCropper: d9a1acbc0600bf8decc8f0d21895872c99a9e4cf
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 271fb1a570113a68fb9509a14859d99f69795466
+PODFILE CHECKSUM: 8253949a541cafd7864dd0bc55191f9acb6122fa
 
 COCOAPODS: 1.5.3
