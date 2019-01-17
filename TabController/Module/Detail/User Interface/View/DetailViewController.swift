@@ -73,7 +73,13 @@ extension DetailViewController: DetailViewInterface {
 
 
 extension DetailViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
     
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 }
 
 extension DetailViewController: UITableViewDataSource {
