@@ -7,5 +7,5 @@
 //
 
 protocol DetailModuleInterface: class {
-    
+    func viewIsReady()
 }

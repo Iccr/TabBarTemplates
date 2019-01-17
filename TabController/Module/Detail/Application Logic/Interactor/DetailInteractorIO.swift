@@ -7,9 +7,10 @@
 //
 
 protocol DetailInteractorInput: class {
-
+    func viewIsReady()
 }
 
 protocol DetailInteractorOutput: class {
-
+    func show(model: Hotel)
+    func show(error: Error)
 }

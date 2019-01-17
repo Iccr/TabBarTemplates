@@ -29,6 +29,16 @@ class ListingViewController: UIViewController {
         self.setup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = ""
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationItem.title = "back"
+    }
+    
     // MARK: IBActions
     
     // MARK: Other Functions

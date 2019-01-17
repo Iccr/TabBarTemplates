@@ -7,5 +7,6 @@
 //
 
 protocol DetailViewInterface: class {
-    
+    func show(model: Hotel)
+    func show(error: String)
 }

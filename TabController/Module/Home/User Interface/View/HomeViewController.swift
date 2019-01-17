@@ -40,6 +40,17 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.setup()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = "Back"
+        self.hideNavigation()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = "Back"
+    }
     
     // MARK: IBActions
     
@@ -49,7 +60,6 @@ class HomeViewController: UIViewController {
         // all setup should be done here
         self.tableView.delegate = self
         self.tableView.dataSource  = self
-        self.hideNavigation()
     }
     
     override func setupTabItem() {

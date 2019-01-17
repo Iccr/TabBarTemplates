@@ -22,11 +22,19 @@ class DetailPresenter {
  // MARK: Detail module interface
 
 extension DetailPresenter: DetailModuleInterface {
-    
+    func viewIsReady() {
+        interactor?.viewIsReady()
+    }
 }
 
 // MARK: Detail interactor output interface
 
 extension DetailPresenter: DetailInteractorOutput {
+    func show(model: Hotel) {
+        view?.show(model: model)
+    }
     
+    func show(error: Error) {
+        view?.show(error: error.localizedDescription)
+    }
 }

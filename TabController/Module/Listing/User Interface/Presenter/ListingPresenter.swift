@@ -35,6 +35,6 @@ extension ListingPresenter: ListingInteractorOutput {
     }
     
     func openDetail(for model: Hotel) {
-        
+        wireframe?.openDetail(for: model)
     }
 }

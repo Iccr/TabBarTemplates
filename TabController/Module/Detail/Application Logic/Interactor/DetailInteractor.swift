@@ -29,5 +29,13 @@ class DetailInteractor {
 // MARK: Detail interactor input interface
 
 extension DetailInteractor: DetailInteractorInput {
+    func viewIsReady() {
+        guard let model = self.model else { raiseError(message: "Cannot find hotel Detail"); return}
+        self.output?.show(model: model)
+    }
     
+    func raiseError(message: String) {
+        let error = NSError.init(domain: "DetailInteractor", code: 0, userInfo: [NSLocalizedDescriptionKey : message])
+        self.output?.show(error: error)
+    }
 }
