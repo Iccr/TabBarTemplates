@@ -86,17 +86,50 @@ extension DetailViewController: UITableViewDataSource {
         
         switch index {
         case .images:
-            break
-        case .info: break
-        case .location: break
-        case .rating: break
-        case .amenities: break
+            return configureImagesCell(tableView: tableView, cellForRowAt: indexPath)
+        case .info:
+            return configureInfoCell(tableView: tableView, cellForRowAt: indexPath)
+        case .location:
+            return configureLocationCell(tableView: tableView, cellForRowAt: indexPath)
+        case .rating:
+            return configureRatingCell(tableView: tableView, cellForRowAt: indexPath)
+        case .amenities:
+            return configureAmenitiesCell(tableView: tableView, cellForRowAt: indexPath)
         }
-        
-        return UITableViewCell()
     }
     
     private func configureImagesCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailImagesTableViewCell") as! DetailImagesTableViewCell
+        cell.model = self.model
+        cell.setup()
+        return cell
+    }
+    
+    private func configureInfoCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailInfoTableViewCell") as! DetailInfoTableViewCell
+        cell.model = self.model
+        cell.setup()
+        return cell
+    }
+    
+    private func configureLocationCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailLocationTableViewCell") as! DetailLocationTableViewCell
+        cell.model = self.model
+        cell.setup()
+        return cell
+    }
+    
+    private func configureRatingCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailRatingTableViewCell") as! DetailRatingTableViewCell
+        cell.model = self.model
+        cell.setup()
+        return cell
+    }
+    
+    private func configureAmenitiesCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailAmenitiesTableViewCell") as! DetailAmenitiesTableViewCell
+        cell.model = self.model
+        cell.setup()
+        return cell
     }
 }
