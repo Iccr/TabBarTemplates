@@ -29,6 +29,10 @@ extension String {
         let data = self.data(using: String.Encoding.utf8)
         return data!.base64EncodedString()
     }
+    
+    func removeWhitespacesInBetween() -> String {
+        return components(separatedBy: .whitespaces).joined()
+    }
 }
 
 

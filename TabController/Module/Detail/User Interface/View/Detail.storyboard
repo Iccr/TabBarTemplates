@@ -388,6 +388,9 @@
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="bookNowTapped:" destination="zJI-hK-bHq" eventType="touchUpInside" id="pBu-Cl-FrE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
