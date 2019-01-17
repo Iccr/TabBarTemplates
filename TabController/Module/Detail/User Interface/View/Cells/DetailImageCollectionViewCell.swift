@@ -13,6 +13,6 @@ class DetailImageCollectionViewCell: UICollectionViewCell {
     var image: String?
     
     func setup() {
-        self.imageView.backgroundColor = AppConstants.themeBlueColor
+        self.backgroundColor = AppConstants.themeBlueColor
     }
 }
