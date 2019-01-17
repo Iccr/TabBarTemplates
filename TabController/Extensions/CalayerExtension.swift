@@ -18,8 +18,7 @@ extension CALayer {
         self.masksToBounds = false
     }
     
-    func addShadow(offset: CGSize) {
-        let color = UIColor.black
+    func addShadow(offset: CGSize, color: UIColor = .black) {
         self.addShadow(with: color, shadowRadius: 2, shadowOpacity: 0.20, offset: offset)
     }
 }

@@ -359,16 +359,71 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2LR-QU-NYt">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="AP8-WI-ux2">
+                                        <rect key="frame" x="2" y="2" width="373" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 passengers, 2 bedroom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IF-IZ-DQI">
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="48"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2n-aL-fBw">
+                                                <rect key="frame" x="273" y="0.0" width="100" height="48"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.72301386440000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="e4P-Ic-aS9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="Book Now">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.72156862745098038" alpha="0.342877485471831" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Bai-b3-Iu0"/>
+                                    <constraint firstAttribute="bottom" secondItem="AP8-WI-ux2" secondAttribute="bottom" id="FOv-Xo-dqC"/>
+                                    <constraint firstItem="AP8-WI-ux2" firstAttribute="leading" secondItem="2LR-QU-NYt" secondAttribute="leading" constant="2" id="Rr0-Ln-5Iv"/>
+                                    <constraint firstAttribute="trailing" secondItem="AP8-WI-ux2" secondAttribute="trailing" id="dJI-43-bvJ"/>
+                                    <constraint firstItem="AP8-WI-ux2" firstAttribute="top" secondItem="2LR-QU-NYt" secondAttribute="top" constant="2" id="xao-Az-FxN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="MAu-tf-DB7" secondAttribute="trailing" id="1uG-eT-HXO"/>
                             <constraint firstItem="DIP-Vv-ylU" firstAttribute="top" secondItem="MAu-tf-DB7" secondAttribute="bottom" id="BLE-Cz-qdD"/>
+                            <constraint firstAttribute="trailing" secondItem="2LR-QU-NYt" secondAttribute="trailing" id="GkJ-LX-gLF"/>
+                            <constraint firstItem="2LR-QU-NYt" firstAttribute="leading" secondItem="ZGK-i7-tYr" secondAttribute="leading" id="NTb-f3-Rfq"/>
                             <constraint firstItem="MAu-tf-DB7" firstAttribute="top" secondItem="WHq-XP-dgK" secondAttribute="bottom" id="llA-Q3-xRj"/>
+                            <constraint firstAttribute="bottom" secondItem="2LR-QU-NYt" secondAttribute="bottom" id="rtM-m4-DnS"/>
                             <constraint firstItem="MAu-tf-DB7" firstAttribute="leading" secondItem="ZGK-i7-tYr" secondAttribute="leading" id="vfa-1I-f8W"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bookNowBackgroundView" destination="2LR-QU-NYt" id="P1t-Ys-moh"/>
                         <outlet property="tableView" destination="MAu-tf-DB7" id="W87-i6-xLU"/>
                     </connections>
                 </viewController>

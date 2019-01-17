@@ -34,6 +34,7 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var bookNowBackgroundView: UIView!
     
     
     // MARK: VC's Life cycle
@@ -57,6 +58,8 @@ class DetailViewController: UIViewController {
         // all setup should be done here
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        let color = UIColor.init(hex: "#0000B8")
+        self.bookNowBackgroundView.layer.addShadow(with: color, shadowRadius: 8)
     }
 }
 
