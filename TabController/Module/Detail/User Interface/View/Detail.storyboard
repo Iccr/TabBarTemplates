@@ -353,7 +353,7 @@
                                                 <constraint firstItem="DVM-Gb-GNi" firstAttribute="leading" secondItem="N45-c7-VOr" secondAttribute="leading" constant="10" id="FDO-so-iQO"/>
                                                 <constraint firstAttribute="trailing" secondItem="DVM-Gb-GNi" secondAttribute="trailing" constant="10" id="PTp-yG-CqO"/>
                                                 <constraint firstItem="DVM-Gb-GNi" firstAttribute="top" secondItem="N45-c7-VOr" secondAttribute="top" id="eku-kI-U5e"/>
-                                                <constraint firstAttribute="bottom" secondItem="DVM-Gb-GNi" secondAttribute="bottom" constant="20" id="roG-sS-yTT"/>
+                                                <constraint firstAttribute="bottom" secondItem="DVM-Gb-GNi" secondAttribute="bottom" constant="150" id="roG-sS-yTT"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
