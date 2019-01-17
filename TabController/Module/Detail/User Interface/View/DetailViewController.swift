@@ -16,17 +16,21 @@ class DetailViewController: UIViewController {
     
     var model: Hotel? {
         didSet {
-            
+            self.collectionView.reloadData()
         }
     }
     
     // MARK: IBOutlets
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     
     // MARK: VC's Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setup()
+        self.presenter?.viewIsReady()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,6 +44,8 @@ class DetailViewController: UIViewController {
     
     private func setup() {
         // all setup should be done here
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
     }
 }
 
@@ -51,5 +57,23 @@ extension DetailViewController: DetailViewInterface {
     
     func show(error: String) {
         self.alert(message: error)
+    }
+}
+
+
+extension DetailViewController: UICollectionViewDelegate {
+    
+}
+
+extension DetailViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return model?.images?.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailImageCollectionViewCell", for: indexPath) as! DetailImageCollectionViewCell
+        cell.image = self.model?.images?.elementAt(index: indexPath.row)
+        cell.setup()
+        return cell
     }
 }

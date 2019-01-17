@@ -151,6 +151,7 @@
 		D901A09021EEF3BB00EA8D3A /* SearchRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901A08F21EEF3BB00EA8D3A /* SearchRequestModel.swift */; };
 		D901A09221EEF72B00EA8D3A /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901A09121EEF72B00EA8D3A /* SearchModel.swift */; };
 		D901A09521EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901A09421EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift */; };
+		D904E98021F00D2F0049E889 /* DetailImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E97F21F00D2F0049E889 /* DetailImageCollectionViewCell.swift */; };
 		D982581221EDA9E70008A472 /* SplashScreenModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98257FF21EDA9E70008A472 /* SplashScreenModuleInterface.swift */; };
 		D982581321EDA9E70008A472 /* SplashScreenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580221EDA9E70008A472 /* SplashScreenService.swift */; };
 		D982581421EDA9E70008A472 /* SplashScreenServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982580321EDA9E70008A472 /* SplashScreenServiceType.swift */; };
@@ -408,6 +409,7 @@
 		D901A08F21EEF3BB00EA8D3A /* SearchRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestModel.swift; sourceTree = "<group>"; };
 		D901A09121EEF72B00EA8D3A /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		D901A09421EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingModelsTableViewCell.swift; sourceTree = "<group>"; };
+		D904E97F21F00D2F0049E889 /* DetailImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		D98257FF21EDA9E70008A472 /* SplashScreenModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenModuleInterface.swift; sourceTree = "<group>"; };
 		D982580221EDA9E70008A472 /* SplashScreenService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenService.swift; sourceTree = "<group>"; };
 		D982580321EDA9E70008A472 /* SplashScreenServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenServiceType.swift; sourceTree = "<group>"; };
@@ -1482,6 +1484,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		D904E97C21F00CCD0049E889 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D904E97F21F00D2F0049E889 /* DetailImageCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		D98257FD21EDA9E70008A472 /* SplashScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -2029,6 +2039,7 @@
 		FF6A253921EF711B00B7273B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D904E97C21F00CCD0049E889 /* Cells */,
 				FF6A253A21EF711B00B7273B /* Detail.storyboard */,
 				FF6A253B21EF711B00B7273B /* DetailViewController.swift */,
 				FF6A253C21EF711B00B7273B /* DetailViewInterface.swift */,
@@ -2405,6 +2416,7 @@
 				D982584D21EDAB870008A472 /* LoginWireframe.swift in Sources */,
 				FF6A254921EF711B00B7273B /* DetailViewInterface.swift in Sources */,
 				90222AE92074C4F200AF91F3 /* LanguageCell.swift in Sources */,
+				D904E98021F00D2F0049E889 /* DetailImageCollectionViewCell.swift in Sources */,
 				D982588C21EDB1B20008A472 /* User.swift in Sources */,
 				D982584B21EDAB870008A472 /* LoginInteractorIO.swift in Sources */,
 				D982585C21EDAB870008A472 /* RegisterViewController.swift in Sources */,

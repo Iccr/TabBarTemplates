@@ -29,7 +29,7 @@ class SearchContainer: Mappable {
 }
 
 class Hotel: Mappable {
-    
+    var images: [String]?
 
     init() { }
     
@@ -39,7 +39,7 @@ class Hotel: Mappable {
     }
     
     func mapping(map: Map) {
-
+        images <- map["images"]
     }
 }
 
