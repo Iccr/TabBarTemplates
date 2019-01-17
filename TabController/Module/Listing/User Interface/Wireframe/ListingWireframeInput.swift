@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ListingWireframeInput: WireframeInput {
-    
+    func openDetail(for model: Hotel)
 }

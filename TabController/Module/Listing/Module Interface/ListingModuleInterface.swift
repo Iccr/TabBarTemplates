@@ -8,4 +8,5 @@
 
 protocol ListingModuleInterface: class {
     func viewIsReady()
+    func openDetail(for model: Hotel)
 }

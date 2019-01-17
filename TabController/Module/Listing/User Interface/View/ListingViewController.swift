@@ -60,6 +60,12 @@ extension ListingViewController: UITableViewDelegate {
         return UITableViewAutomaticDimension
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let model = self.models?.elementAt(index: indexPath.row) {
+            self.presenter?.openDetail(for: model)
+        }
+        
+    }
 }
 
 extension ListingViewController: UITableViewDataSource {

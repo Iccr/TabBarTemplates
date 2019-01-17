@@ -14,11 +14,13 @@ class DetailInteractor {
     
     weak var output: DetailInteractorOutput?
     private let service: DetailServiceType
+    var model: Hotel?
     
     // MARK: Initialization
     
-    init(service: DetailServiceType) {
+    init(service: DetailServiceType, model: Hotel?) {
         self.service = service
+        self.model = model
     }
 
     // MARK: Converting entities

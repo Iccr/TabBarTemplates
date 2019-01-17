@@ -10,6 +10,7 @@ import UIKit
 
 class DetailWireframe {
      weak var view: UIViewController!
+    var model: Hotel?
 }
 
 extension DetailWireframe: DetailWireframeInput {
@@ -18,7 +19,7 @@ extension DetailWireframe: DetailWireframeInput {
     
     func getMainView() -> UIViewController {
         let service = DetailService()
-        let interactor = DetailInteractor(service: service)
+        let interactor = DetailInteractor(service: service, model: self.model)
         let presenter = DetailPresenter()
         let viewController = viewControllerFromStoryboard(of: DetailViewController.self)
         
@@ -30,5 +31,10 @@ extension DetailWireframe: DetailWireframeInput {
         
         self.view = viewController
         return viewController
+    }
+    
+    func openDetail(model: Hotel, source: UINavigationController) {
+        self.model = model
+        self.pushMainView(in: source)
     }
 }

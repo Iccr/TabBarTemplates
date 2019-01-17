@@ -33,4 +33,8 @@ extension ListingPresenter: ListingInteractorOutput {
     func viewIsReady() {
         interactor?.viewIsReady()
     }
+    
+    func openDetail(for model: Hotel) {
+        
+    }
 }

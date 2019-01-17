@@ -11,6 +11,7 @@ import UIKit
 class ListingWireframe {
      weak var view: UIViewController!
     var models: [Hotel]?
+    lazy var detailWireframe = DetailWireframe()
 }
 
 extension ListingWireframe: ListingWireframeInput {
@@ -36,5 +37,11 @@ extension ListingWireframe: ListingWireframeInput {
     func openList(models: [Hotel], source: UINavigationController) {
         self.models = models
         self.pushMainView(in: source)
+    }
+    
+    func openDetail(for model: Hotel) {
+        if let navigation = self.view.navigationController {
+            detailWireframe.openDetail(model: model, source: navigation)
+        }
     }
 }
