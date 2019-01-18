@@ -12,6 +12,10 @@ protocol HomeSearchDelegate {
     func search(model: SearchRequestModel)
 }
 
+@objc protocol HomeNotifications {
+    func numberOfPassengerSelection()
+}
+
 class HomeViewController: UIViewController {
     
     enum Cells: Int {
@@ -60,7 +64,13 @@ class HomeViewController: UIViewController {
         // all setup should be done here
         self.tableView.delegate = self
         self.tableView.dataSource  = self
+        setupTargets()
     }
+    
+    private func setupTargets() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.numberOfPassengerSelection), name: HomeNotification.getPassengerNumberSelection(), object: nil)
+    }
+    
     
     override func setupTabItem() {
         self.tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "home"), selectedImage: #imageLiteral(resourceName: "home_ac"))
@@ -136,3 +146,13 @@ extension HomeViewController: HomeSearchDelegate {
         presenter?.search(request: model)
     }
 }
+
+
+
+extension HomeViewController: HomeNotifications {
+    @objc func numberOfPassengerSelection() {
+        presenter?.openNumberOfTravellerSelection()
+        
+    }
+}
+

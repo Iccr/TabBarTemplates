@@ -151,6 +151,18 @@
 		D901A09021EEF3BB00EA8D3A /* SearchRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901A08F21EEF3BB00EA8D3A /* SearchRequestModel.swift */; };
 		D901A09221EEF72B00EA8D3A /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901A09121EEF72B00EA8D3A /* SearchModel.swift */; };
 		D901A09521EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901A09421EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift */; };
+		D903C5C821F18D2B00CB6EEB /* NumberOfTravellersModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903C5B521F18D2B00CB6EEB /* NumberOfTravellersModuleInterface.swift */; };
+		D903C5C921F18D2B00CB6EEB /* NumberOfTravellersServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903C5B821F18D2B00CB6EEB /* NumberOfTravellersServiceType.swift */; };
+		D903C5CA21F18D2B00CB6EEB /* NumberOfTravellersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903C5B921F18D2B00CB6EEB /* NumberOfTravellersService.swift */; };
+		D903C5CB21F18D2B00CB6EEB /* NumberOfTravellersInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903C5BB21F18D2B00CB6EEB /* NumberOfTravellersInteractorIO.swift */; };
+		D903C5CC21F18D2B00CB6EEB /* NumberOfTravellersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903C5BC21F18D2B00CB6EEB /* NumberOfTravellersInteractor.swift */; };
+		D903C5CD21F18D2B00CB6EEB /* NumberOfTravellersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903C5BF21F18D2B00CB6EEB /* NumberOfTravellersPresenter.swift */; };
+		D903C5CE21F18D2B00CB6EEB /* NumberOfTravellersWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903C5C121F18D2B00CB6EEB /* NumberOfTravellersWireframe.swift */; };
+		D903C5CF21F18D2B00CB6EEB /* NumberOfTravellersWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903C5C221F18D2B00CB6EEB /* NumberOfTravellersWireframeInput.swift */; };
+		D903C5D021F18D2B00CB6EEB /* NumberOfTravellersViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903C5C521F18D2B00CB6EEB /* NumberOfTravellersViewInterface.swift */; };
+		D903C5D121F18D2B00CB6EEB /* NumberOfTravellers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D903C5C621F18D2B00CB6EEB /* NumberOfTravellers.storyboard */; };
+		D903C5D221F18D2B00CB6EEB /* NumberOfTravellersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903C5C721F18D2B00CB6EEB /* NumberOfTravellersViewController.swift */; };
+		D903C5D421F18D8E00CB6EEB /* HomeNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903C5D321F18D8E00CB6EEB /* HomeNotification.swift */; };
 		D904E98021F00D2F0049E889 /* DetailImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E97F21F00D2F0049E889 /* DetailImageCollectionViewCell.swift */; };
 		D904E98221F01E070049E889 /* DetailImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E98121F01E070049E889 /* DetailImagesTableViewCell.swift */; };
 		D904E98421F01E460049E889 /* DetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904E98321F01E460049E889 /* DetailInfoTableViewCell.swift */; };
@@ -425,6 +437,18 @@
 		D901A08F21EEF3BB00EA8D3A /* SearchRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestModel.swift; sourceTree = "<group>"; };
 		D901A09121EEF72B00EA8D3A /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		D901A09421EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingModelsTableViewCell.swift; sourceTree = "<group>"; };
+		D903C5B521F18D2B00CB6EEB /* NumberOfTravellersModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfTravellersModuleInterface.swift; sourceTree = "<group>"; };
+		D903C5B821F18D2B00CB6EEB /* NumberOfTravellersServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfTravellersServiceType.swift; sourceTree = "<group>"; };
+		D903C5B921F18D2B00CB6EEB /* NumberOfTravellersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfTravellersService.swift; sourceTree = "<group>"; };
+		D903C5BB21F18D2B00CB6EEB /* NumberOfTravellersInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfTravellersInteractorIO.swift; sourceTree = "<group>"; };
+		D903C5BC21F18D2B00CB6EEB /* NumberOfTravellersInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfTravellersInteractor.swift; sourceTree = "<group>"; };
+		D903C5BF21F18D2B00CB6EEB /* NumberOfTravellersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfTravellersPresenter.swift; sourceTree = "<group>"; };
+		D903C5C121F18D2B00CB6EEB /* NumberOfTravellersWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfTravellersWireframe.swift; sourceTree = "<group>"; };
+		D903C5C221F18D2B00CB6EEB /* NumberOfTravellersWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfTravellersWireframeInput.swift; sourceTree = "<group>"; };
+		D903C5C521F18D2B00CB6EEB /* NumberOfTravellersViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfTravellersViewInterface.swift; sourceTree = "<group>"; };
+		D903C5C621F18D2B00CB6EEB /* NumberOfTravellers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NumberOfTravellers.storyboard; sourceTree = "<group>"; };
+		D903C5C721F18D2B00CB6EEB /* NumberOfTravellersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfTravellersViewController.swift; sourceTree = "<group>"; };
+		D903C5D321F18D8E00CB6EEB /* HomeNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNotification.swift; sourceTree = "<group>"; };
 		D904E97F21F00D2F0049E889 /* DetailImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		D904E98121F01E070049E889 /* DetailImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImagesTableViewCell.swift; sourceTree = "<group>"; };
 		D904E98321F01E460049E889 /* DetailInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -1205,6 +1229,7 @@
 		90222FCC2074CBFF00AF91F3 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				D903C5B321F18D2B00CB6EEB /* NumberOfTravellers */,
 				D904E98D21F068200049E889 /* Confirmation */,
 				FF6A252C21EF711B00B7273B /* Detail */,
 				D901A06F21EEE91300EA8D3A /* Listing */,
@@ -1515,6 +1540,96 @@
 				D901A09421EF1E7C00EA8D3A /* ListingModelsTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		D903C5B321F18D2B00CB6EEB /* NumberOfTravellers */ = {
+			isa = PBXGroup;
+			children = (
+				D903C5B421F18D2B00CB6EEB /* Module Interface */,
+				D903C5B621F18D2B00CB6EEB /* Application Logic */,
+				D903C5BD21F18D2B00CB6EEB /* User Interface */,
+			);
+			path = NumberOfTravellers;
+			sourceTree = "<group>";
+		};
+		D903C5B421F18D2B00CB6EEB /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D903C5B521F18D2B00CB6EEB /* NumberOfTravellersModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		D903C5B621F18D2B00CB6EEB /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				D903C5B721F18D2B00CB6EEB /* Service */,
+				D903C5BA21F18D2B00CB6EEB /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		D903C5B721F18D2B00CB6EEB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D903C5B821F18D2B00CB6EEB /* NumberOfTravellersServiceType.swift */,
+				D903C5B921F18D2B00CB6EEB /* NumberOfTravellersService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D903C5BA21F18D2B00CB6EEB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D903C5BB21F18D2B00CB6EEB /* NumberOfTravellersInteractorIO.swift */,
+				D903C5BC21F18D2B00CB6EEB /* NumberOfTravellersInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D903C5BD21F18D2B00CB6EEB /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D903C5BE21F18D2B00CB6EEB /* Presenter */,
+				D903C5C021F18D2B00CB6EEB /* Wireframe */,
+				D903C5C321F18D2B00CB6EEB /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		D903C5BE21F18D2B00CB6EEB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D903C5BF21F18D2B00CB6EEB /* NumberOfTravellersPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D903C5C021F18D2B00CB6EEB /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				D903C5C121F18D2B00CB6EEB /* NumberOfTravellersWireframe.swift */,
+				D903C5C221F18D2B00CB6EEB /* NumberOfTravellersWireframeInput.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		D903C5C321F18D2B00CB6EEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D903C5C421F18D2B00CB6EEB /* ViewModels */,
+				D903C5C521F18D2B00CB6EEB /* NumberOfTravellersViewInterface.swift */,
+				D903C5C621F18D2B00CB6EEB /* NumberOfTravellers.storyboard */,
+				D903C5C721F18D2B00CB6EEB /* NumberOfTravellersViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D903C5C421F18D2B00CB6EEB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		D904E97C21F00CCD0049E889 /* Cells */ = {
@@ -1905,6 +2020,7 @@
 		D982586421EDAE9E0008A472 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D903C5D321F18D8E00CB6EEB /* HomeNotification.swift */,
 				D982586521EDAEAC0008A472 /* Utility.swift */,
 			);
 			path = Helper;
@@ -2310,6 +2426,7 @@
 			files = (
 				90222AD42074C29300AF91F3 /* QRScanner.storyboard in Resources */,
 				901BAA522074E6EE001531EA /* ModuleB.storyboard in Resources */,
+				D903C5D121F18D2B00CB6EEB /* NumberOfTravellers.storyboard in Resources */,
 				D982585021EDAB870008A472 /* Login.storyboard in Resources */,
 				FF6A254721EF711B00B7273B /* Detail.storyboard in Resources */,
 				D982588421EDB0690008A472 /* ForgotPassword.storyboard in Resources */,
@@ -2504,6 +2621,7 @@
 				901BAA982074E84B001531EA /* ModuleDService.swift in Sources */,
 				901BAA7B2074E836001531EA /* ModuleCModuleInterface.swift in Sources */,
 				901BAA972074E84B001531EA /* ModuleDInteractorIO.swift in Sources */,
+				D903C5CB21F18D2B00CB6EEB /* NumberOfTravellersInteractorIO.swift in Sources */,
 				D982588521EDB0690008A472 /* ForgotPasswordViewController.swift in Sources */,
 				D98258B221EDBDAE0008A472 /* HomeViewInterface.swift in Sources */,
 				D904E98421F01E460049E889 /* DetailInfoTableViewCell.swift in Sources */,
@@ -2524,9 +2642,11 @@
 				90C5EAC92074DC21009EBC01 /* MainViewInterface.swift in Sources */,
 				D982584A21EDAB870008A472 /* LoginInteractor.swift in Sources */,
 				90C5EAC62074DC21009EBC01 /* MainModuleInterface.swift in Sources */,
+				D903C5CD21F18D2B00CB6EEB /* NumberOfTravellersPresenter.swift in Sources */,
 				901BAA782074E836001531EA /* ModuleCInteractorIO.swift in Sources */,
 				D904E9A621F068200049E889 /* ConfirmationInteractorIO.swift in Sources */,
 				901BAA2F2074E593001531EA /* ModuleAViewInterface.swift in Sources */,
+				D903C5D421F18D8E00CB6EEB /* HomeNotification.swift in Sources */,
 				90222AD62074C29300AF91F3 /* SpLocationManager.swift in Sources */,
 				D901A08C21EEE91400EA8D3A /* ListingViewInterface.swift in Sources */,
 				90222FF12074CC2000AF91F3 /* LoadingServiceType.swift in Sources */,
@@ -2535,10 +2655,12 @@
 				909B07D42074CD8E00496256 /* Either.swift in Sources */,
 				D982581521EDA9E70008A472 /* SplashScreenInteractor.swift in Sources */,
 				D982585821EDAB870008A472 /* RegisterWireframeInput.swift in Sources */,
+				D903C5C921F18D2B00CB6EEB /* NumberOfTravellersServiceType.swift in Sources */,
 				90C5EAC42074DC21009EBC01 /* MainService.swift in Sources */,
 				D982585521EDAB870008A472 /* RegisterInteractor.swift in Sources */,
 				90C5EACB2074DC21009EBC01 /* MainWireframeInput.swift in Sources */,
 				901BAAA02074E84B001531EA /* ModuleDWireframeInput.swift in Sources */,
+				D903C5D021F18D2B00CB6EEB /* NumberOfTravellersViewInterface.swift in Sources */,
 				D982581621EDA9E70008A472 /* SplashScreenInteractorIO.swift in Sources */,
 				909B07DB2074CD8F00496256 /* WireframeInput.swift in Sources */,
 				D982585721EDAB870008A472 /* RegisterPresenter.swift in Sources */,
@@ -2587,6 +2709,7 @@
 				90222AB22074C1C200AF91F3 /* DoubleExtension.swift in Sources */,
 				901BAA742074E836001531EA /* ModuleCViewInterface.swift in Sources */,
 				D904E9A321F068200049E889 /* ConfirmationService.swift in Sources */,
+				D903C5C821F18D2B00CB6EEB /* NumberOfTravellersModuleInterface.swift in Sources */,
 				901BAA292074E593001531EA /* ModuleAInteractorIO.swift in Sources */,
 				D982585221EDAB870008A472 /* RegisterModuleInterface.swift in Sources */,
 				90C5EAC22074DC21009EBC01 /* MainInteractor.swift in Sources */,
@@ -2599,6 +2722,7 @@
 				901BAAC02074E876001531EA /* ModuleEModuleInterface.swift in Sources */,
 				901BAA4F2074E6EE001531EA /* ModuleBServiceType.swift in Sources */,
 				901BAA2E2074E593001531EA /* ModuleAViewController.swift in Sources */,
+				D903C5CC21F18D2B00CB6EEB /* NumberOfTravellersInteractor.swift in Sources */,
 				90222AD92074C29300AF91F3 /* TableViewPickerCell.swift in Sources */,
 				90222FEB2074CC2000AF91F3 /* LoadingViewInterface.swift in Sources */,
 				901BAA552074E6EE001531EA /* ModuleBWireframe.swift in Sources */,
@@ -2611,6 +2735,7 @@
 				D904E9AB21F068200049E889 /* ConfirmationViewController.swift in Sources */,
 				901BAA9A2074E84B001531EA /* ModuleDModuleInterface.swift in Sources */,
 				90222AB92074C1C200AF91F3 /* UIColorExtension.swift in Sources */,
+				D903C5CA21F18D2B00CB6EEB /* NumberOfTravellersService.swift in Sources */,
 				909B07DA2074CD8F00496256 /* UserDefaultManager.swift in Sources */,
 				D982581A21EDA9E70008A472 /* SplashScreenViewInterface.swift in Sources */,
 				901BAABD2074E876001531EA /* ModuleEInteractorIO.swift in Sources */,
@@ -2622,6 +2747,7 @@
 				901BAA2A2074E593001531EA /* ModuleAService.swift in Sources */,
 				90222A662074BBD800AF91F3 /* ViewController.swift in Sources */,
 				901BAA4C2074E6ED001531EA /* ModuleBInteractor.swift in Sources */,
+				D903C5D221F18D2B00CB6EEB /* NumberOfTravellersViewController.swift in Sources */,
 				D982588321EDB0690008A472 /* ForgotPasswordWireframeInput.swift in Sources */,
 				D982588821EDB0D50008A472 /* DataRequestExtension.swift in Sources */,
 				90C5EACF2074DCE2009EBC01 /* UIViewControllerExtension.swift in Sources */,
@@ -2647,6 +2773,7 @@
 				901BAA792074E836001531EA /* ModuleCService.swift in Sources */,
 				D98258AC21EDBDAE0008A472 /* HomeInteractor.swift in Sources */,
 				901BAA512074E6EE001531EA /* ModuleBPresenter.swift in Sources */,
+				D903C5CF21F18D2B00CB6EEB /* NumberOfTravellersWireframeInput.swift in Sources */,
 				901BAA762074E836001531EA /* ModuleCWireframeInput.swift in Sources */,
 				D982585E21EDAC610008A472 /* ApiServiceType.swift in Sources */,
 				D904E9AC21F068200049E889 /* ConfirmationViewInterface.swift in Sources */,
@@ -2700,6 +2827,7 @@
 				D982581921EDA9E70008A472 /* SplashScreenWireframeInput.swift in Sources */,
 				D982587D21EDB0690008A472 /* ForgotPasswordServiceType.swift in Sources */,
 				D901A08621EEE91400EA8D3A /* ListingServiceType.swift in Sources */,
+				D903C5CE21F18D2B00CB6EEB /* NumberOfTravellersWireframe.swift in Sources */,
 				FF6A254B21EF711B00B7273B /* DetailWireframeInput.swift in Sources */,
 				D982581421EDA9E70008A472 /* SplashScreenServiceType.swift in Sources */,
 				901BAA312074E593001531EA /* ModuleAWireframeInput.swift in Sources */,

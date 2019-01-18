@@ -11,6 +11,7 @@ import UIKit
 class HomeWireframe {
      weak var view: UIViewController!
     private lazy var listWireframe = ListingWireframe()
+    let numberOfTravellersWireframe = NumberOfTravellersWireframe()
 }
 
 extension HomeWireframe: HomeWireframeInput {
@@ -37,5 +38,9 @@ extension HomeWireframe: HomeWireframeInput {
         if let navigation = self.view.navigationController {
             listWireframe.openList(models: models, request: request, source: navigation)
         }
+    }
+    
+    func openNumberOfTravellersSelection() {
+        numberOfTravellersWireframe.openMainView(source: view)
     }
 }

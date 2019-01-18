@@ -17,7 +17,11 @@ class HomeSearchTableViewCell: UITableViewCell {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var backGroundView: UIView!
     
+    @IBOutlet weak var numberOfPassengerStackView: UIStackView!
+    
     private var model: SearchRequestModel = SearchRequestModel()
+    private var numberTapGesture: UITapGestureRecognizer?
+    
     var searchdelegate: HomeSearchDelegate?
     
     override func awakeFromNib() {
@@ -28,6 +32,7 @@ class HomeSearchTableViewCell: UITableViewCell {
     
     func setup() {
         self.configureViews()
+        configureGestures()
     }
 
     private func configureViews() {
@@ -35,6 +40,13 @@ class HomeSearchTableViewCell: UITableViewCell {
         searchButton.rounded()
         self.backGroundView.layer.cornerRadius = 10
         setupTextFields()
+    }
+    
+    private func configureGestures() {
+        let gesture = UITapGestureRecognizer()
+        self.numberTapGesture = gesture
+        numberTapGesture?.addTarget(self, action: #selector(self.passengerNumberSelection(_:)))
+        self.numberOfPassengerStackView.addGestureRecognizer(gesture)
     }
     
     
@@ -92,6 +104,10 @@ class HomeSearchTableViewCell: UITableViewCell {
                           .font : UIFont.systemFont(ofSize: 12, weight: .regular)]
         
         textfield?.attributedPlaceholder = NSAttributedString(string: placeholder, attributes:attributes)
+    }
+    
+    @objc func passengerNumberSelection(_ sender: Any) {
+        NotificationCenter.default.post(name: HomeNotification.getPassengerNumberSelection(), object: nil)
     }
 
 }

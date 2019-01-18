@@ -297,6 +297,7 @@
                                             <outlet property="checkInDateTextField" destination="pOD-5r-W0C" id="h3j-dU-xRZ"/>
                                             <outlet property="checkOutDateTextField" destination="4zq-s5-8hd" id="RKU-sV-cbq"/>
                                             <outlet property="fromDestinationTextField" destination="gke-JE-iQ4" id="Ziw-s5-ztz"/>
+                                            <outlet property="numberOfPassengerStackView" destination="vcZ-QL-dq4" id="7Ib-5a-Fdx"/>
                                             <outlet property="searchButton" destination="RSf-oD-IgA" id="L0F-pw-SO2"/>
                                             <outlet property="toDestinationTextField" destination="0ow-Kx-grP" id="3pT-sH-xEF"/>
                                         </connections>
