@@ -41,7 +41,7 @@ class HomeSearchTableViewCell: UITableViewCell {
         let numberOfPassenger = self.model?.numberOfPassengers ?? "0"
         let numberOfRoom = self.model?.numberOfRooms ?? "0"
         
-        let text = "\(numberOfPassenger) Passenger, \(numberOfRoom) rooms"
+        let text = "\(numberOfPassenger) Travellers, \(numberOfRoom) rooms"
         self.numberOfPassengerLabel.text = text
     }
 

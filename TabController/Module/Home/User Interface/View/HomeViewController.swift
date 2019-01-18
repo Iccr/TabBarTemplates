@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
     var presenter: HomeModuleInterface?
     var request: SearchRequestModel? {
         didSet {
-            self.tableView.reloadData()
+            self.tableView.reloadRows(at: [IndexPath.init(row: Cells.search.rawValue, section: 0)], with: UITableViewRowAnimation.none)
         }
     }
     
