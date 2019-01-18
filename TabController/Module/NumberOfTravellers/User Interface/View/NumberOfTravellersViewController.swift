@@ -74,6 +74,8 @@ class NumberOfTravellersViewController: UIViewController {
     
 
     @IBAction func close(_ sender: Any) {
+        self.model?.numberOfPassengers = "\(self.passengerCount)"
+        self.model?.numberOfRooms = "\(self.roomCount)"
         self.dismiss(animated: true, completion: nil)
     }
     
