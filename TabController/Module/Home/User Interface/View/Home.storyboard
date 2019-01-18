@@ -64,11 +64,11 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oVu-2k-mV7">
                                                                     <rect key="frame" x="0.0" y="0.0" width="355" height="329"/>
                                                                     <subviews>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fYU-18-cUY">
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYU-18-cUY">
                                                                             <rect key="frame" x="0.0" y="0.0" width="355" height="44"/>
                                                                             <subviews>
-                                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="l8W-Vr-bYC">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="44"/>
+                                                                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="l8W-Vr-bYC">
+                                                                                    <rect key="frame" x="-140" y="0.0" width="140" height="44"/>
                                                                                     <subviews>
                                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koU-aY-Nze">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="140" height="44"/>
@@ -109,10 +109,10 @@
                                                                                     </constraints>
                                                                                 </stackView>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KQd-yU-XYg">
-                                                                                    <rect key="frame" x="140" y="0.0" width="75" height="44"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="215" height="44"/>
                                                                                     <subviews>
                                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f63-yI-h7w">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="75" height="44"/>
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="215" height="44"/>
                                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         </view>
                                                                                     </subviews>
@@ -603,7 +603,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8je-5K-XuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-92" y="232.53373313343329"/>
+            <point key="canvasLocation" x="-634" y="303"/>
         </scene>
     </scenes>
     <resources>

@@ -22,6 +22,7 @@ class SearchRequestModel: Serializer {
     var checkOutDate: String?
     var direction:TravelDirection?
     var numberOfPassengers: String?
+    var numberOfRooms: String?
     
     func serialize() -> [String : String] {
         var dict = ["":""]
@@ -29,6 +30,8 @@ class SearchRequestModel: Serializer {
         dict["to"] = self.to ?? ""
         dict["checkIn"] = self.checkInDate ?? ""
         dict["checkOut"] = self.checkOutDate ?? ""
+        dict["numberOfPassengers"] = self.numberOfPassengers ?? ""
+        dict["numberOfRooms"] = self.numberOfRooms ?? ""
         if let number = self.numberOfPassengers {
             dict["direction"] = number
         }
