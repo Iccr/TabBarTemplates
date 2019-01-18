@@ -30,6 +30,7 @@ extension ListingPresenter: ListingModuleInterface {
     
     func show(request: SearchRequestModel) {
         self.request = request
+        self.view?.show(request: request)
     }
 }
 

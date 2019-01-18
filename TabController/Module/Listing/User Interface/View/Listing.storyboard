@@ -322,6 +322,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dateAndPassengerCountLabel" destination="JB4-2O-eNz" id="PY5-Qc-zT5"/>
                         <outlet property="shadowView" destination="xKY-uU-Bm0" id="reh-q0-zsc"/>
                         <outlet property="tableview" destination="eHH-nK-lmL" id="kNq-Zr-fFG"/>
                     </connections>

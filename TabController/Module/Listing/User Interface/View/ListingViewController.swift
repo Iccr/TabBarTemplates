@@ -11,7 +11,7 @@ import UIKit
 class ListingViewController: UIViewController {
     
     // MARK: IBOutlets
-    var models: [Hotel]?
+    
     
     @IBOutlet weak var shadowView: UIView!
     
@@ -19,7 +19,20 @@ class ListingViewController: UIViewController {
     
     @IBOutlet weak var tableview: UITableView!
     
+    @IBOutlet weak var dateAndPassengerCountLabel: UILabel!
+    
     var presenter: ListingModuleInterface?
+    
+    var models: [Hotel]?
+    var request: SearchRequestModel? {
+        didSet {
+            let numberOfPassenger = self.request?.numberOfPassengers ?? "0"
+            let numberOfRoom = self.request?.numberOfRooms ?? "0"
+            
+            let text = "\(numberOfPassenger) Travellers, \(numberOfRoom) rooms"
+            self.dateAndPassengerCountLabel.text = text
+        }
+    }
     
 
     // MARK: VC's Life cycle
@@ -57,6 +70,10 @@ class ListingViewController: UIViewController {
 extension ListingViewController: ListingViewInterface {
     func show(models: [Hotel]) {
         self.models = models
+    }
+    
+    func show(request: SearchRequestModel) {
+        self.request = request
     }
 }
 
