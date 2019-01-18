@@ -40,7 +40,11 @@ class NumberOfTravellersViewController: UIViewController {
     
     var presenter: NumberOfTravellersModuleInterface?
     
-    var model: SearchRequestModel?
+    var model: SearchRequestModel? {
+        didSet {
+            self.populateValues()
+        }
+    }
     
 
     // MARK: VC's Life cycle
@@ -57,7 +61,7 @@ class NumberOfTravellersViewController: UIViewController {
     private func setup() {
         // all setup should be done here
        [passengerIncreamentButton, passengerDecreamentButton, roomIncreamentButton, roomDecreamentButton, doneButton ].forEach({$0?.rounded()})
-        populateValues()
+        presenter?.viewIsReady()
     }
     
     
@@ -76,7 +80,8 @@ class NumberOfTravellersViewController: UIViewController {
     @IBAction func close(_ sender: Any) {
         self.model?.numberOfPassengers = "\(self.passengerCount)"
         self.model?.numberOfRooms = "\(self.roomCount)"
-        self.dismiss(animated: true, completion: nil)
+        guard let request = self.model else {return}
+        self.presenter?.close(with: request)
     }
     
     @IBAction func decreasePassengerCount(_ sender: Any) {
@@ -107,7 +112,9 @@ class NumberOfTravellersViewController: UIViewController {
 
 // MARK: NumberOfTravellersViewInterface
 extension NumberOfTravellersViewController: NumberOfTravellersViewInterface {
-    
+    func set(request: SearchRequestModel) {
+        self.model = request
+    }
 }
 
 

@@ -8,5 +8,5 @@
 
 protocol HomeModuleInterface: class {
     func search(request: SearchRequestModel)
-    func openNumberOfTravellerSelection()
+    func openNumberOfTravellerSelection(request: SearchRequestModel?, completion: @escaping (SearchRequestModel) -> ())
 }

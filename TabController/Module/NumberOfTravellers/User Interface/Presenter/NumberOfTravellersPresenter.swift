@@ -22,11 +22,21 @@ class NumberOfTravellersPresenter {
  // MARK: NumberOfTravellers module interface
 
 extension NumberOfTravellersPresenter: NumberOfTravellersModuleInterface {
-
+    func close(with request: SearchRequestModel) {
+        self.wireframe?.close(request: request)
+    }
+    
+    func viewIsReady() {
+        self.interactor?.viewIsReady()
+    }
 }
 
 // MARK: NumberOfTravellers interactor output interface
 
 extension NumberOfTravellersPresenter: NumberOfTravellersInteractorOutput {
+    func set(request: SearchRequestModel) {
+        self.view?.set(request: request)
+    }
     
+
 }

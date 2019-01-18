@@ -17,9 +17,10 @@ class HomeSearchTableViewCell: UITableViewCell {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var backGroundView: UIView!
     
+    @IBOutlet weak var numberOfPassengerLabel: UILabel!
     @IBOutlet weak var numberOfPassengerStackView: UIStackView!
     
-    private var model: SearchRequestModel = SearchRequestModel()
+    var model: SearchRequestModel?
     private var numberTapGesture: UITapGestureRecognizer?
     
     var searchdelegate: HomeSearchDelegate?
@@ -32,7 +33,16 @@ class HomeSearchTableViewCell: UITableViewCell {
     
     func setup() {
         self.configureViews()
-        configureGestures() 
+        configureGestures()
+        populateInfo()
+    }
+    
+    private func populateInfo() {
+        let numberOfPassenger = self.model?.numberOfPassengers ?? "0"
+        let numberOfRoom = self.model?.numberOfRooms ?? "0"
+        
+        let text = "\(numberOfPassenger) Passenger, \(numberOfRoom) rooms"
+        self.numberOfPassengerLabel.text = text
     }
 
     private func configureViews() {
@@ -52,10 +62,10 @@ class HomeSearchTableViewCell: UITableViewCell {
     
     // @IBAction
     @IBAction func search(_ sender: Any) {
-        model.from = self.fromDestinationTextField.text!
-        model.to = self.toDestinationTextField.text!
-        model.checkInDate = self.checkInDateTextField.text!
-        model.checkOutDate = self.checkOutDateTextField.text!
+        model?.from = self.fromDestinationTextField.text!
+        model?.to = self.toDestinationTextField.text!
+        model?.checkInDate = self.checkInDateTextField.text!
+        model?.checkOutDate = self.checkOutDateTextField.text!
         searchdelegate?.search(model: model)
     }
     

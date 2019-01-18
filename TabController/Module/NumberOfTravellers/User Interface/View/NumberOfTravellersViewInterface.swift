@@ -7,5 +7,5 @@
 //
 
 protocol NumberOfTravellersViewInterface: class {
-    
+    func set(request: SearchRequestModel)
 }

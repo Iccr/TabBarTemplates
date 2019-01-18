@@ -9,5 +9,5 @@
 import Foundation
 
 protocol NumberOfTravellersWireframeInput: WireframeInput {
-    
+    func close(request: SearchRequestModel)
 }

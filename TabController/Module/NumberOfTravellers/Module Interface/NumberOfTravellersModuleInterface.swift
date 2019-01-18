@@ -7,5 +7,6 @@
 //
 
 protocol NumberOfTravellersModuleInterface: class {
-    
+    func viewIsReady()
+    func close(with request: SearchRequestModel)
 }

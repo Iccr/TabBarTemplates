@@ -9,7 +9,7 @@
 import UIKit
 
 protocol HomeSearchDelegate {
-    func search(model: SearchRequestModel)
+    func search(model: SearchRequestModel?)
 }
 
 @objc protocol HomeNotifications {
@@ -26,17 +26,17 @@ class HomeViewController: UIViewController {
     
     // MARK: IBOutlets
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var travelmageView: UIImageView!
     
-    
-    
     // MARK: Properties
-
     
     var rows: [Cells] = [.image, .search, .sponsored]
     var presenter: HomeModuleInterface?
-    
+    var request: SearchRequestModel? {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
     
     // MARK: VC's Life cycle
     
@@ -65,6 +65,7 @@ class HomeViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource  = self
         setupTargets()
+        self.request = SearchRequestModel()
     }
     
     private func setupTargets() {
@@ -124,6 +125,7 @@ extension HomeViewController: UITableViewDataSource {
     
     private func configureSearchCell(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeSearchTableViewCell") as! HomeSearchTableViewCell
+        cell.model = request
         cell.searchdelegate = self
         cell.setup()
         return cell
@@ -142,7 +144,9 @@ extension HomeViewController: UITableViewDataSource {
 }
 
 extension HomeViewController: HomeSearchDelegate {
-    func search(model: SearchRequestModel) {
+  
+    func search(model: SearchRequestModel?) {
+        guard let model = self.request else {return}
         presenter?.search(request: model)
     }
 }
@@ -151,8 +155,11 @@ extension HomeViewController: HomeSearchDelegate {
 
 extension HomeViewController: HomeNotifications {
     @objc func numberOfPassengerSelection() {
-        presenter?.openNumberOfTravellerSelection()
-        
+        self.presenter?.openNumberOfTravellerSelection(request: self.request, completion: self.numberOfPassengerSelected)
+    }
+    
+    func numberOfPassengerSelected(model: SearchRequestModel?) {
+        self.request = model
     }
 }
 

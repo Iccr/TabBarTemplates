@@ -7,9 +7,9 @@
 //
 
 protocol NumberOfTravellersInteractorInput: class {
-
+    func viewIsReady()
 }
 
 protocol NumberOfTravellersInteractorOutput: class {
-
+    func set(request: SearchRequestModel)
 }

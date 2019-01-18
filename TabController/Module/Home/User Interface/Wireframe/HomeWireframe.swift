@@ -12,9 +12,14 @@ class HomeWireframe {
      weak var view: UIViewController!
     private lazy var listWireframe = ListingWireframe()
     let numberOfTravellersWireframe = NumberOfTravellersWireframe()
+
 }
 
 extension HomeWireframe: HomeWireframeInput {
+    func openNumberOfTravellerSelection(request: SearchRequestModel?, completion: ((SearchRequestModel) -> ())?) {
+        numberOfTravellersWireframe.open(request: request, source: self.view, completion: completion)
+    }
+    
     
     var storyboardName: String {return "Home"}
     
@@ -38,9 +43,5 @@ extension HomeWireframe: HomeWireframeInput {
         if let navigation = self.view.navigationController {
             listWireframe.openList(models: models, request: request, source: navigation)
         }
-    }
-    
-    func openNumberOfTravellersSelection() {
-        numberOfTravellersWireframe.openMainView(source: view)
     }
 }

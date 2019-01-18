@@ -21,8 +21,8 @@ class SearchRequestModel: Serializer {
     var checkInDate: String?
     var checkOutDate: String?
     var direction:TravelDirection?
-    var numberOfPassengers: String?
-    var numberOfRooms: String?
+    var numberOfPassengers: String? = "1"
+    var numberOfRooms: String? = "1"
     
     func serialize() -> [String : String] {
         var dict = ["":""]

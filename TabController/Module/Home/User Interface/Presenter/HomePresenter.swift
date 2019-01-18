@@ -25,8 +25,11 @@ class HomePresenter {
  // MARK: Home module interface
 
 extension HomePresenter: HomeModuleInterface {
-    func openNumberOfTravellerSelection() {
-        self.wireframe?.openNumberOfTravellersSelection()
+
+    
+    
+    func openNumberOfTravellerSelection(request: SearchRequestModel?, completion: @escaping (SearchRequestModel) -> ()) {
+        self.wireframe?.openNumberOfTravellerSelection(request: request, completion: completion)
     }
     
     func search(request: SearchRequestModel) {

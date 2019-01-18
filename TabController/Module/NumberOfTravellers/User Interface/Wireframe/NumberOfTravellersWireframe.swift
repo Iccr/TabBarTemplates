@@ -10,6 +10,8 @@ import UIKit
 
 class NumberOfTravellersWireframe {
      weak var view: UIViewController!
+    var request: SearchRequestModel?
+    var completion: ((SearchRequestModel) -> ())?
 }
 
 extension NumberOfTravellersWireframe: NumberOfTravellersWireframeInput {
@@ -18,7 +20,7 @@ extension NumberOfTravellersWireframe: NumberOfTravellersWireframeInput {
     
     func getMainView() -> UIViewController {
         let service = NumberOfTravellersService()
-        let interactor = NumberOfTravellersInteractor(service: service)
+        let interactor = NumberOfTravellersInteractor(service: service, request: self.request)
         let presenter = NumberOfTravellersPresenter()
         let viewController = viewControllerFromStoryboard(of: NumberOfTravellersViewController.self)
         
@@ -32,4 +34,16 @@ extension NumberOfTravellersWireframe: NumberOfTravellersWireframeInput {
         return viewController
     }
 
+    
+    func open(request: SearchRequestModel?, source: UIViewController ,completion: ((SearchRequestModel) -> ())? ) {
+        self.request = request
+        self.completion = completion
+        self.openMainView(source: source)
+    }
+    
+    func close(request: SearchRequestModel) {
+        self.view.dismiss(animated: true) {
+            self.completion?(request)
+        }
+    }
 }
