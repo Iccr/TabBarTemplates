@@ -32,7 +32,7 @@ class HomeSearchTableViewCell: UITableViewCell {
     
     func setup() {
         self.configureViews()
-        configureGestures()
+        configureGestures() 
     }
 
     private func configureViews() {

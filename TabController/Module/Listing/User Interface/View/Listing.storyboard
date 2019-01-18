@@ -252,7 +252,7 @@
                                 <rect key="frame" x="0.0" y="40" width="375" height="72.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="loE-R9-eGD">
-                                        <rect key="frame" x="0.0" y="12" width="375" height="60.5"/>
+                                        <rect key="frame" x="10" y="12" width="355" height="60.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorted By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsX-TA-cKL">
                                                 <rect key="frame" x="0.0" y="0.0" width="76" height="20.5"/>
@@ -302,8 +302,8 @@
                                     <constraint firstAttribute="bottom" secondItem="loE-R9-eGD" secondAttribute="bottom" id="070-ms-dHZ"/>
                                     <constraint firstItem="loE-R9-eGD" firstAttribute="top" secondItem="qK7-a6-mB4" secondAttribute="top" constant="12" id="BtK-QF-AgJ"/>
                                     <constraint firstAttribute="height" constant="72.5" id="Hn3-yc-nOm"/>
-                                    <constraint firstAttribute="trailing" secondItem="loE-R9-eGD" secondAttribute="trailing" id="SYb-ys-K3T"/>
-                                    <constraint firstItem="loE-R9-eGD" firstAttribute="leading" secondItem="qK7-a6-mB4" secondAttribute="leading" id="YrG-8z-AYF"/>
+                                    <constraint firstAttribute="trailing" secondItem="loE-R9-eGD" secondAttribute="trailing" constant="10" id="SYb-ys-K3T"/>
+                                    <constraint firstItem="loE-R9-eGD" firstAttribute="leading" secondItem="qK7-a6-mB4" secondAttribute="leading" constant="10" id="YrG-8z-AYF"/>
                                 </constraints>
                             </view>
                         </subviews>
